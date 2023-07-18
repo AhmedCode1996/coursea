@@ -20,7 +20,7 @@ export default AppLayoutContent;
 
 const Wrapper = styled.div`
   display: grid;
-  grid-template-columns: ${265 / 16}rem 1fr;
+  grid-template-columns: ${240 / 16}rem 1fr;
   background-color: ${COLORS.neutral.lightGrey};
   gap: 8px;
 `;

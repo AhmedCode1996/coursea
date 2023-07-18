@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { useState } from "react";
 import {
   createStyles,
@@ -7,16 +9,46 @@ import {
   Group,
   rem,
 } from "@mantine/core";
+
 import range from "./../../assets/range.png";
 import beginnerRange from "./../../assets/beginnerRange.png";
 import intermediateRange from "./../../assets/intermediateRange.png";
 import masterRange from "./../../assets/masterRange.png";
+
+import category from "./../../assets/category.png";
+import allCategories from "./../../assets/allCategories.png";
+import design from "./../../assets/design.png";
+import development from "./../../assets/development.png";
+import software from "./../../assets/software.png";
+import marketing from "./../../assets/marketing.png";
+
+import sort from "./../../assets/sort.png";
+import popularSort from "./../../assets/popularSort.png";
+import ascendingSort from "./../../assets/ascendingSort.png";
+import descendingSort from "./../../assets/descendingSort.png";
+import ratingSort from "./../../assets/ratingSort.png";
+
 import { COLORS, TYPOGRAPHY } from "../../constants";
-const data = [
+const levelData = [
   { label: "level", image: range },
   { label: "Beginner", image: beginnerRange },
   { label: "Intermediate", image: intermediateRange },
   { label: "Master", image: masterRange },
+];
+const categoryData = [
+  { label: "Category", image: category },
+  { label: "All Categories", image: allCategories },
+  { label: "Development", image: development },
+  { label: "Marketing", image: marketing },
+  { label: "Design", image: design },
+  { label: "Software", image: software },
+];
+const sortByData = [
+  { label: "Sort By:", image: sort },
+  { label: "Popular", image: popularSort },
+  { label: "Title: A-To-Z", image: ascendingSort },
+  { label: "Title: Z-To-A", image: descendingSort },
+  { label: "Rating", image: ratingSort },
 ];
 
 const useStyles = createStyles((theme, { opened }) => ({
@@ -52,11 +84,17 @@ const useStyles = createStyles((theme, { opened }) => ({
   },
 }));
 
-function FilterInput() {
+function FilterInput({ type }) {
   const [opened, setOpened] = useState(false);
   const { classes } = useStyles({ opened });
-  const [selected, setSelected] = useState(data[0]);
-  const items = data.map((item) => (
+  const [selected, setSelected] = useState(levelData[0]);
+
+  let targetData = [];
+  if (type === "level") targetData = levelData;
+  if (type === "sortBy") targetData = sortByData;
+  if (type === "category") targetData = categoryData;
+
+  const items = targetData?.map((item) => (
     <Menu.Item
       icon={<Image src={item.image} width={12} height={12} />}
       onClick={() => setSelected(item)}
@@ -77,7 +115,7 @@ function FilterInput() {
       <Menu.Target>
         <UnstyledButton className={classes.control}>
           <Group spacing="xs">
-            <Image src={selected.image} width={13} height={12} />
+            <Image src={selected.image} width={15} height={14} />
             <span className={classes.label}>{selected.label}</span>
           </Group>
         </UnstyledButton>

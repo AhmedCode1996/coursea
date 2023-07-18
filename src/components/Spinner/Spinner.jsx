@@ -1,11 +1,15 @@
 import { styled } from "styled-components";
-import loader from "./../../assets/loading.gif";
-import { COLORS } from "./../../constants";
+import Lottie from "lottie-react";
+
+import animatedSpinner from "./../../assets/animatedSpinner.json";
+
+import { TYPOGRAPHY, COLORS, FONT_FAMILY } from "./../../constants";
+
 function Spinner() {
   return (
     <Wrapper>
       <Content>
-        <img src={loader} title="loading spinner" />
+        <Lottie animationData={animatedSpinner} loop={true} />
         <p>Loading courses....</p>
       </Content>
     </Wrapper>
@@ -15,12 +19,18 @@ function Spinner() {
 export default Spinner;
 
 const Wrapper = styled.div`
-  position: absolute;
-  inset: 0;
-  background-color: ${COLORS.transparent.black10};
   display: flex;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  inset: 0;
+  background-color: ${COLORS.transparent.black10};
 `;
 
-const Content = styled.div``;
+const Content = styled.div`
+  p {
+    font-family: ${FONT_FAMILY.bespoke};
+    font-weight: 500;
+    font-size: ${TYPOGRAPHY.xl};
+  }
+`;

@@ -20,4 +20,8 @@ const Wrapper = styled.aside`
   align-content: space-between;
   gap: 0.625rem;
   padding: 1rem;
+  position: sticky;
+  height: 100dvh;
+  top: 0;
+  left: 0;
 `;

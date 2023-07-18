@@ -41,6 +41,9 @@ export const TYPOGRAPHY = {
 };
 
 export const FONT_FAMILY = {
+  bespoke: "'Bespoke Serif', serif",
+  telma: "'Telma', cursive",
+  ubuntu: "'Ubuntu', sans-serif",
   pally: "'Pally', sans-serif",
   pilcrow: "'Pilcrow Rounded', sans-serif",
   asap: "'Asap', sans-serif",

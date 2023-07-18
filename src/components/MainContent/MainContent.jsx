@@ -9,8 +9,12 @@ import Courses from "./../Courses/Courses";
 function MainContent() {
   return (
     <Wrapper>
-      <SearchInput />
-      <FilterInput />
+      <FilterBar>
+        <SearchInput />
+        <FilterInput type="level" />
+        <FilterInput type="sortBy" />
+        <FilterInput type="category" />
+      </FilterBar>
       <Courses />
     </Wrapper>
   );
@@ -19,3 +23,12 @@ function MainContent() {
 export default MainContent;
 
 const Wrapper = styled.main``;
+const FilterBar = styled.div`
+  display: flex;
+  gap: 1rem;
+
+  & > *:first-child {
+    flex: 1;
+    margin-right: auto;
+  }
+`;
