@@ -34,6 +34,7 @@ const InputElement = styled.input`
   padding-inline: var(--horizontal-padding);
   padding-block: calc(var(--horizontal-padding) / 2);
   width: 100%;
+  background-color: ${COLORS.neutral.white};
   transition: all 0.3s;
   font-weight: 500;
   text-transform: capitalize;

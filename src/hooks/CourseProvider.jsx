@@ -21,19 +21,18 @@ const CourseProvider = ({ children }) => {
 
       /*
       // // Insert Rows
-       const { data, error } = await supabase
-         .from("courses")
-         .insert(mappedCourses)
-         .select();
+      const { data, error } = await supabase
+        .from("courses")
+        .insert(mappedCourses)
+        .select();
       */
-
       /*
       //delete all rows
-       const { error } = await supabase
-         .from("courses")
-         .delete()
-         .eq("is_paid", true);
-      */
+      const { error } = await supabase
+        .from("courses")
+        .delete()
+        .eq("is_paid", false);
+        */
     };
     getData();
   }, []);

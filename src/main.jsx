@@ -1,5 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
+import { Provider } from "react-redux";
+import { store } from "./store";
 
 import AppLayout from "./ui/AppLayout";
 import AppLayoutContent from "./ui/AppLayoutContent";
@@ -42,8 +44,10 @@ const root = document.getElementById("root");
 createRoot(root).render(
   <>
     <GlobalStyle />
-    <CourseProvider>
-      <RouterProvider router={router} />
-    </CourseProvider>
+    <Provider store={store}>
+      <CourseProvider>
+        <RouterProvider router={router} />
+      </CourseProvider>
+    </Provider>
   </>
 );

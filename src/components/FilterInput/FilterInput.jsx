@@ -10,46 +10,51 @@ import {
   rem,
 } from "@mantine/core";
 
-import range from "./../../assets/range.png";
-import beginnerRange from "./../../assets/beginnerRange.png";
-import intermediateRange from "./../../assets/intermediateRange.png";
-import masterRange from "./../../assets/masterRange.png";
+import rangeIcon from "./../../assets/range.png";
+import beginnerRangeIcon from "./../../assets/beginnerRange.png";
+import intermediateRangeIcon from "./../../assets/intermediateRange.png";
+import masterRangeIcon from "./../../assets/masterRange.png";
 
-import category from "./../../assets/category.png";
-import allCategories from "./../../assets/allCategories.png";
-import design from "./../../assets/design.png";
-import development from "./../../assets/development.png";
-import software from "./../../assets/software.png";
-import marketing from "./../../assets/marketing.png";
+import categoryIcon from "./../../assets/category.png";
+import allCategoriesIcon from "./../../assets/allCategories.png";
+import designIcon from "./../../assets/design.png";
+import developmentIcon from "./../../assets/development.png";
+import softwareIcon from "./../../assets/software.png";
+import marketingIcon from "./../../assets/marketing.png";
 
-import sort from "./../../assets/sort.png";
-import popularSort from "./../../assets/popularSort.png";
-import ascendingSort from "./../../assets/ascendingSort.png";
-import descendingSort from "./../../assets/descendingSort.png";
-import ratingSort from "./../../assets/ratingSort.png";
+import sortIcon from "./../../assets/sort.png";
+import popularSortIcon from "./../../assets/popularSort.png";
+import ascendingSortIcon from "./../../assets/ascendingSort.png";
+import descendingSortIcon from "./../../assets/descendingSort.png";
+import ratingSortIcon from "./../../assets/ratingSort.png";
 
 import { COLORS, TYPOGRAPHY } from "../../constants";
-const levelData = [
-  { label: "level", image: range },
-  { label: "Beginner", image: beginnerRange },
-  { label: "Intermediate", image: intermediateRange },
-  { label: "Master", image: masterRange },
-];
-const categoryData = [
-  { label: "Category", image: category },
-  { label: "All Categories", image: allCategories },
-  { label: "Development", image: development },
-  { label: "Marketing", image: marketing },
-  { label: "Design", image: design },
-  { label: "Software", image: software },
-];
-const sortByData = [
-  { label: "Sort By:", image: sort },
-  { label: "Popular", image: popularSort },
-  { label: "Title: A-To-Z", image: ascendingSort },
-  { label: "Title: Z-To-A", image: descendingSort },
-  { label: "Rating", image: ratingSort },
-];
+import { useDispatch } from "react-redux";
+import { filter } from "../../features/courseSlice";
+
+const inputData = {
+  level: [
+    { label: "level", image: rangeIcon },
+    { label: "Beginner", image: beginnerRangeIcon },
+    { label: "Intermediate", image: intermediateRangeIcon },
+    { label: "Master", image: masterRangeIcon },
+  ],
+  category: [
+    { label: "Category", image: categoryIcon },
+    { label: "All Categories", image: allCategoriesIcon },
+    { label: "Development", image: developmentIcon },
+    { label: "Marketing", image: marketingIcon },
+    { label: "Design", image: designIcon },
+    { label: "Software", image: softwareIcon },
+  ],
+  sortBy: [
+    { label: "Sort By:", image: sortIcon },
+    { label: "Popular", image: popularSortIcon },
+    { label: "Title: A-To-Z", image: ascendingSortIcon },
+    { label: "Title: Z-To-A", image: descendingSortIcon },
+    { label: "Rating", image: ratingSortIcon },
+  ],
+};
 
 const useStyles = createStyles((theme, { opened }) => ({
   control: {
@@ -85,19 +90,23 @@ const useStyles = createStyles((theme, { opened }) => ({
 }));
 
 function FilterInput({ type }) {
+  const dispatch = useDispatch();
   const [opened, setOpened] = useState(false);
   const { classes } = useStyles({ opened });
-  const [selected, setSelected] = useState(levelData[0]);
+  const [selected, setSelected] = useState(inputData[type][0]);
 
   let targetData = [];
-  if (type === "level") targetData = levelData;
-  if (type === "sortBy") targetData = sortByData;
-  if (type === "category") targetData = categoryData;
+  if (type === "level") targetData = inputData[type];
+  if (type === "sortBy") targetData = inputData[type];
+  if (type === "category") targetData = inputData[type];
 
   const items = targetData?.map((item) => (
     <Menu.Item
-      icon={<Image src={item.image} width={12} height={12} />}
-      onClick={() => setSelected(item)}
+      icon={<Image src={item.image} width={20} height={20} />}
+      onClick={() => {
+        setSelected(item);
+        dispatch(filter(item));
+      }}
       key={item.label}
     >
       {item.label}
@@ -115,7 +124,7 @@ function FilterInput({ type }) {
       <Menu.Target>
         <UnstyledButton className={classes.control}>
           <Group spacing="xs">
-            <Image src={selected.image} width={15} height={14} />
+            <Image src={selected.image} width={20} height={20} />
             <span className={classes.label}>{selected.label}</span>
           </Group>
         </UnstyledButton>

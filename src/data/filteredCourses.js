@@ -4,6 +4,8 @@ export const mappedCourses = courses.map((course) => {
   const {
     id,
     title,
+    category,
+    level,
     rating,
     duration,
     sections,
@@ -26,6 +28,8 @@ export const mappedCourses = courses.map((course) => {
     id,
     title,
     rating,
+    category,
+    level,
     duration,
     sections,
     students,

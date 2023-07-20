@@ -1,4 +1,4 @@
-export const courses = [
+const baseData = [
   {
     _class: "course",
     sections: 24,
@@ -4049,3 +4049,14 @@ export const courses = [
       "Improve your relationships with deeper connection, as clear communication skills are the doorway to love.",
   },
 ];
+
+const levels = ["beginner", "intermediate", "master"];
+const categories = ["development", "marketing", "design", "software"];
+
+export const courses = baseData.map((course) => {
+  return {
+    ...course,
+    level: levels[Math.floor(Math.random() * levels.length)],
+    category: categories[Math.floor(Math.random() * categories.length)],
+  };
+});
