@@ -10,15 +10,17 @@ import { useEffect } from "react";
 import { fetchApiCourses } from "../../features/productApiCall";
 
 function Courses() {
-  const dispatch = useDispatch();
   // const [courses] = useCourseContext();
-  const { queryFilter, courses } = useSelector((state) => state.courseSlice);
+  const dispatch = useDispatch();
+  const { courses, loading, inputFilter } = useSelector(
+    (state) => state.courseSlice
+  );
 
   useEffect(() => {
     dispatch(fetchApiCourses());
-  }, []);
+  }, [ dispatch]);
 
-  if (!courses.length) return <Spinner />;
+  if (loading) return <Spinner />;
   return (
     <Wrapper>
       {courses.map((element) => (
