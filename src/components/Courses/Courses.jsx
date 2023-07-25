@@ -7,7 +7,8 @@ import Spinner from "../Spinner/Spinner";
 import { COLORS } from "./../../constants";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { fetchApiCourses } from "../../features/productApiCall";
+// import { fetchApiCourses } from "../../features/productApiCall";
+import { fetchCourses } from "../../features/courseSlice";
 
 function Courses() {
   // const [courses] = useCourseContext();
@@ -17,7 +18,7 @@ function Courses() {
   );
 
   useEffect(() => {
-    dispatch(fetchApiCourses());
+    dispatch(fetchCourses());
   }, [ dispatch]);
 
   if (loading) return <Spinner />;

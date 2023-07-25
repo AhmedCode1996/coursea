@@ -2,18 +2,20 @@
 import { styled } from "styled-components";
 
 import SearchInput from "../SearchInput/SearchInput";
-import FilterInput from "../FilterInput/FilterInput";
 
 import Courses from "./../Courses/Courses";
+import SortFilterInput from "./../SortFilterInput/SortFilterInput";
+import CategoryFilterInput from "./../CategoryFilterInput/CategoryFilterInput";
+import LevelFilterInput from "./../LevelFilterInput/LevelFilterInput";
 
 function MainContent() {
   return (
     <Wrapper>
       <FilterBar>
         <SearchInput />
-        <FilterInput type="level" />
-        <FilterInput type="sortBy" />
-        <FilterInput type="category" />
+        <LevelFilterInput />
+        <SortFilterInput />
+        <CategoryFilterInput />
       </FilterBar>
       <Courses />
     </Wrapper>

@@ -10,10 +10,9 @@ import {
   rem,
 } from "@mantine/core";
 
-import rangeIcon from "./../../assets/range.png";
-import beginnerRangeIcon from "./../../assets/beginnerRange.png";
-import intermediateRangeIcon from "./../../assets/intermediateRange.png";
-import masterRangeIcon from "./../../assets/masterRange.png";
+import { COLORS, TYPOGRAPHY } from "../../constants";
+import { useDispatch, useSelector } from "react-redux";
+import { categoryFilter } from "../../features/courseSlice";
 
 import categoryIcon from "./../../assets/category.png";
 import allCategoriesIcon from "./../../assets/allCategories.png";
@@ -22,39 +21,14 @@ import developmentIcon from "./../../assets/development.png";
 import softwareIcon from "./../../assets/software.png";
 import marketingIcon from "./../../assets/marketing.png";
 
-import sortIcon from "./../../assets/sort.png";
-import popularSortIcon from "./../../assets/popularSort.png";
-import ascendingSortIcon from "./../../assets/ascendingSort.png";
-import descendingSortIcon from "./../../assets/descendingSort.png";
-import ratingSortIcon from "./../../assets/ratingSort.png";
-
-import { COLORS, TYPOGRAPHY } from "../../constants";
-import { useDispatch, useSelector } from "react-redux";
-import { filter, sort } from "../../features/courseSlice";
-
-const inputData = {
-  level: [
-    { label: "level", image: rangeIcon },
-    { label: "Beginner", image: beginnerRangeIcon },
-    { label: "Intermediate", image: intermediateRangeIcon },
-    { label: "Master", image: masterRangeIcon },
-  ],
-  category: [
-    { label: "Category", image: categoryIcon },
-    { label: "All Categories", image: allCategoriesIcon },
-    { label: "Development", image: developmentIcon },
-    { label: "Marketing", image: marketingIcon },
-    { label: "Design", image: designIcon },
-    { label: "Software", image: softwareIcon },
-  ],
-  sortBy: [
-    { label: "Sort By:", image: sortIcon },
-    { label: "Popular", image: popularSortIcon },
-    { label: "Title: A-To-Z", image: ascendingSortIcon },
-    { label: "Title: Z-To-A", image: descendingSortIcon },
-    { label: "Rating", image: ratingSortIcon },
-  ],
-};
+const categoryData = [
+  { label: "Category", image: categoryIcon },
+  { label: "All Categories", image: allCategoriesIcon },
+  { label: "Development", image: developmentIcon },
+  { label: "Marketing", image: marketingIcon },
+  { label: "Design", image: designIcon },
+  { label: "Software", image: softwareIcon },
+];
 
 const useStyles = createStyles((theme, { opened }) => ({
   control: {
@@ -89,27 +63,20 @@ const useStyles = createStyles((theme, { opened }) => ({
   },
 }));
 
-function FilterInput({ type }) {
+function CategoryFilterInput() {
   const dispatch = useDispatch();
-  const { inputFilter } = useSelector((state) => state.courseSlice);
+  const { categoryFilterState } = useSelector((state) => state.courseSlice);
 
   const [opened, setOpened] = useState(false);
   const { classes } = useStyles({ opened });
-  const [selected, setSelected] = useState(inputData[type][0]);
-  let targetData = [];
-  if (type === "level") targetData = inputData[type];
-  if (type === "sortBy") targetData = inputData[type];
-  if (type === "category") targetData = inputData[type];
+  const [selected, setSelected] = useState(categoryData[0]);
 
-  const items = targetData?.map((item) => (
+  const items = categoryData?.map((item) => (
     <Menu.Item
       icon={<Image src={item.image} width={20} height={20} />}
       onClick={() => {
         setSelected(item);
-
-        dispatch(filter(item));
-
-        dispatch(sort());
+        dispatch(categoryFilter(item));
       }}
       key={item.label}
     >
@@ -138,4 +105,4 @@ function FilterInput({ type }) {
   );
 }
 
-export default FilterInput;
+export default CategoryFilterInput;
