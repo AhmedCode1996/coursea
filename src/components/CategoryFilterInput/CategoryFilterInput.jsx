@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   createStyles,
   UnstyledButton,
@@ -69,7 +69,11 @@ function CategoryFilterInput() {
 
   const [opened, setOpened] = useState(false);
   const { classes } = useStyles({ opened });
-  const [selected, setSelected] = useState(categoryData[0]);
+
+  const [selected, setSelected] = useState({
+    ...categoryData[0],
+    label: categoryFilterState,
+  });
 
   const items = categoryData?.map((item) => (
     <Menu.Item

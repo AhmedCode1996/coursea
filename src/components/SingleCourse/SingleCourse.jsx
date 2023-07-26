@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-unused-vars */
 import { styled } from "styled-components";
+import { Link } from "react-router-dom";
 
 import { COLORS, TYPOGRAPHY } from "../../constants";
 
@@ -33,7 +34,7 @@ function SingleCourse(props) {
   if (level === "intermediate") levelImage = intermediateRange;
   if (level === "master") levelImage = masterRange;
   return (
-    <CourseWrapper>
+    <CourseWrapper to={`/account/${id}`}>
       <CourseImage>
         <CourseAvatar src={course_image} title={title} />
         <Level>
@@ -60,7 +61,7 @@ function SingleCourse(props) {
 
 export default SingleCourse;
 
-const CourseWrapper = styled.div`
+const CourseWrapper = styled(Link)`
   --padding: ${20 / 16}rem;
   --vertical-gap: ${20 / 16}rem;
   display: flex;

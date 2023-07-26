@@ -8,9 +8,9 @@ const initialState = {
   courses: [],
   error: null,
   searchFilter: "",
-  levelFilterState: "",
-  categoryFilterState: "",
-  sortFilterState: "",
+  levelFilterState: "Level",
+  categoryFilterState: "Category",
+  sortFilterState: "Sort By",
 };
 
 export const fetchCourses = createAsyncThunk(
@@ -35,6 +35,9 @@ const courseSlice = createSlice({
 
       state.courses = state.originalCourses;
       state.courses = state.courses.filter((course) => course.level === value);
+      state.categoryFilterState = "hello";
+      state.sortFilterState = "Sort By";
+      console.log(state.categoryFilterState);
     },
     categoryFilter: (state, { payload }) => {
       let value = payload.label.toLowerCase();
@@ -47,6 +50,8 @@ const courseSlice = createSlice({
       state.courses = state.courses.filter(
         (course) => course.category === value
       );
+      state.levelFilterState = "Level";
+      state.sortFilterState = "Sort By";
     },
     sortFilter: (state, { payload }) => {
       let value = payload.label.toLowerCase();
@@ -54,15 +59,23 @@ const courseSlice = createSlice({
       state.courses = state.originalCourses;
       if (value === "popular") {
         state.courses.sort((a, b) => b.students - a.students);
+        state.levelFilterState = "Level";
+        state.categoryFilterState = "Category";
       }
       if (value === "rating") {
         state.courses.sort((a, b) => b.rating - a.rating);
+        state.levelFilterState = "Level";
+        state.categoryFilterState = "Category";
       }
       if (value === "title: a-to-z") {
         state.courses.sort((a, b) => a.title.localeCompare(b.title));
+        state.levelFilterState = "Level";
+        state.categoryFilterState = "Category";
       }
       if (value === "title: z-to-a") {
         state.courses.sort((a, b) => b.title.localeCompare(a.title));
+        state.levelFilterState = "Level";
+        state.categoryFilterState = "Category";
       }
     },
   },
@@ -73,9 +86,9 @@ const courseSlice = createSlice({
     });
     builder.addCase(fetchCourses.fulfilled, (state, { payload }) => {
       state.loading = false;
+      state.error = null;
       state.courses = payload;
       state.originalCourses = payload;
-      state.error = null;
     });
     builder.addCase(fetchCourses.rejected, (state, action) => {
       state.loading = false;
@@ -87,3 +100,5 @@ const courseSlice = createSlice({
 export const { levelFilter, sortFilter, categoryFilter } = courseSlice.actions;
 
 export default courseSlice.reducer;
+
+export const getAllCourses = (state) => state.courseSlice;

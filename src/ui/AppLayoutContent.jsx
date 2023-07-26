@@ -1,8 +1,10 @@
 import { styled } from "styled-components";
+import { Outlet } from "react-router-dom";
+
 import { COLORS } from "../constants";
-import Header from "./../components/Header/Header";
+
 import Sidebar from "./../components/Sidebar/Sidebar";
-import MainContent from "./../components/MainContent/MainContent";
+import Header from "./../components/Header/Header";
 
 const AppLayoutContent = () => {
   return (
@@ -10,7 +12,7 @@ const AppLayoutContent = () => {
       <Sidebar />
       <HeaderAndContentWrapper>
         <Header />
-        <MainContent />
+        <Outlet />
       </HeaderAndContentWrapper>
     </Wrapper>
   );

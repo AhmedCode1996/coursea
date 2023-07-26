@@ -11,6 +11,9 @@ import SignUp from "./pages/SignUp";
 
 import GlobalStyle from "./styles/GlobalStyles";
 import CourseProvider from "./hooks/CourseProvider";
+// import Courses from "./components/Courses/Courses";
+import Course from "./pages/Course";
+import MainContent from "./components/MainContent/MainContent";
 
 const router = createBrowserRouter([
   {
@@ -28,12 +31,16 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/account",
+    path: "account",
     element: <AppLayoutContent />,
     children: [
       {
         index: true,
-        // element:<Overview />,
+        element: <MainContent />,
+      },
+      {
+        path: ":courseid",
+        element: <Course />,
       },
     ],
   },

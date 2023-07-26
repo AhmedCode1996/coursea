@@ -67,7 +67,10 @@ function SortFilterInput() {
 
   const [opened, setOpened] = useState(false);
   const { classes } = useStyles({ opened });
-  const [selected, setSelected] = useState(sortData[0]);
+  const [selected, setSelected] = useState({
+    ...sortData[0],
+    label: sortFilterState,
+  });
 
   const items = sortData?.map((item) => (
     <Menu.Item

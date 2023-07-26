@@ -61,18 +61,20 @@ const useStyles = createStyles((theme, { opened }) => ({
 
 function LevelFilterInput() {
   const dispatch = useDispatch();
-  const { inputFilter } = useSelector((state) => state.courseSlice);
-
+  const { levelFilterState } = useSelector((state) => state.courseSlice);
   const [opened, setOpened] = useState(false);
   const { classes } = useStyles({ opened });
-  const [selected, setSelected] = useState(levelData[0]);
+  const [selected, setSelected] = useState({
+    ...levelData[0],
+    label: levelFilterState,
+  });
 
   const items = levelData?.map((item) => (
     <Menu.Item
       icon={<Image src={item.image} width={20} height={20} />}
       onClick={() => {
         setSelected(item);
-        dispatch(levelFilter(item))
+        dispatch(levelFilter(item));
       }}
       key={item.label}
     >

@@ -8,18 +8,16 @@ import { COLORS } from "./../../constants";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 // import { fetchApiCourses } from "../../features/productApiCall";
-import { fetchCourses } from "../../features/courseSlice";
+import { fetchCourses, getAllCourses } from "../../features/courseSlice";
 
 function Courses() {
   // const [courses] = useCourseContext();
   const dispatch = useDispatch();
-  const { courses, loading, inputFilter } = useSelector(
-    (state) => state.courseSlice
-  );
+  const { courses, loading, error } = useSelector(getAllCourses);
 
   useEffect(() => {
     dispatch(fetchCourses());
-  }, [ dispatch]);
+  }, [dispatch]);
 
   if (loading) return <Spinner />;
   return (
