@@ -1,8 +1,27 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import styled, { css } from "styled-components";
 import { COLORS, TYPOGRAPHY } from "../../constants";
+import { createUser } from "../../features/user/userSlice";
+import { useDispatch, useSelector } from "react-redux";
+
 function AuthButton(props) {
-  return <Wrapper type={props.type}>{props.children}</Wrapper>;
+  const { email, password } = useSelector((state) => state.user);
+
+  const dispatch = useDispatch();
+  function handelAuthButton(e) {
+    e.preventDefault();
+    const userCredentials = {
+      email,
+      password,
+    };
+    dispatch(createUser(userCredentials));
+  }
+  return (
+    <Wrapper onClick={handelAuthButton} type={props.type}>
+      {props.children}
+    </Wrapper>
+  );
 }
 
 const Wrapper = styled.button`

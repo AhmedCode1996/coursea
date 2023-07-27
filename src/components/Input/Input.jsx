@@ -1,10 +1,21 @@
+/* eslint-disable react/prop-types */
 import { useId, useState } from "react";
 import { styled } from "styled-components";
+
 import { COLORS, TYPOGRAPHY } from "./../../constants";
-/* eslint-disable react/prop-types */
+
 function Input(props) {
+
   const [value, setValue] = useState("");
   const id = useId();
+
+  const handleInputChange = (e) => {
+    const inputValue = e.target.value;
+    setValue(inputValue);
+    props.handleChange(inputValue);
+  };
+
+  
   return (
     <Wrapper>
       <Label htmlFor={`input${id}`}>{props.children}</Label>
@@ -13,7 +24,7 @@ function Input(props) {
         type={props.type}
         placeholder={props.placeholder}
         value={value}
-        onChange={(e) => setValue(e.target.value)}
+        onChange={handleInputChange}
       />
     </Wrapper>
   );

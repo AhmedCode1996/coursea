@@ -3,8 +3,17 @@ import { COLORS, TYPOGRAPHY } from "../constants";
 import { Link } from "react-router-dom";
 import Input from "../components/Input/Input";
 import AuthButton from "../components/AuthButton/AuthButton";
+import { useDispatch } from "react-redux";
+import { setEmail, setPassword } from "../features/user/userSlice";
 
 function SignUp() {
+  const dispatch = useDispatch();
+  function handleEmailChange(value) {
+    dispatch(setEmail(value));
+  }
+  function handlePasswordChange(value) {
+    dispatch(setPassword(value));
+  }
   return (
     <Wrapper>
       <Heading>
@@ -13,13 +22,21 @@ function SignUp() {
           Already have an account ? <LinkRef>Login</LinkRef>
         </p>
       </Heading>
-      <Input type="text" placeholder="Your Email">
+      <Input
+        handleChange={handleEmailChange}
+        type="text"
+        placeholder="Your Email"
+      >
         Email Address
       </Input>
-      <Input type="text" placeholder="write your Email again">
+      {/* <Input type="text" placeholder="write your Email again">
         Email Address
-      </Input>
-      <Input type="password" placeholder="Your password">
+      </Input> */}
+      <Input
+        handleChange={handlePasswordChange}
+        type="password"
+        placeholder="Your password"
+      >
         Password
       </Input>
       <AuthButton type="create">Create</AuthButton>
