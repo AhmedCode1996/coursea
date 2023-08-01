@@ -4,22 +4,29 @@ import { Link } from "react-router-dom";
 import Input from "../components/Input/Input";
 import AuthButton from "../components/AuthButton/AuthButton";
 import { useDispatch } from "react-redux";
-import { setEmail, setPassword } from "../features/user/userSlice";
+import { setEmail, setPassword, setUsername } from "../features/user/userSlice";
 
 function SignUp() {
   const dispatch = useDispatch();
+
   function handleEmailChange(value) {
     dispatch(setEmail(value));
   }
+
   function handlePasswordChange(value) {
     dispatch(setPassword(value));
   }
+
+  function handleUsernameChange(value) {
+    dispatch(setUsername(value));
+  }
+
   return (
     <Wrapper>
       <Heading>
         <h2>Create An Account</h2>
         <p>
-          Already have an account ? <LinkRef>Login</LinkRef>
+          Already have an account ? <LinkRef to="/">Login</LinkRef>
         </p>
       </Heading>
       <Input
@@ -29,9 +36,13 @@ function SignUp() {
       >
         Email Address
       </Input>
-      {/* <Input type="text" placeholder="write your Email again">
-        Email Address
-      </Input> */}
+      <Input
+        handleChange={handleUsernameChange}
+        type="text"
+        placeholder="Your Username"
+      >
+        Username
+      </Input>
       <Input
         handleChange={handlePasswordChange}
         type="password"

@@ -3,19 +3,23 @@ import { useId, useState } from "react";
 import { styled } from "styled-components";
 
 import { COLORS, TYPOGRAPHY } from "./../../constants";
+import { useSelector } from "react-redux";
 
 function Input(props) {
-
+  const { authenticated } = useSelector((state) => state.user);
   const [value, setValue] = useState("");
   const id = useId();
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
-    setValue(inputValue);
-    props.handleChange(inputValue);
+    if (!authenticated) {
+      setValue(inputValue);
+      props.handleChange(inputValue);
+    } else {
+      setValue(inputValue);
+    }
   };
 
-  
   return (
     <Wrapper>
       <Label htmlFor={`input${id}`}>{props.children}</Label>

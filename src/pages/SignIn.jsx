@@ -11,7 +11,7 @@ const SignIn = () => {
       <Heading>
         <h2>Sign In</h2>
         <p>
-          New user ? <LinkRef>Create an account</LinkRef>
+          New user ? <LinkRef to="/signup">Create an account</LinkRef>
         </p>
       </Heading>
       <Input type="text" placeholder="Your Email">

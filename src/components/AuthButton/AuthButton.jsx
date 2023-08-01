@@ -4,18 +4,27 @@ import styled, { css } from "styled-components";
 import { COLORS, TYPOGRAPHY } from "../../constants";
 import { createUser } from "../../features/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 function AuthButton(props) {
-  const { email, password } = useSelector((state) => state.user);
+  const navigate = useNavigate();
+
+  const { email, password, authenticated } = useSelector((state) => state.user);
 
   const dispatch = useDispatch();
+
   function handelAuthButton(e) {
     e.preventDefault();
     const userCredentials = {
       email,
       password,
     };
-    dispatch(createUser(userCredentials));
+    if (!authenticated) {
+      dispatch(createUser(userCredentials));
+      navigate("/");
+    } else {
+      navigate("/account");
+    }
   }
   return (
     <Wrapper onClick={handelAuthButton} type={props.type}>
