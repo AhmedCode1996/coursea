@@ -1,6 +1,28 @@
 const baseData = [
   {
     _class: "course",
+    modules: [
+      {
+        title: "twenty pull slight dropped",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "service origin entirely gravity",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "valuable zero successful pencil",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "though dry roll tribe",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "on wonder tonight somebody",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 923,
     keyPoints: [
       "castle plus darkness look parent its surprise steep six bound curious door hidden primitive usually happen again together feed perfectly mental block soldier wide",
@@ -52,6 +74,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "die dance bite underline",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "card saved classroom tropical",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "strip involved separate label",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "grew share ground state",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "away brief muscle signal",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 482,
     keyPoints: [
       "around raise vapor stage phrase love collect hunter eager add question camp swing leaving most fish lay stay then reader curious between noted force",
@@ -101,6 +145,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "enter machinery except recently",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "rest darkness food manner",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "became arm burst tea",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "away himself zoo sugar",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "thumb wrong rope phrase",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 33,
     keyPoints: [
       "declared tail chamber porch canal parent swim slight under worker within coal duck taste hour rise box yard felt cattle win modern rock teacher",
@@ -157,6 +223,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "stared cloth gun factory",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "represent money man boy",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "especially parent library torn",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "making later sleep shall",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "stove hunt organized battle",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 65,
     keyPoints: [
       "naturally are left measure blew somewhere shop label apartment main now bone song remarkable neck being most somebody record failed solution animal leather truck",
@@ -209,6 +297,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "remain cloud spider shorter",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "high talk rubber hunt",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "rope to exact flies",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "verb cross atomic cowboy",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "goes oldest week soil",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 92,
     keyPoints: [
       "is own line function plastic practical very country enough making stove gentle gulf test guard burst eat cost butter tone pocket student whale rod",
@@ -263,6 +373,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "greatly locate couple factory",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "log everywhere continent orange",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "figure typical idea hidden",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "tell pole there seems",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "down accept fog both",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 630,
     keyPoints: [
       "wealth truth bark everybody none toward direction dog cold successful captain protection shop positive useful white vessels since buried former pool research bill nature",
@@ -330,6 +462,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "alone hay fifty skin",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "anybody soil pour powerful",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "leader settle move office",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "on somebody hole cage",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "thing planet recall butter",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 180,
     keyPoints: [
       "surprise acres mad north natural nation fat paper told paid eleven entire indicate leg ship sat drive buy powder nearest enter including shoulder upon",
@@ -382,6 +536,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "example earn over children",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "shore certain hello instant",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "shelter farmer wash own",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "nature himself exclaimed identity",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "slowly government heat daughter",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 23,
     keyPoints: [
       "completely escape dog clean swam white bank applied sound instance swept outer dish nor monkey power bear wild against birds liquid human fix little",
@@ -449,6 +625,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "wrapped sense limited term",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "leader said solve riding",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "upward story ring want",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "drawn part ball arrange",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "gravity empty sum hurt",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 763,
     keyPoints: [
       "physical try look mouth group wrote balance yard develop knife dirt note smoke duty dust occasionally merely fastened build price globe stepped actual valley",
@@ -500,6 +698,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "powerful sick sit still",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "massage dollar zoo cookies",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "industry world desert pictured",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "vessels combination afternoon moon",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "put place contain date",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 486,
     keyPoints: [
       "slope group simply perhaps case entirely queen shelter out fear aid dropped silly function include lesson chart immediately itself tired went allow deeply scene",
@@ -549,6 +769,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "light done wall try",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "putting hide handsome town",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "settle ride shinning above",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "younger charge boy follow",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "table shade handsome torn",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 380,
     keyPoints: [
       "same memory settle pool brown thin thick origin given every furniture native song universe with has must parallel courage weight thirty nation good glad",
@@ -601,6 +843,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "century alike spoken built",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "model complex pay behavior",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "kept railroad second skill",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "complete trap support bush",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "back research food take",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 318,
     keyPoints: [
       "quickly forgot dry listen tired short sick goose ability prevent vertical character nearer bill equator gain apart grain hollow mile central suit sang free",
@@ -653,6 +917,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "pictured atmosphere particles pleasant",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "known unhappy five recall",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "could paper brass safety",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "wagon ear stand been",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "chicken previous possible shaking",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 964,
     keyPoints: [
       "that length suggest shoulder instant jack plural composed needs serious higher log hold tin planet fed concerned telephone east watch snow heart asleep decide",
@@ -719,6 +1005,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "with bigger finish iron",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "mighty wood proper night",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "during progress cold nation",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "pet serve consist hole",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "program else screen ice",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 821,
     keyPoints: [
       "introduced written pour leaf continent badly world mood work quick castle orange stronger pocket spider dry strip ride food noted lost country pie verb",
@@ -772,6 +1080,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "fur season deep swung",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "sick little powder using",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "slow married certain right",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "business other dress audience",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "appearance tightly lost dead",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 963,
     keyPoints: [
       "related moon barn front dried seven compound medicine model cowboy dirt flies fear instead slept dance thing hold growth accident tool concerned upper tower",
@@ -823,6 +1153,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "farmer fallen uncle somehow",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "secret missing ants tin",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "page constantly chair military",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "nervous would handsome mark",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "drop excited skill morning",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 280,
     keyPoints: [
       "smooth reader his inside separate divide sentence jump mean finally chemical drew immediately loud child according cold curve protection slip cook principal personal wrote",
@@ -898,6 +1250,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "state pack loose mysterious",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "production impossible cut lovely",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "gold combine above foot",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "solve stretch desk saddle",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "lack inch wrote melted",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 859,
     keyPoints: [
       "worry region nine ruler acres path exchange brought pot apartment railroad foot lack lower largest search library scientific load clock surprise garden mostly forth",
@@ -951,6 +1325,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "must fighting area quiet",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "cool speed rays bring",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "willing our happily whenever",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "planet surrounded port shelf",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "fine press vast camera",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 455,
     keyPoints: [
       "coast paint surrounded shake hidden ground which city green life master drink importance bone select chest themselves bad without giving bread beneath becoming continued",
@@ -1004,6 +1400,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "being list here drew",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "personal camera cloth every",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "ear cat headed sides",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "his stop noise close",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "highway behind also globe",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 30,
     keyPoints: [
       "example driver blanket night rough swept tomorrow zero college vast tower fast religious purple pig circus gradually planning add rather said climb seven test",
@@ -1057,6 +1475,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "wore element horse hill",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "obtain row fully move",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "snow merely brother special",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "broke difference ranch collect",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "throw future program noon",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 420,
     keyPoints: [
       "extra greatest necessary worry twelve that combination nearly mice getting were automobile spite exact changing damage country his blue spider gather additional himself seat",
@@ -1106,6 +1546,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "official crack purpose step",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "interest parallel been entirely",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "listen rays magic account",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "thirty none vote middle",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "bad dried choice follow",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 548,
     keyPoints: [
       "possible rice ball organization screen halfway level power fourth given sea no whale clothing wave to wheat measure leader smallest husband blanket enjoy spin",
@@ -1157,6 +1619,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "control steel busy universe",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "darkness pretty mouse quiet",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "ever whatever liquid furniture",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "minute successful fog mixture",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "happy your throughout paragraph",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 849,
     keyPoints: [
       "wire north port arm fairly met spent advice point birth elephant discover open riding floating cheese sport birds ancient curve every straight boy mad",
@@ -1209,6 +1693,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "involved unless angle ship",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "brick garden production furniture",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "left full receive brother",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "home plate call village",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "whom golden football understanding",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 909,
     keyPoints: [
       "home particular dropped difficulty stock dinner handsome missing ranch discover paint thee fairly swim why stomach pitch further slide round our it jack solid",
@@ -1260,6 +1766,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "valley air chapter seeing",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "mine laid frame fallen",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "excellent fifteen mental wherever",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "view flow buried leg",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "younger structure memory climb",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 360,
     keyPoints: [
       "account cast activity certain prevent gray flies solar selection research sure composed dirt cell few mean report cannot owner basis foreign cow knife himself",
@@ -1311,6 +1839,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "slowly goes feed position",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "silence means fish control",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "level observe steel took",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "found held per settle",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "seat meal fall handle",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 208,
     keyPoints: [
       "letter tree composition silent construction bicycle personal congress generally country evidence primitive believed age alike orange forward song dollar upon shorter managed day heading",
@@ -1365,6 +1915,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "attention respect seed try",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "whistle captain hardly particularly",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "above whistle view right",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "table began rubbed bring",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "on apple try author",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 246,
     keyPoints: [
       "grandfather sort successful if hot taken kids picture later against somehow happy science wing truth pool walk who song interest definition blanket mass negative",
@@ -1423,6 +1995,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "willing somewhere sea state",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "population living circle owner",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "ordinary hunter struck seen",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "sad coffee determine nervous",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "lying giant decide outer",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 240,
     keyPoints: [
       "lot chamber ten forth climate molecular size flame interior old moon father hidden kill prepare prevent pleasure managed fighting leave ancient fear stone mix",
@@ -1480,6 +2074,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "cave tone location angle",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "depth tried whale instead",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "bowl stairs soon dinner",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "later origin consonant plates",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "ship tin orbit possibly",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 719,
     keyPoints: [
       "loss everywhere throw watch bark loud deal plate breathe vowel object whom hundred certainly seems necessary twelve account report start forgotten known ride key",
@@ -1556,6 +2172,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "shade especially activity parts",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "growth who equipment enjoy",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "bean motion creature send",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "wolf equator smooth win",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "tank chief floor part",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 861,
     keyPoints: [
       "sister wonderful sure join shape natural handsome everyone again hardly personal signal likely method game soil rabbit waste whale equally volume equal hundred thumb",
@@ -1609,6 +2247,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "adjective terrible cattle active",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "battle ants flame congress",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "to composition wire ran",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "nearly become foreign wire",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "detail fog doll pie",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 491,
     keyPoints: [
       "rest beat important slope island second mysterious ago hide daughter warm element stick arm radio truth mirror careful catch success liquid president should pig",
@@ -1663,6 +2323,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "sent still ourselves electricity",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "suit degree bell handsome",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "remember skin crop plastic",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "apple can natural neighbor",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "feel aboard getting cave",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 205,
     keyPoints: [
       "if younger thirty factory this recall contain bottom river mice classroom hall quarter weigh through beauty chose noise forgotten ahead cast cool feet typical",
@@ -1719,6 +2401,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "lunch floating if belong",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "stopped gift difficult identity",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "exclaimed reach fallen folks",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "duty believed golden although",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "value judge chair wide",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 315,
     keyPoints: [
       "younger transportation watch sense purple pilot enough faster action season fifteen sail image mice cotton won horn usual creature clothes moment boat therefore flame",
@@ -1770,6 +2474,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "next find tank were",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "saddle coming ring moving",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "bear foot skill difference",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "railroad some zoo wide",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "instance public even recognize",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 586,
     keyPoints: [
       "deep hunt harder perfectly magic thin sugar beyond brain pass origin snake trade easy oil fort excellent difficult telephone foot hour column motor engine",
@@ -1823,6 +2549,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "library sign balance product",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "slide eat entirely firm",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "something goose clear society",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "wing plus friend third",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "near jack decide fifth",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 182,
     keyPoints: [
       "outside appropriate began vertical our buried canal tiny excellent park distant drop cast thin dirty needle alone warm lake say instant telephone cutting applied",
@@ -1873,6 +2621,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "substance anyway instead drop",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "blank myself make fairly",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "combine victory anywhere alone",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "pile was if person",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "classroom cannot hit visit",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 483,
     keyPoints: [
       "correctly biggest simple percent label specific bush she carefully held joy softly leader turn weight place that recall introduced ride idea stronger mental outer",
@@ -1925,6 +2695,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "baby silly movement wide",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "dress national charge won",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "meet ready children combine",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "needed rain shallow gas",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "solve hunt stream entirely",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 39,
     keyPoints: [
       "kill visitor on church stone mighty using married radio rhythm minute star these include meal all five field refer alike force lot organization plural",
@@ -1974,6 +2766,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "slow swam snow upward",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "fairly diameter anybody card",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "whole pretty present nine",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "operation voyage instance previous",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "visitor near thank paragraph",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 727,
     keyPoints: [
       "horn stick directly system down element end unit hung through sing poor tide fellow behavior pride hat fence sense managed blanket grew women uncle",
@@ -2030,6 +2844,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "railroad selection powder slip",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "wheat repeat examine thick",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "dot daughter frozen nor",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "clean dried spite color",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "unit our surface claws",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 673,
     keyPoints: [
       "original border rope break toward complex among smoke safe cloud noun run deeply rock ship steel social wear industry minute front edge spirit point",
@@ -2082,6 +2918,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "grandfather huge want musical",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "importance bone organized forgotten",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "giant pour grabbed today",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "settlers equally am chair",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "edge somewhere tea rich",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 367,
     keyPoints: [
       "labor action main cost movie speak laid metal border blind plural finger tree dawn repeat remain shorter sail breathe sugar source same using page",
@@ -2134,6 +2992,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "problem eight earn muscle",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "produce interior partly ill",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "rabbit combine worse applied",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "arrange sun mine slabs",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "smallest age sink stopped",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 982,
     keyPoints: [
       "share electric studied tree saddle direct vessels smoke has daughter drove whatever nice ill letter quietly whale grabbed is gently hide middle because changing",
@@ -2187,6 +3067,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "summer family molecular born",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "wise stared by phrase",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "sand ten put brief",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "keep president fairly kill",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "attack wooden north hollow",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 173,
     keyPoints: [
       "silly real dark above atom dust practice baby change printed tax tone discuss automobile nervous object gold whenever introduced rule sat society brass rapidly",
@@ -2249,6 +3151,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "chamber chose piano chance",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "also mostly fuel solid",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "copper tin fear manufacturing",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "standard fire fun stretch",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "oil scientific involved garden",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 159,
     keyPoints: [
       "writer sweet high never unless could reason balance shelf opinion previous him improve driving most actually he amount company present roll reader catch noted",
@@ -2298,6 +3222,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "learn board handle just",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "mountain recognize species depth",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "crop escape cap mud",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "trade darkness telephone dried",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "essential became quickly seat",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 424,
     keyPoints: [
       "valley difference someone halfway book variety according wall themselves fly division off most buffalo garden explain useful sell selection ready football ask women manner",
@@ -2351,6 +3297,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "purple living breathing red",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "planning distance well settlers",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "television silk closely wet",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "trip flower travel older",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "copper lesson climb butter",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 481,
     keyPoints: [
       "film bat had earn north when slip have weight refer apart fighting differ eight onto forgotten poet desk route also seven stomach happen broken",
@@ -2410,6 +3378,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "excitement secret paragraph unhappy",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "sound ago become driven",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "tone date please car",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "also mighty shake minerals",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "feet sent wrote copy",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 809,
     keyPoints: [
       "soldier more across over pale breakfast wife became base moving wherever remember golden sentence fifth early move share extra slip win wagon little dug",
@@ -2462,6 +3452,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "edge radio common against",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "climate rice whether week",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "pond loud ready ate",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "manufacturing boy mice remove",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "winter finish fire regular",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 741,
     keyPoints: [
       "pilot mill three society right directly able red branch sink dried flew anywhere train here wave found paper capital refused shaking topic verb author",
@@ -2512,6 +3524,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "sent opinion typical cutting",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "passage physical won sink",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "managed arrangement water wind",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "him grown white sheep",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "nodded ahead sport label",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 652,
     keyPoints: [
       "total individual everywhere church quite steam safe iron anyway floor surprise pair active ancient medicine grandfather silver tank grass doing time answer language ill",
@@ -2563,6 +3597,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "fifteen safety pole enjoy",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "even school mouth hair",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "were previous tribe frighten",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "capital swing have physical",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "yet mysterious camera her",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 816,
     keyPoints: [
       "spoken even involved shine cloud kind shinning firm unhappy market practice log because flower problem from heart fence plain front corner spent spite break",
@@ -2615,6 +3671,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "seed tool count think",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "softly shirt combination muscle",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "him gasoline title smallest",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "picture taught seat born",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "correct prove wonderful farther",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 196,
     keyPoints: [
       "independent air certain all direction please yes ants out are realize some explore shine shaking whispered population subject body hide adventure felt ever pole",
@@ -2668,6 +3746,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "somewhere orange silver invented",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "build taste basket result",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "thread traffic blue city",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "careful worth engineer parallel",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "location human even herself",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 324,
     keyPoints: [
       "health through animal important fact stronger locate run star swing speak perfectly height hungry greatly white sudden himself fair course separate dust similar sure",
@@ -2720,6 +3820,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "religious sides snow another",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "managed certainly whistle simply",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "clay pride each stretch",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "hospital club needle other",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "classroom cattle hello business",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 239,
     keyPoints: [
       "wheat middle imagine model suppose enter goes took certain dress negative leaf everyone per themselves rapidly industrial neighborhood gravity dot sail planet hurt feature",
@@ -2772,6 +3894,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "purple she beyond completely",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "length settle nest answer",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "loss riding powerful information",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "basis reader itself step",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "than beat nearly led",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 557,
     keyPoints: [
       "property specific planning enough die double shelf original him choose stone island brief tea thrown fairly office west bridge whistle gun as behavior kind",
@@ -2825,6 +3969,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "frog organized beginning sail",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "shut bill prevent continent",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "command join change baseball",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "control car heard rod",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "roar gun piano straight",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 862,
     keyPoints: [
       "mass nearby strike uncle coming television influence mysterious last frighten open faster disease fifth question bite cabin lady whispered local summer shelter prepare central",
@@ -2882,6 +4048,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "mouth shade wait tongue",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "subject mail being where",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "group happily basis plant",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "gold six cell aloud",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "blood alike wide planning",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 534,
     keyPoints: [
       "grade fifteen decide cat salt copy building possibly regular anyone range pole good metal thou plastic cool certainly told owner straight quite tent environment",
@@ -2939,6 +4127,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "bell younger reader which",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "does vessels mostly mood",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "prove cut symbol sink",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "although went should order",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "rough particularly ourselves zero",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 347,
     keyPoints: [
       "open only increase dish chart attack represent molecular teeth scientific running at build forward bean industry rich solid men four tribe army kids essential",
@@ -2989,6 +4199,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "gulf action for favorite",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "bus run kill recognize",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "more frequently appropriate test",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "shall tin advice farther",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "development twenty wooden realize",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 244,
     keyPoints: [
       "person saw club spin smooth symbol species log mill fighting hunter in heat gate fourth work daily trace behavior balance purple depth duck station",
@@ -3066,6 +4298,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "journey parts mile join",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "younger design noise somewhere",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "now needed rather fairly",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "club motor tone given",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "slope bush was handle",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 884,
     keyPoints: [
       "grandmother general tobacco roll brief somewhere vegetable dull obtain round gate shade touch fill task settle wild black own have folks wooden might organized",
@@ -3119,6 +4373,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "darkness it wolf surrounded",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "as person division including",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "sides sitting butter dropped",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "crowd write brick curious",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "team tent captain line",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 403,
     keyPoints: [
       "take especially tip wood had can reach highest raw door announced nearer larger wish herself beyond pot eye pan chose mirror metal just brush",
@@ -3169,6 +4445,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "aware education composed use",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "ranch upper view mighty",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "sunlight frozen shout below",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "went oxygen previous doll",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "carry scared outside jack",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 810,
     keyPoints: [
       "information composed pen sunlight upper prize develop dry make week slave newspaper heart ordinary buy community clay busy supply card broke cabin scene cry",
@@ -3219,6 +4517,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "than pull read room",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "missing army cutting bark",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "nose pot pretty deer",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "worse stick instrument given",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "cold door put single",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 533,
     keyPoints: [
       "seems bet earth piece stage quietly battle mirror spread touch actual bush state task forth kitchen mouth feet limited fur short heard happen written",
@@ -3276,6 +4596,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "warn carried thee broke",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "universe spider lake give",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "victory package world ants",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "breakfast smile wrapped next",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "other look sand different",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 845,
     keyPoints: [
       "silver dull usual attention troops lonely fish balloon twelve earlier halfway belong harbor mile rubbed press dear only worth nearby board lead fair cream",
@@ -3328,6 +4670,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "power accurate rise cookies",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "final beside date thing",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "capital addition traffic strong",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "pattern hearing waste earn",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "sure building share river",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 925,
     keyPoints: [
       "save could nervous managed fairly regular describe musical should wool bee move tail sign out charge dropped package old farther pocket handle pain express",
@@ -3404,6 +4768,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "live wherever everyone read",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "split mighty national power",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "directly form back north",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "space standard building invented",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "moon interest chain declared",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 279,
     keyPoints: [
       "official instead tower goes foot pride business coat coast daily habit jet birthday suit yard empty change gave aboard shinning soil struck land pen",
@@ -3454,6 +4840,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "sets event primitive fuel",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "are south range grandmother",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "program ago visitor apart",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "plain law across size",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "tide cell judge plant",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 516,
     keyPoints: [
       "mean coach food worry who managed turn police chart middle appropriate mental shoulder won slipped process belt bean shake including flame diameter labor mill",
@@ -3507,6 +4915,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "brush sink noise jump",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "been uncle camp angry",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "stand meat cookies discovery",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "that labor cage slide",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "own broken bite roll",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 543,
     keyPoints: [
       "shinning grew women scientist bigger addition merely original famous teeth case problem water operation discovery final hand seeing generally typical discover vote drop book",
@@ -3562,6 +4992,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "massage essential any community",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "state foreign book snake",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "rocky turn fireplace slightly",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "eager slow melted species",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "table popular dig fact",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 777,
     keyPoints: [
       "bound store who orbit sea chain hearing show substance aid society bigger silence wrapped hurried construction you taught mile half living rise slowly hall",
@@ -3627,6 +5079,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "few slowly yard might",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "wolf near close discuss",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "softly organized tea catch",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "president ate foot wonderful",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "shake coal tight fifth",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 847,
     keyPoints: [
       "someone worth sometime cup interior arrange yourself outer climb aloud football shown gravity electricity cook anywhere guard per dropped mother tin copy compass birthday",
@@ -3679,6 +5153,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "nearly beyond riding library",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "including respect who laid",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "material strong vote some",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "out nation damage arrange",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "tea rear ruler trap",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 953,
     keyPoints: [
       "band chapter date setting attack comfortable blank within machine stranger local massage during because breathe listen hurt smell lonely pool sale funny clock serve",
@@ -3731,6 +5227,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "sport swim farm carefully",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "below own taste score",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "location cattle for lot",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "way with rubbed cause",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "weak automobile adventure cheese",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 174,
     keyPoints: [
       "seat pet draw silly world rock against whose salt each must basis regular nice old unless cast suit high sitting boy voice taken rays",
@@ -3782,6 +5300,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "young early primitive rabbit",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "beside recall anyone ever",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "another white rocket statement",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "oldest purpose book grain",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "electricity something command stove",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 850,
     keyPoints: [
       "ran now hang fox wife hospital sport twice discuss seen caught smoke wherever poor hour shop new population home what swimming silly pressure separate",
@@ -3834,6 +5374,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "ability upper bag remove",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "degree throat opposite mean",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "alone last baseball rich",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "whale pass another select",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "clay but year modern",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 47,
     keyPoints: [
       "low railroad light brass model cook street massage circus built church complex tie disease led ourselves tube through paid zero article crop building trap",
@@ -3885,6 +5447,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "action forget trouble love",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "bit national brought scene",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "built trail silver rather",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "shade become beautiful until",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "electric signal flower total",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 595,
     keyPoints: [
       "recently neck imagine plane went muscle now wrong sure flag toward instance journey sudden crew far bat twenty own gas chance round laugh nodded",
@@ -3950,6 +5534,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "lesson product dropped column",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "event does individual bad",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "seen build location public",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "list shout six between",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "straw area effect somebody",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 888,
     keyPoints: [
       "cent your though blanket jar mental slowly identity necessary bark sugar tired discussion weight tip begun follow purple matter triangle similar beyond second full",
@@ -4002,6 +5608,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "general sang degree object",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "roll piece discuss oldest",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "fourth conversation terrible branch",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "pole vast alike simply",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "when kitchen fur something",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 331,
     keyPoints: [
       "evidence massage degree look region pony frog safety firm buy atmosphere recognize crowd too come course view stream hand bite recent likely chemical missing",
@@ -4057,6 +5685,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "offer slight exactly applied",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "graph cow stuck trade",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "struck grow letter someone",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "answer introduced bend floor",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "wing foot progress moment",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 25,
     keyPoints: [
       "task horse deer giving fifty wait your stronger western not transportation direction outer iron trail business speak pilot farm third animal game provide during",
@@ -4108,6 +5758,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "worker weight shaking dry",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "forth easily fill brown",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "nine good principal present",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "stand back equipment open",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "farm fight full involved",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 2,
     keyPoints: [
       "tired handsome usually sound got article fat captured make necessary good jar none tune upper enjoy major once ever universe trade diameter shape several",
@@ -4160,6 +5832,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "fed piece cattle flower",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "pupil good book shinning",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "island wrapped season service",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "teeth balance success layers",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "throat whom arm think",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 830,
     keyPoints: [
       "month grew given beautiful actually aid seven ever drive speed world shout newspaper worse flew cloud dead neighbor join merely library door path bit",
@@ -4209,6 +5903,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "point stop national were",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "sign blow positive threw",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "shelter slide rope me",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "laid few pole cat",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "rather rain chest dangerous",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 18,
     keyPoints: [
       "rather electricity clothes help package comfortable underline good thy airplane higher wife one southern doctor word using floating book row hair return broad wheat",
@@ -4286,6 +6002,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "disease still combination scared",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "beyond manner personal tube",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "factor area shirt discussion",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "according quite straw seen",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "of occasionally twenty smallest",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 715,
     keyPoints: [
       "chose type so lack firm everywhere tent got vast unhappy somehow event heat slide afternoon troops making loose repeat wonder breath noise dropped simple",
@@ -4340,6 +6078,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "only married handle glad",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "character fire ability hunter",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "social average school same",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "turn country develop tail",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "steel deep vowel gentle",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 698,
     keyPoints: [
       "final fifty cent machine dug busy thing thy ran breath body six very begun person construction last equal winter swam bound our electric plant",
@@ -4392,6 +6152,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "pure walk plenty behavior",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "camp game recall education",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "sick herd rhyme newspaper",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "giant exciting next fifth",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "partly limited important affect",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 155,
     keyPoints: [
       "discover that itself related ask serious research lot butter riding came calm so lying read brief curve soldier unusual early crew compare in current",
@@ -4444,6 +6226,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "rate condition selection yard",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "being nor nose floating",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "mountain word join finest",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "system three dear level",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "line stood cool fought",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 165,
     keyPoints: [
       "bar sick sit hat cloth outer care clean variety having brave spring bear coach third include bow sense automobile shelter snake harbor immediately pitch",
@@ -4493,6 +6297,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "addition stepped book came",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "drawn exclaimed instead usual",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "within chose ought material",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "clean turn hundred noise",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "finest book key but",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 838,
     keyPoints: [
       "dust moment frighten sink as visit paid speed fair form produce round just able beneath ask doubt require bottom thirty card thee married guard",
@@ -4545,6 +6371,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "clean lift trunk helpful",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "jar appropriate rice ask",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "manner heat division rising",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "tried require smaller slope",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "tobacco stems do might",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 159,
     keyPoints: [
       "engine what alphabet base hand against crew same then root outer wherever noun magnet source well pot orbit rain student tried cover breath porch",
@@ -4595,6 +6443,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "wild disease coach national",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "night merely sheet most",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "wonderful drive dropped learn",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "distant develop difficulty recognize",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "suddenly difficulty jar jet",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 607,
     keyPoints: [
       "least stop rod consonant handsome lack library wing point pack soldier where distant valley help daughter nine purple pain acres peace once game pleasant",
@@ -4648,6 +6518,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "there sweet work wave",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "vapor possible layers student",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "report field truth form",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "party being finest balance",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "union best gas hospital",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 970,
     keyPoints: [
       "cave sail quietly get produce shorter differ acres hunt ring furniture surprise corner they sort rain under story deep drew join nine flight home",
@@ -4712,6 +6604,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "meet use teeth half",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "force empty six bean",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "tax substance easily kept",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "jump native progress studying",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "gold something cup yes",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 659,
     keyPoints: [
       "stream fact buffalo space pan point saw bigger twelve evening completely star bank progress low forgotten month choose differ making brother fix supply noun",
@@ -4765,6 +6679,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "ago angle compound person",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "ride my fellow around",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "above slight wing rice",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "folks strip tired current",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "circle though explain teach",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 701,
     keyPoints: [
       "street major handle everybody luck feel had clay dawn someone more library some house paragraph cage one melted bear agree youth monkey refused substance",
@@ -4829,6 +6765,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "vertical trail copper specific",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "broad student sharp shade",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "earn bill chapter arrange",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "thin plastic highway because",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "underline electricity verb gently",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 642,
     keyPoints: [
       "porch under how article size apple rear region firm directly frequently advice whatever president furniture recognize raw high closer pale lower passage important maybe",
@@ -4883,6 +6841,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "important weather check sister",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "came gave block saddle",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "people soldier became valley",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "room receive scene block",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "pound circus heading map",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 63,
     keyPoints: [
       "flight doubt protection purpose statement worker airplane gentle nearby thin angle supply future flat create proper powder rock face machine lot pet fence whole",
@@ -4935,6 +6915,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "moving shorter wooden agree",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "season been score positive",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "hold enemy travel something",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "occur dog setting donkey",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "office garage surrounded partly",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 713,
     keyPoints: [
       "development heat special smell hurt mouse belong ability control coat term move organized ill body travel wagon morning tried tobacco distance page production are",
@@ -4984,6 +6986,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "movie ate everything long",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "chain wait rocky order",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "having differ whether unless",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "occur equator usual military",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "easily willing basis occasionally",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 174,
     keyPoints: [
       "spend won secret waste feel has bus summer harder feed faster itself needle known captain engineer blanket for earlier valuable sail series exercise lose",
@@ -5036,6 +7060,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "animal comfortable left exact",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "act interest making practice",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "tent one mirror magic",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "is whatever thick especially",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "knew finish clothes tip",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 288,
     keyPoints: [
       "slightly lack thin fighting drop occasionally struggle tube forgotten short mix seat product eye war farm bank score breakfast numeral prepare aboard song exchange",
@@ -5085,6 +7131,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "disappear cold rubbed vertical",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "hope my hollow proud",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "metal immediately look mine",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "these load prize place",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "burn mean lost brick",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 175,
     keyPoints: [
       "aid struggle wrote area disease fifteen step stared slept effect atom college swimming sentence essential real poetry drawn improve burst rod earn than introduced",
@@ -5137,6 +7205,28 @@ const baseData = [
   },
   {
     _class: "course",
+    modules: [
+      {
+        title: "push gulf future sets",
+        url: "https://download-video.akamaized.net/v2-1/playback/d5e1dec5-58e1-42fe-83b3-07c3116aa58a/88ab6b78?__token__=st=1690975215~exp=1690989615~acl=%2Fv2-1%2Fplayback%2Fd5e1dec5-58e1-42fe-83b3-07c3116aa58a%2F88ab6b78%2A~hmac=bbb5c6e566086bfe290330a992bfbf6a01e9920a6dc2a17090a35702714e323d&r=dXMtd2VzdDE%3D",
+      },
+      {
+        title: "forth substance gave gently",
+        url: "https://download-video.akamaized.net/v2-1/playback/af8b7b25-012b-4f0f-bde5-4cb4f699a552/7e9069c8-ca852a91?__token__=st=1690975560~exp=1690989960~acl=%2Fv2-1%2Fplayback%2Faf8b7b25-012b-4f0f-bde5-4cb4f699a552%2F7e9069c8-ca852a91%2A~hmac=8e89c750dfeeebbe804ef89082e56179bff85c156d843d2320cd6656ce6b6629&r=dXMtZWFzdDE%3D",
+      },
+      {
+        title: "visit softly already rice",
+        url: "https://vod-progressive.akamaized.net/exp=1690990080~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F3782%2F21%2F543910236%2F2579406043.mp4~hmac=0c0701a3bd9dd8f0f68f9b27e1cb0884f3da0eb6376e1f535800cf82772a9c96/vimeo-prod-skyfire-std-us/01/3782/21/543910236/2579406043.mp4?filename=file.mp4",
+      },
+      {
+        title: "shot seat but oil",
+        url: "https://vod-progressive.akamaized.net/exp=1690990074~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F488%2F23%2F577442929%2F2727494297.mp4~hmac=839681be6a4ec4d4e9658a45d370a16d0630415ae7f5bed78086f7af03b660b9/vimeo-prod-skyfire-std-us/01/488/23/577442929/2727494297.mp4?filename=file.mp4",
+      },
+      {
+        title: "sister cross favorite father",
+        url: "https://vod-progressive.akamaized.net/exp=1690990086~acl=%2Fvimeo-prod-skyfire-std-us%2F01%2F2170%2F20%2F510850921%2F2357004668.mp4~hmac=9cbd00ff5c12bfea820f06ccbfd87b81d7a9ff93cbbc736c1b73a16da7c40a04/vimeo-prod-skyfire-std-us/01/2170/20/510850921/2357004668.mp4?filename=file.mp4",
+      },
+    ],
     reviews: 830,
     keyPoints: [
       "rubber system while vessels train escape aid gradually slight rough means thin rear supper possibly addition silly sum dozen space power current wore period",

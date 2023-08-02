@@ -1,9 +1,13 @@
+/* eslint-disable no-unused-vars */
 import { styled } from "styled-components";
 import Input from "../components/Input/Input";
 import AuthButton from "../components/AuthButton/AuthButton";
 import SocialAuth from "../components/SocialAuth/SocialAuth";
 import { COLORS, TYPOGRAPHY } from "../constants";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
+import { supabase } from "../services/supabase";
+import { mappedCourses } from "../data/filteredCourses";
 
 const SignIn = () => {
   return (

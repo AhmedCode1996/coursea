@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import { useSelector } from "react-redux";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import clock from "./../assets/clock.png";
 import user from "./../assets/user.png";
@@ -19,9 +19,12 @@ import { getAllCourses } from "../features/courseSlice";
 import { styled } from "styled-components";
 import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../constants";
 import { useEffect, useRef, useState } from "react";
+import { ColorSchemeProvider } from "@mantine/core";
 
 const Course = () => {
+  const [videoIndex, setVideoIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [videoFullDuration, setVideoFullDuration] = useState(0);
 
   const elementRef = useRef(null);
   const videoRef = useRef(null);
@@ -33,9 +36,11 @@ const Course = () => {
     if (videoRef.current.paused) {
       videoRef.current.play();
       setIsPlaying(true);
+      setVideoFullDuration(videoRef.current.duration.toFixed(0));
     } else {
       videoRef.current.pause();
       setIsPlaying(false);
+      setVideoFullDuration(videoRef.current.duration.toFixed(0));
     }
   };
 
@@ -77,7 +82,7 @@ const Course = () => {
             </ProgressBarWrapper>
             <VideoDuration>
               <CurrentDuration>2:20/</CurrentDuration>
-              <FullDuration>10:00</FullDuration>
+              <FullDuration>{videoFullDuration}:00</FullDuration>
             </VideoDuration>
             <img onClick={fullScreenRequest} src={fullScreenButton} />
             <img src={screenMirroringButton} />
@@ -87,7 +92,7 @@ const Course = () => {
             onClick={handlePlayPauseClick}
             ref={elementRef}
             style={{ width: "100%" }}
-            src="https://download-video.akamaized.net/v2-1/playback/5f2ad7e4-0f3d-4cda-83fd-3aef3e8b23e0/62534a16?__token__=st=1690375053~exp=1690389453~acl=%2Fv2-1%2Fplayback%2F5f2ad7e4-0f3d-4cda-83fd-3aef3e8b23e0%2F62534a16%2A~hmac=920a4deb1c2131209722e35f33513345ac7aa0f82795c4d4d37de72de862e565&r=dXMtY2VudHJhbDE%3D"
+            src={targetCourse.modules[videoIndex].url}
           ></VideoElement>
         </VideoWrapper>
         <CourseInfo>
@@ -108,13 +113,26 @@ const Course = () => {
         <CardCourseInfo>
           <InstructorAvatar src={targetCourse.instructor_image} />
           <InstructorName>{targetCourse.instructor_name}</InstructorName>
-          <CourseCardRating image={star}>{targetCourse.rating.toFixed(1)}</CourseCardRating>
+          <CourseCardRating image={star}>
+            {targetCourse.rating.toFixed(1)}
+          </CourseCardRating>
         </CardCourseInfo>
         <CourseDetails>
           <Students image={user}>{targetCourse.students} Student</Students>
           <Modules image={document}>{targetCourse.sections} Module</Modules>
           <Duration image={clock}>{targetCourse.duration}</Duration>
         </CourseDetails>
+        <CourseModules>
+          <h3>{targetCourse.modules?.length} Modules</h3>
+          <ModuleList>
+            {targetCourse.modules?.map((module, index) => (
+              <ModuleListItem onClick={() => setVideoIndex(index)} key={index}>
+                <span>{index + 1}</span>
+                <Link>{module.title}</Link>
+              </ModuleListItem>
+            ))}
+          </ModuleList>
+        </CourseModules>
       </CourseCard>
     </FullCourseWrapper>
   );
@@ -302,5 +320,37 @@ const Modules = styled(CourseDetailsSingleItem)`
 const Duration = styled(CourseDetailsSingleItem)`
   &::before {
     background-image: url(${(props) => props.image && props.image});
+  }
+`;
+
+const CourseModules = styled.div``;
+
+const ModuleList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: ${30 / 16}rem;
+`;
+
+const ModuleListItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  span {
+    width: ${30 / 16}rem;
+    height: ${30 / 16}rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: ${COLORS.neutral.softGrey};
+    color: ${COLORS.neutral.black};
+    font-weight: bold;
+  }
+
+  a {
+    color: ${COLORS.neutral.darkGrey};
   }
 `;

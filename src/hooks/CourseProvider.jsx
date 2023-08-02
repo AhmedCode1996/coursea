@@ -26,6 +26,7 @@ const CourseProvider = ({ children }) => {
         .insert(mappedCourses)
         .select();
       */
+
       /*
       //delete all rows
       const { error } = await supabase
