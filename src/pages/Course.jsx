@@ -1,11 +1,13 @@
 /* eslint-disable no-unused-vars */
 import { useSelector } from "react-redux";
-import { Link, useParams } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 
 import clock from "./../assets/clock.png";
 import user from "./../assets/user.png";
 import document from "./../assets/document.png";
 import star from "./../assets/star.png";
+import staticArrow from "./../assets/staticLeftArrow.png";
+import animatedArrow from "./../assets/animatedLeftArrow.json";
 
 import playButton from "./../assets/play.svg";
 import pauseButton from "./../assets/pause.svg";
@@ -13,18 +15,19 @@ import fullScreenButton from "./../assets/fullScreen.svg";
 import volumbeButton from "./../assets/volume.svg";
 import screenMirroringButton from "./../assets/screenmirroring.svg";
 
-import Video from "./../components/Video/Video";
-
 import { getAllCourses } from "../features/courseSlice";
 import { styled } from "styled-components";
 import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../constants";
 import { useEffect, useRef, useState } from "react";
-import { ColorSchemeProvider } from "@mantine/core";
+import AnimatedIcon from "../components/AnimatedIcon/AnimatedIcon";
 
 const Course = () => {
+  const navigate = useNavigate();
+  const [isAnimating, setIsAnimating] = useState(false);
   const [videoIndex, setVideoIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [videoFullDuration, setVideoFullDuration] = useState(0);
+  const [videoCurrentTime, setVideoCurrentTime] = useState(0);
 
   const elementRef = useRef(null);
   const videoRef = useRef(null);
@@ -37,10 +40,12 @@ const Course = () => {
       videoRef.current.play();
       setIsPlaying(true);
       setVideoFullDuration(videoRef.current.duration.toFixed(0));
+      // setVideoCurrentTime(videoRef.current.currentTime.toFixed(2));
     } else {
       videoRef.current.pause();
       setIsPlaying(false);
       setVideoFullDuration(videoRef.current.duration.toFixed(0));
+      setVideoCurrentTime(videoRef.current.currentTime.toFixed(2));
     }
   };
 
@@ -71,6 +76,17 @@ const Course = () => {
   return (
     <FullCourseWrapper>
       <CourseWrapper>
+        <BackArrow
+          onMouseLeave={() => setIsAnimating(false)}
+          onMouseEnter={() => setIsAnimating(true)}
+          onClick={() => navigate(-1)}
+        >
+          {isAnimating ? (
+            <AnimatedIcon icon={animatedArrow} />
+          ) : (
+            <img src={staticArrow} />
+          )}
+        </BackArrow>
         <VideoWrapper>
           <ControlBar>
             <Play
@@ -81,7 +97,7 @@ const Course = () => {
               <ProgressBar></ProgressBar>
             </ProgressBarWrapper>
             <VideoDuration>
-              <CurrentDuration>2:20/</CurrentDuration>
+              <CurrentDuration>{videoCurrentTime}/</CurrentDuration>
               <FullDuration>{videoFullDuration}:00</FullDuration>
             </VideoDuration>
             <img onClick={fullScreenRequest} src={fullScreenButton} />
@@ -109,10 +125,12 @@ const Course = () => {
         </CourseInfo>
       </CourseWrapper>
       <CourseCard>
-        <Title>{targetCourse.title}</Title>
+        <CardTitle>{targetCourse.title}</CardTitle>
         <CardCourseInfo>
           <InstructorAvatar src={targetCourse.instructor_image} />
-          <InstructorName>{targetCourse.instructor_name}</InstructorName>
+          <CardInstructorName>
+            {targetCourse.instructor_name}
+          </CardInstructorName>
           <CourseCardRating image={star}>
             {targetCourse.rating.toFixed(1)}
           </CourseCardRating>
@@ -133,6 +151,7 @@ const Course = () => {
             ))}
           </ModuleList>
         </CourseModules>
+        <button>join course</button>
       </CourseCard>
     </FullCourseWrapper>
   );
@@ -144,13 +163,23 @@ const FullCourseWrapper = styled.div`
   display: grid;
   column-gap: 30px;
   grid-template-columns: 1fr ${350 / 16}rem;
+  padding-top: 1.5rem;
 
   & > * {
     background-color: ${COLORS.neutral.white};
   }
 `;
 
-const CourseWrapper = styled.div``;
+const CourseWrapper = styled.div`
+  position: relative;
+`;
+const BackArrow = styled.div`
+  width: ${24 / 16}rem;
+  height: ${24 / 16}rem;
+  position: absolute;
+  top: -2rem;
+  cursor: pointer;
+`;
 const VideoWrapper = styled.div`
   position: relative;
   border-radius: 1rem;
@@ -227,6 +256,10 @@ const Title = styled.h2`
   color: ${COLORS.neutral.black};
   font-size: ${TYPOGRAPHY.xl2};
 `;
+
+const CardTitle = styled(Title)`
+  font-size: ${TYPOGRAPHY.lg};
+`;
 const MiniInfo = styled.div`
   display: flex;
   justify-content: space-between;
@@ -247,6 +280,10 @@ const InstructorAvatar = styled.img`
 const InstructorName = styled.h3`
   font-weight: normal;
   margin-right: auto;
+`;
+
+const CardInstructorName = styled(InstructorName)`
+  color: ${COLORS.neutral.darkGrey};
 `;
 
 const InstructorJob = styled.h3`
@@ -270,8 +307,20 @@ const CourseCard = styled.div`
   flex-direction: column;
   gap: var(--spacing);
   padding: var(--spacing);
-
   border-radius: 1rem;
+  height: fit-content;
+  position: sticky;
+  top: 0;
+
+  button {
+    background-color: ${COLORS.primary};
+    color: ${COLORS.neutral.black};
+    text-transform: capitalize;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 13px 24px;
+    cursor: pointer;
+  }
 `;
 
 const CardCourseInfo = styled.div`
