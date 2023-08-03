@@ -3,6 +3,7 @@
 // import { mappedCourses } from "../data/filteredCourses";
 import { createContext, useEffect, useState } from "react";
 import { supabase } from "../services/supabase";
+import { mappedCourses } from "./../data/filteredCourses";
 
 export const CourseContext = createContext();
 
@@ -18,7 +19,6 @@ const CourseProvider = ({ children }) => {
         .select("*");
       if (error) setError(error);
       setCourseData(courses);
-
       /*
       // // Insert Rows
       const { data, error } = await supabase
@@ -26,7 +26,6 @@ const CourseProvider = ({ children }) => {
         .insert(mappedCourses)
         .select();
       */
-
       /*
       //delete all rows
       const { error } = await supabase

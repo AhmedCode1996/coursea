@@ -1,6 +1,13 @@
 /* eslint-disable no-unused-vars */
+import { useEffect, useRef, useState } from "react";
+import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
+import { styled } from "styled-components";
 import { useSelector } from "react-redux";
-import { Link, useNavigate, useParams } from "react-router-dom";
+
+import { getAllCourses } from "../features/courseSlice";
+import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../constants";
+
+import AnimatedIcon from "../components/AnimatedIcon/AnimatedIcon";
 
 import clock from "./../assets/clock.png";
 import user from "./../assets/user.png";
@@ -8,6 +15,8 @@ import document from "./../assets/document.png";
 import star from "./../assets/star.png";
 import staticArrow from "./../assets/staticLeftArrow.png";
 import animatedArrow from "./../assets/animatedLeftArrow.json";
+import staticCheckMark from "./../assets/staticCheckMark.png";
+import animatedCheckMark from "./../assets/animatedCheckMark.json";
 
 import playButton from "./../assets/play.svg";
 import pauseButton from "./../assets/pause.svg";
@@ -15,15 +24,10 @@ import fullScreenButton from "./../assets/fullScreen.svg";
 import volumbeButton from "./../assets/volume.svg";
 import screenMirroringButton from "./../assets/screenmirroring.svg";
 
-import { getAllCourses } from "../features/courseSlice";
-import { styled } from "styled-components";
-import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../constants";
-import { useEffect, useRef, useState } from "react";
-import AnimatedIcon from "../components/AnimatedIcon/AnimatedIcon";
-
 const Course = () => {
   const navigate = useNavigate();
   const [isAnimating, setIsAnimating] = useState(false);
+  const [checkMarkAnimate, setIsCheckMarkAnimate] = useState(false);
   const [videoIndex, setVideoIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [videoFullDuration, setVideoFullDuration] = useState(0);
@@ -122,6 +126,56 @@ const Course = () => {
             </InstructorInfo>
             <CourseRating>{targetCourse.rating.toFixed(1)}</CourseRating>
           </MiniInfo>
+          <TabsWrapper>
+            <Tabs>
+              <Tab>
+                <NavTab>about</NavTab>
+              </Tab>
+              <Tab>
+                <NavTab> assignment </NavTab>
+              </Tab>
+              <Tab>
+                <NavTab> tools </NavTab>
+              </Tab>
+              <Tab>
+                <NavTab> review </NavTab>
+              </Tab>
+            </Tabs>
+            <TabsContent>
+              <Content>
+                <ContentDescription>
+                  <h3>description</h3>
+                  {targetCourse.description.map((cours, index) => (
+                    <p className="content-paragraph" key={index}>
+                      {cours}
+                    </p>
+                  ))}
+
+                  <h3>key point</h3>
+                  <ul className="points-list">
+                    {targetCourse.keyPoints.map((cours, index) => (
+                      <li
+                        className="list-item"
+                        key={index}
+                        onMouseEnter={() => setIsCheckMarkAnimate(true)}
+                        onMouseLeave={() => setIsCheckMarkAnimate(false)}
+                      >
+                        {checkMarkAnimate ? (
+                          <span style={{ width: "24px" }}>
+                            <AnimatedIcon icon={animatedCheckMark} />
+                          </span>
+                        ) : (
+                          <img src={staticCheckMark} />
+                        )}
+
+                        <p>{cours.substring(0, 30 + index * 4)}</p>
+                      </li>
+                    ))}
+                  </ul>
+                </ContentDescription>
+              </Content>
+            </TabsContent>
+          </TabsWrapper>
         </CourseInfo>
       </CourseWrapper>
       <CourseCard>
@@ -251,6 +305,7 @@ const CourseInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  padding: 1rem;
 `;
 const Title = styled.h2`
   color: ${COLORS.neutral.black};
@@ -299,6 +354,65 @@ const FollowLink = styled.button`
 
 const CourseRating = styled.span`
   color: ${COLORS.neutral.black};
+`;
+
+const TabsWrapper = styled.div``;
+const Tabs = styled.ul`
+  display: flex;
+  gap: 2.5rem;
+  border-bottom: 2px solid ${COLORS.neutral.softGrey};
+  padding: 0.6rem 0;
+`;
+const Tab = styled.li`
+  cursor: pointer;
+`;
+
+const NavTab = styled(NavLink)`
+  color: ${COLORS.neutral.darkGrey};
+  font-size: ${TYPOGRAPHY.lg};
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 0.8rem 0;
+  border-bottom: 2px solid transparent;
+  transition: all 0.4s;
+
+  &:focus {
+    border-bottom-color: ${COLORS.primary};
+    color: ${COLORS.neutral.black};
+  }
+`;
+
+const TabsContent = styled.div``;
+const Content = styled.div``;
+const ContentDescription = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+
+  h3 {
+    margin-top: 1.5rem;
+    font-size: ${TYPOGRAPHY.xl};
+  }
+
+  p.content-paragraph {
+    font-size: ${TYPOGRAPHY.base};
+  }
+
+  .points-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .list-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      width: ${24 / 16}rem;
+    }
+  }
 `;
 
 const CourseCard = styled.div`
