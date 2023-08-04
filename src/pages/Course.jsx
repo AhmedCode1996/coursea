@@ -27,8 +27,8 @@ import screenMirroringButton from "./../assets/screenmirroring.svg";
 const Course = () => {
   const navigate = useNavigate();
   const [contentToggle, setContentToggle] = useState(1);
+  const [keyPointToggle, setKeyPointToggle] = useState(null);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [checkMarkAnimate, setIsCheckMarkAnimate] = useState(false);
   const [videoIndex, setVideoIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
   const [videoFullDuration, setVideoFullDuration] = useState(0);
@@ -158,10 +158,11 @@ const Course = () => {
                       <li
                         className="list-item"
                         key={index}
-                        onMouseEnter={() => setIsCheckMarkAnimate(true)}
-                        onMouseLeave={() => setIsCheckMarkAnimate(false)}
+                        onMouseEnter={() => {
+                          setKeyPointToggle(index);
+                        }}
                       >
-                        {checkMarkAnimate ? (
+                        {keyPointToggle === index ? (
                           <span style={{ width: "24px" }}>
                             <AnimatedIcon icon={animatedCheckMark} />
                           </span>
@@ -414,6 +415,7 @@ const Content = styled.div`
       display: flex;
       align-items: center;
       gap: 10px;
+      width: fit-content;
 
       img {
         width: ${24 / 16}rem;
