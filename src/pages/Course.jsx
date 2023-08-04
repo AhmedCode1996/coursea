@@ -26,6 +26,7 @@ import screenMirroringButton from "./../assets/screenmirroring.svg";
 
 const Course = () => {
   const navigate = useNavigate();
+  const [contentToggle, setContentToggle] = useState(1);
   const [isAnimating, setIsAnimating] = useState(false);
   const [checkMarkAnimate, setIsCheckMarkAnimate] = useState(false);
   const [videoIndex, setVideoIndex] = useState(0);
@@ -128,22 +129,22 @@ const Course = () => {
           </MiniInfo>
           <TabsWrapper>
             <Tabs>
-              <Tab>
+              <Tab onClick={() => setContentToggle(1)}>
                 <NavTab>about</NavTab>
               </Tab>
-              <Tab>
+              <Tab onClick={() => setContentToggle(2)}>
                 <NavTab> assignment </NavTab>
               </Tab>
-              <Tab>
+              <Tab onClick={() => setContentToggle(3)}>
                 <NavTab> tools </NavTab>
               </Tab>
-              <Tab>
+              <Tab onClick={() => setContentToggle(4)}>
                 <NavTab> review </NavTab>
               </Tab>
             </Tabs>
             <TabsContent>
               <Content>
-                <ContentDescription>
+                <div className={`content ${contentToggle === 1 && "active"}`}>
                   <h3>description</h3>
                   {targetCourse.description.map((cours, index) => (
                     <p className="content-paragraph" key={index}>
@@ -172,7 +173,10 @@ const Course = () => {
                       </li>
                     ))}
                   </ul>
-                </ContentDescription>
+                </div>
+                <div className={`content ${contentToggle === 2 && "active"}`}>
+                  <h3>hello World</h3>
+                </div>
               </Content>
             </TabsContent>
           </TabsWrapper>
@@ -383,35 +387,41 @@ const NavTab = styled(NavLink)`
 `;
 
 const TabsContent = styled.div``;
-const Content = styled.div``;
-const ContentDescription = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
+const Content = styled.div`
+  .content {
+    display: none;
 
-  h3 {
-    margin-top: 1.5rem;
-    font-size: ${TYPOGRAPHY.xl};
-  }
-
-  p.content-paragraph {
-    font-size: ${TYPOGRAPHY.base};
-  }
-
-  .points-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .list-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    img {
-      width: ${24 / 16}rem;
+    & > * + * {
+      margin-top: 1.5rem;
     }
+
+    h3 {
+      margin-top: 1.5rem;
+      font-size: ${TYPOGRAPHY.xl};
+    }
+
+    p.content-paragraph {
+      font-size: ${TYPOGRAPHY.base};
+    }
+
+    .points-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .list-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      img {
+        width: ${24 / 16}rem;
+      }
+    }
+  }
+  .active {
+    display: block;
   }
 `;
 
