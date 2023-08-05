@@ -9,6 +9,7 @@ const initialState = {
   authenticated: false,
   loading: false,
   error: "",
+  following: [],
 };
 
 export const createUser = createAsyncThunk(
@@ -41,6 +42,10 @@ const userSlice = createSlice({
     setUsername: (state, { payload }) => {
       state.username = payload;
     },
+    setFollow: (state, { payload }) => {
+      state.following.push(payload);
+      console.log(state.following);
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(createUser.pending, (state) => {
@@ -59,5 +64,6 @@ const userSlice = createSlice({
   },
 });
 
-export const { setEmail, setPassword, setUsername } = userSlice.actions;
+export const { setEmail, setPassword, setUsername, setFollow } =
+  userSlice.actions;
 export default userSlice.reducer;

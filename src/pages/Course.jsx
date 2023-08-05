@@ -2,7 +2,7 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, NavLink, useNavigate, useParams } from "react-router-dom";
 import { styled } from "styled-components";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { getAllCourses } from "../features/courseSlice";
 import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../constants";
@@ -23,9 +23,12 @@ import pauseButton from "./../assets/pause.svg";
 import fullScreenButton from "./../assets/fullScreen.svg";
 import volumbeButton from "./../assets/volume.svg";
 import screenMirroringButton from "./../assets/screenmirroring.svg";
+import { setFollow } from "../features/user/userSlice";
+import FollowLink from "../components/FollowLink/FollowLink";
 
 const Course = () => {
   const navigate = useNavigate();
+  const dispatch = useDispatch();
   const [contentToggle, setContentToggle] = useState(1);
   const [keyPointToggle, setKeyPointToggle] = useState(null);
   const [isAnimating, setIsAnimating] = useState(false);
@@ -123,7 +126,7 @@ const Course = () => {
               <InstructorAvatar src={targetCourse.instructor_image} />
               <InstructorName>{targetCourse.instructor_name}</InstructorName>
               <InstructorJob>{targetCourse.instructor_job}</InstructorJob>
-              <FollowLink>follow mentor</FollowLink>
+              <FollowLink course={targetCourse} />
             </InstructorInfo>
             <CourseRating>{targetCourse.rating.toFixed(1)}</CourseRating>
           </MiniInfo>
@@ -349,12 +352,6 @@ const CardInstructorName = styled(InstructorName)`
 const InstructorJob = styled.h3`
   color: ${COLORS.neutral.darkGrey};
   font-weight: normal;
-`;
-
-const FollowLink = styled.button`
-  color: ${COLORS.seconday.blue};
-  text-transform: capitalize;
-  cursor: pointer;
 `;
 
 const CourseRating = styled.span`

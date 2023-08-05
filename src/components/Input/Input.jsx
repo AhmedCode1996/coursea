@@ -9,6 +9,7 @@ function Input(props) {
   const { authenticated } = useSelector((state) => state.user);
   const [value, setValue] = useState("");
   const id = useId();
+  console.log(authenticated);
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
