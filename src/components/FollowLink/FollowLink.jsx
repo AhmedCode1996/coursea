@@ -13,7 +13,7 @@ function FollowLink({ course }) {
 
   return (
     <LinkWrapper
-      isFollowing={isFollowing}
+      following={isFollowing}
       onClick={() => {
         if (!isFollowing) {
           dispatch(
@@ -36,7 +36,7 @@ export default FollowLink;
 
 const LinkWrapper = styled.button`
   color: ${(props) =>
-    props.isFollowing ? COLORS.seconday.blue : COLORS.neutral.darkGrey};
+    props.following ? COLORS.seconday.blue : COLORS.neutral.darkGrey};
   text-transform: capitalize;
   cursor: pointer;
 `;

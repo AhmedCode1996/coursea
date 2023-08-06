@@ -1,5 +1,5 @@
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { createRoot } from "react-dom/client";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
@@ -11,7 +11,7 @@ import SignUp from "./pages/SignUp";
 
 import GlobalStyle from "./styles/GlobalStyles";
 import CourseProvider from "./hooks/CourseProvider";
-// import Courses from "./components/Courses/Courses";
+
 import Course from "./pages/Course";
 import MainContent from "./components/MainContent/MainContent";
 

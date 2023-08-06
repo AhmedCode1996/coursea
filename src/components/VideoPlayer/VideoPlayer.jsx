@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useEffect, useRef, useState } from "react";
 import { styled } from "styled-components";
@@ -8,26 +9,27 @@ import pauseButton from "./../../assets/pause.svg";
 import fullScreenButton from "./../../assets/fullScreen.svg";
 import volumbeButton from "./../../assets/volume.svg";
 import screenMirroringButton from "./../../assets/screenmirroring.svg";
+import { displayFormattedTime } from "../../utils/displayFormattedTime";
 
 function VideoPlayer({ videoUrl }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [videoFullDuration, setVideoFullDuration] = useState(0);
   const [videoCurrentTime, setVideoCurrentTime] = useState(0);
+  const [currentProgress, setCurrentProgress] = useState("");
 
   const elementRef = useRef(null);
   const videoRef = useRef(null);
+  const progressBarElement = useRef(null);
 
   const handlePlayPauseClick = () => {
     if (videoRef.current.paused) {
       videoRef.current.play();
       setIsPlaying(true);
-      setVideoFullDuration(videoRef.current.duration.toFixed(0));
-      // setVideoCurrentTime(videoRef.current.currentTime.toFixed(2));
+      setVideoFullDuration(videoRef.current.duration);
     } else {
       videoRef.current.pause();
       setIsPlaying(false);
-      setVideoFullDuration(videoRef.current.duration.toFixed(0));
-      setVideoCurrentTime(videoRef.current.currentTime.toFixed(2));
+      setVideoFullDuration(videoRef.current.duration);
     }
   };
 
@@ -38,6 +40,7 @@ function VideoPlayer({ videoUrl }) {
   useEffect(() => {
     const videoElement = elementRef.current;
     videoRef.current = videoElement;
+
     /* 
       autoplay
       controller
@@ -55,6 +58,17 @@ function VideoPlayer({ videoUrl }) {
     */
   }, []);
 
+  const handleProgressBarClick = (e) => {
+    const progressBar = progressBarElement.current;
+    const progressBarWidth = progressBar.getBoundingClientRect().width;
+    const clickPosition = e.nativeEvent.offsetX;
+    const currentTime =
+      (clickPosition / progressBarWidth) * videoRef.current.duration;
+    videoRef.current.currentTime = currentTime;
+  };
+
+
+
   return (
     <VideoWrapper>
       <ControlBar>
@@ -62,18 +76,39 @@ function VideoPlayer({ videoUrl }) {
           onClick={handlePlayPauseClick}
           src={!isPlaying ? playButton : pauseButton}
         />
-        <ProgressBarWrapper>
-          <ProgressBar></ProgressBar>
+        <ProgressBarWrapper
+          ref={progressBarElement}
+          // error onClick code
+          // onClick={(e) => {
+          //   const currentTime = e.nativeEvent.offsetX;
+          //   console.log((currentTime / progressBarOffsetWidth) * 100);
+          //   setCurrentProgress(
+          //     `${(currentTime / progressBarOffsetWidth) * 100}%`
+          //   );
+          // }}
+          onClick={handleProgressBarClick}
+        >
+          <ProgressBar currentProgress={currentProgress}></ProgressBar>
         </ProgressBarWrapper>
         <VideoDuration>
-          <CurrentDuration>{videoCurrentTime}/</CurrentDuration>
-          <FullDuration>{videoFullDuration}:00</FullDuration>
+          <CurrentDuration>
+            {displayFormattedTime(videoCurrentTime)}/
+          </CurrentDuration>
+          <FullDuration>{displayFormattedTime(videoFullDuration)}</FullDuration>
         </VideoDuration>
         <img onClick={fullScreenRequest} src={fullScreenButton} />
         <img src={screenMirroringButton} />
         <img src={volumbeButton} />
       </ControlBar>
       <VideoElement
+        onTimeUpdate={() => {
+          setVideoCurrentTime(videoRef.current.currentTime);
+          setCurrentProgress(
+            `${
+              (videoRef.current.currentTime / videoRef.current.duration) * 100
+            }%`
+          );
+        }}
         onClick={handlePlayPauseClick}
         ref={elementRef}
         style={{ width: "100%" }}
@@ -142,7 +177,7 @@ const ProgressBarWrapper = styled.div`
 const ProgressBar = styled.div`
   background-color: ${COLORS.neutral.black};
   border-radius: inherit;
-  width: 40%;
+  width: ${(props) => props.currentProgress};
   height: 100%;
 `;
 const VideoDuration = styled.div`

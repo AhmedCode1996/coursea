@@ -10,6 +10,7 @@ const initialState = {
   loading: false,
   error: "",
   following: [],
+  joinedCourses: []
 };
 
 export const createUser = createAsyncThunk(

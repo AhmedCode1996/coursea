@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { styled } from "styled-components";
 import { useSelector } from "react-redux";
@@ -18,35 +18,47 @@ import CourseCardModules from "../components/CourseCardModules/CourseCardModules
 import JoinButton from "../components/JoinButton/JoinButton";
 
 const Course = () => {
-  const [videoIndex, setVideoIndex] = useState(0);
-
+  const [videoIndex, setVideoIndex] = useState(4);
+  const [selectedCourse, setSelectedCourse] = useState({});
   const { courseid } = useParams();
   const { courses } = useSelector(getAllCourses);
-  const targetCourse = courses.find((course) => course.id === Number(courseid));
 
   const handleVideoIndex = (index) => {
     setVideoIndex(index);
   };
 
+  useEffect(() => {
+    const selectedCourse = courses.find(
+      (course) => course.id === Number(courseid)
+    );
+    setSelectedCourse(selectedCourse);
+  }, [courseid, courses]);
+
   return (
     <FullCourseWrapper>
-      <CourseWrapper>
-        <BackArrow />
-        <VideoPlayer videoUrl={targetCourse?.modules[videoIndex].url} />
-        <CourseInfo>
-          <CourseMiniInformation courseInformation={targetCourse} />
-          <TabsAndContent courseInformation={targetCourse} />
-        </CourseInfo>
-      </CourseWrapper>
-      <CourseCardWrapper>
-        <CourseCardInformation cardInformation={targetCourse} />
-        <CourseDetails details={targetCourse} />
-        <CourseCardModules
-          handleVideoIndex={handleVideoIndex}
-          targetCourseModules={targetCourse}
-        />
-        <JoinButton />
-      </CourseCardWrapper>
+      {Object.keys(selectedCourse || {}).length ? (
+        <>
+          <CourseWrapper>
+            <BackArrow />
+            <VideoPlayer videoUrl={selectedCourse.modules[videoIndex].url} />
+            <CourseInfo>
+              <CourseMiniInformation courseInformation={selectedCourse} />
+              <TabsAndContent courseInformation={selectedCourse} />
+            </CourseInfo>
+          </CourseWrapper>
+          <CourseCardWrapper>
+            <CourseCardInformation cardInformation={selectedCourse} />
+            <CourseDetails details={selectedCourse} />
+            <CourseCardModules
+              handleVideoIndex={handleVideoIndex}
+              selectedCourseModules={selectedCourse}
+            />
+            <JoinButton />
+          </CourseCardWrapper>
+        </>
+      ) : (
+        <p>Loading....</p>
+      )}
     </FullCourseWrapper>
   );
 };

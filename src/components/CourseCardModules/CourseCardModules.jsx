@@ -3,12 +3,12 @@ import { styled } from "styled-components";
 import { COLORS } from "../../constants";
 import { Link } from "react-router-dom";
 
-function CourseCardModules({ targetCourseModules, handleVideoIndex }) {
+function CourseCardModules({ selectedCourseModules, handleVideoIndex }) {
   return (
     <CourseModules>
-      <h3>{targetCourseModules?.modules.length} Modules</h3>
+      <h3>{selectedCourseModules.modules.length} Modules</h3>
       <ModuleList>
-        {targetCourseModules?.modules.map((module, index) => (
+        {selectedCourseModules.modules.map((module, index) => (
           <ModuleListItem onClick={() => handleVideoIndex(index)} key={index}>
             <span>{index + 1}</span>
             <Link>{module.title}</Link>

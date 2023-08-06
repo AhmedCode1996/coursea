@@ -5,8 +5,17 @@ import { COLORS } from "../constants";
 
 import Sidebar from "./../components/Sidebar/Sidebar";
 import Header from "./../components/Header/Header";
+import { useEffect } from "react";
+import { useDispatch } from "react-redux";
+import { fetchCourses } from "../features/courseSlice";
 
 const AppLayoutContent = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchCourses());
+  }, [dispatch]);
+
   return (
     <Wrapper>
       <Sidebar />

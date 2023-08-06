@@ -14,24 +14,26 @@ const CourseProvider = ({ children }) => {
   useEffect(() => {
     const getData = async () => {
       //selecting all rows
+
       const { data: courses, error } = await supabase
         .from("courses")
         .select("*");
       if (error) setError(error);
       setCourseData(courses);
+
       /*
       // // Insert Rows
       const { data, error } = await supabase
         .from("courses")
         .insert(mappedCourses)
         .select();
-      */
+        */
       /*
       //delete all rows
       const { error } = await supabase
         .from("courses")
         .delete()
-        .eq("is_paid", false);
+        .eq("is_paid", true);
         */
     };
     getData();

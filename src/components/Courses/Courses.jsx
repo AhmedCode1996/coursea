@@ -1,25 +1,24 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import { styled } from "styled-components";
 import SingleCourse from "../SingleCourse/SingleCourse";
-import { useCourseContext } from "../../hooks/useCourseProvider";
 import Spinner from "../Spinner/Spinner";
 import { COLORS } from "./../../constants";
-import { useSelector, useDispatch } from "react-redux";
-import { useEffect } from "react";
-// import { fetchApiCourses } from "../../features/productApiCall";
+import { useSelector } from "react-redux";
 import { fetchCourses, getAllCourses } from "../../features/courseSlice";
+// import { useCourseContext } from "../../hooks/useCourseProvider";
+// import { useEffect } from "react";
+// import { fetchApiCourses } from "../../features/productApiCall";
 
 function Courses() {
-  // const [courses] = useCourseContext();
-  const dispatch = useDispatch();
-  const { courses, loading, error } = useSelector(getAllCourses);
+  const { courses, loading } = useSelector(getAllCourses);
 
-  useEffect(() => {
-    dispatch(fetchCourses());
-  }, [dispatch]);
+  // const [courses] = useCourseContext();
+  // useEffect(() => {
+  //   dispatch(fetchCourses());
+  // }, [dispatch]);
 
   if (loading) return <Spinner />;
+
   return (
     <Wrapper>
       {courses.map((element) => (
