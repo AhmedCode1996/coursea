@@ -53,7 +53,7 @@ const Course = () => {
               handleVideoIndex={handleVideoIndex}
               selectedCourseModules={selectedCourse}
             />
-            <JoinButton />
+            <JoinButton courseId={courseid} />
           </CourseCardWrapper>
         </>
       ) : (

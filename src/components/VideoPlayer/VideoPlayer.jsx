@@ -67,8 +67,6 @@ function VideoPlayer({ videoUrl }) {
     videoRef.current.currentTime = currentTime;
   };
 
-
-
   return (
     <VideoWrapper>
       <ControlBar>

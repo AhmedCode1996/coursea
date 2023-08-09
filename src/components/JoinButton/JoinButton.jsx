@@ -1,9 +1,27 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import { styled } from "styled-components";
 
 import { COLORS } from "../../constants";
+import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { joinCourse } from "../../features/user/userSlice";
 
-function JoinButton() {
-  return <ButtonWrapper>join course</ButtonWrapper>;
+function JoinButton({ courseId }) {
+  const { joinedCourses } = useSelector((state) => state.user);
+  const [isExist, setIsExist] = useState(joinedCourses.includes(courseId));
+  const dispatch = useDispatch();
+
+  return (
+    <ButtonWrapper
+      onClick={() => {
+        dispatch(joinCourse(courseId));
+        setIsExist(true)
+      }}
+    >
+      {isExist ? "go to course" : "join course"}
+    </ButtonWrapper>
+  );
 }
 
 export default JoinButton;
