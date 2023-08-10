@@ -6,7 +6,7 @@ function ExpandCourses() {
   return (
     <>
       <LinkItem>explore courses</LinkItem>
-      <LinkItem>my courses</LinkItem>
+      <LinkItem to="/account/mycourses">my courses</LinkItem>
     </>
   );
 }

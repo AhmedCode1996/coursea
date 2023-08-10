@@ -14,9 +14,10 @@ function JoinButton({ courseId }) {
 
   return (
     <ButtonWrapper
+      isExist={isExist}
       onClick={() => {
         dispatch(joinCourse(courseId));
-        setIsExist(true)
+        setIsExist(true);
       }}
     >
       {isExist ? "go to course" : "join course"}
@@ -27,7 +28,10 @@ function JoinButton({ courseId }) {
 export default JoinButton;
 
 const ButtonWrapper = styled.button`
-  background-color: ${COLORS.primary};
+  background-color: ${(props) =>
+    props.isExist ? COLORS.neutral.white : COLORS.primary};
+  border: 3px solid
+    ${(props) => (props.isExist ? COLORS.neutral.grey : "transparent")};
   color: ${COLORS.neutral.black};
   text-transform: capitalize;
   font-weight: 600;

@@ -14,6 +14,7 @@ import CourseProvider from "./hooks/CourseProvider";
 
 import Course from "./pages/Course";
 import MainContent from "./components/MainContent/MainContent";
+import MyCourses from "./pages/MyCourses";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <MainContent />,
+      },
+      {
+        path: 'mycourses',
+        element: <MyCourses/>
       },
       {
         path: ":courseid",
