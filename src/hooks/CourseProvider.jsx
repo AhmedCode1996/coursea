@@ -14,13 +14,11 @@ const CourseProvider = ({ children }) => {
   useEffect(() => {
     const getData = async () => {
       //selecting all rows
-
-      const { data: courses, error } = await supabase
-        .from("courses")
-        .select("*");
-      if (error) setError(error);
-      setCourseData(courses);
-
+      // const { data: courses, error } = await supabase
+      //   .from("courses")
+      //   .select("*");
+      // if (error) setError(error);
+      // setCourseData(courses);
       /*
       // // Insert Rows
       const { data, error } = await supabase
@@ -36,6 +34,7 @@ const CourseProvider = ({ children }) => {
         .eq("is_paid", true);
         */
     };
+
     getData();
   }, []);
 

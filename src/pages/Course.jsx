@@ -16,6 +16,7 @@ import CourseDetails from "../components/CourseDetails/CourseDetails";
 import CourseCardInformation from "../components/CourseCardInformation/CourseCardInformation";
 import CourseCardModules from "../components/CourseCardModules/CourseCardModules";
 import JoinButton from "../components/JoinButton/JoinButton";
+import CourseSpinner from "../components/CourseSpinner/CourseSpinner";
 
 const Course = () => {
   const [videoIndex, setVideoIndex] = useState(4);
@@ -57,7 +58,7 @@ const Course = () => {
           </CourseCardWrapper>
         </>
       ) : (
-        <p>Loading....</p>
+        <CourseSpinner />
       )}
     </FullCourseWrapper>
   );
@@ -69,7 +70,6 @@ const FullCourseWrapper = styled.div`
   display: grid;
   column-gap: 30px;
   grid-template-columns: 1fr ${350 / 16}rem;
-  padding-top: 1.5rem;
 
   & > * {
     background-color: ${COLORS.neutral.white};

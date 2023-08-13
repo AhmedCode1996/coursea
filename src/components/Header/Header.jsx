@@ -24,7 +24,7 @@ const Wrapper = styled.header`
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 
   & > *:not(:first-child) {
     cursor: pointer;

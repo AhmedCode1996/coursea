@@ -5,8 +5,11 @@ import { COLORS, TYPOGRAPHY } from "../../constants";
 import { createUser } from "../../features/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import AuthSpinner from "../AuthSpinner/AuthSpinner";
 
 function AuthButton(props) {
+  const [clicked, setClicked] = useState(false);
   const navigate = useNavigate();
 
   const { email, password, authenticated } = useSelector((state) => state.user);
@@ -15,20 +18,26 @@ function AuthButton(props) {
 
   function handelAuthButton(e) {
     e.preventDefault();
+    setClicked(true);
     const userCredentials = {
       email,
       password,
     };
-    if (!authenticated) {
-      dispatch(createUser(userCredentials));
-      navigate("/");
-    } else {
-      navigate("/account");
-    }
+
+    setTimeout(() => {
+      if (!authenticated) {
+        dispatch(createUser(userCredentials));
+        navigate("/");
+        setClicked(false);
+      } else {
+        navigate("/account");
+        setClicked(false);
+      }
+    }, 2000);
   }
   return (
     <Wrapper onClick={handelAuthButton} type={props.type}>
-      {props.children}
+      {clicked ? <AuthSpinner /> : props.children}
     </Wrapper>
   );
 }
@@ -55,6 +64,9 @@ const Wrapper = styled.button`
       color: ${COLORS.neutral.darkGrey};
       background-color: ${COLORS.neutral.softGrey};
     `}
+    display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: ${TYPOGRAPHY.base};
   border-radius: var(--button-border-radius);
   padding-inline: var(--horizontal-padding);

@@ -51,7 +51,7 @@ function TabsAndContent({ courseInformation }) {
                   }}
                 >
                   {keyPointToggle === index ? (
-                    <span style={{ width: "24px" }}>
+                    <span style={{ width: "32px" }}>
                       <AnimatedIcon icon={animatedCheckMark} />
                     </span>
                   ) : (
@@ -131,7 +131,11 @@ const Content = styled.div`
       width: fit-content;
 
       img {
-        width: ${24 / 16}rem;
+        width: ${32 / 16}rem;
+      }
+
+      p {
+        font-size: ${TYPOGRAPHY.lg};
       }
     }
   }

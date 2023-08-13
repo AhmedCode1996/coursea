@@ -52,8 +52,8 @@ const Wrapper = styled.div`
   justify-content: center;
   gap: 10px;
   border: 2px dashed ${COLORS.primary};
-  border-radius: 8px;
-  padding: 0.5rem;
+  border-radius: 16px;
+  padding: 0.375rem;
   position: relative;
 `;
 const Label = styled.label`

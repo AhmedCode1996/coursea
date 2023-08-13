@@ -5,6 +5,8 @@ import BackArrow from "../components/BackArrow/BackArrow";
 import { styled } from "styled-components";
 import { COLORS } from "../constants";
 
+import CourseSpinner from "./../components/CourseSpinner/CourseSpinner";
+
 const MyCourses = () => {
   const { joinedCourses } = useSelector((state) => state.user);
   const { courses } = useSelector((state) => state.courseSlice);
@@ -24,9 +26,16 @@ const MyCourses = () => {
 
   if (!targetCourses.length) {
     return (
-      <div style={{ position: "relative", marginTop: "2rem" }}>
+      <div
+        style={{
+          position: "relative",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <BackArrow />
-        <p>loading......</p>
+        <CourseSpinner />
       </div>
     );
   }
@@ -52,5 +61,4 @@ const Wrapper = styled.div`
   padding-block: 1rem;
   padding-inline: 0.5rem;
   position: relative;
-  margin-top: 2rem;
 `;
