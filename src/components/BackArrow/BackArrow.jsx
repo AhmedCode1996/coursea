@@ -33,5 +33,6 @@ const ArrowWrapper = styled.div`
   height: ${24 / 16}rem;
   position: absolute;
   top: -2rem;
+  left: 0;
   cursor: pointer;
 `;

@@ -5,8 +5,10 @@ import Input from "../components/Input/Input";
 import AuthButton from "../components/AuthButton/AuthButton";
 import { useDispatch } from "react-redux";
 import { setEmail, setPassword, setUsername } from "../features/user/userSlice";
+import AvatarInput from "../components/AvatarInput/AvatarInput";
 
 function SignUp() {
+
   const dispatch = useDispatch();
 
   function handleEmailChange(value) {
@@ -50,6 +52,7 @@ function SignUp() {
       >
         Password
       </Input>
+      <AvatarInput>upload your avatar</AvatarInput>
       <AuthButton type="create">Create</AuthButton>
       <Recaptcha>
         <input type="checkbox" />

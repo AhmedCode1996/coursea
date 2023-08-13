@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useId, useState } from "react";
 import { styled } from "styled-components";
@@ -6,19 +7,18 @@ import { COLORS, TYPOGRAPHY } from "./../../constants";
 import { useSelector } from "react-redux";
 
 function Input(props) {
-  const { authenticated } = useSelector((state) => state.user);
+  const { email, password, authenticated, avatar } = useSelector((state) => state.user);
+console.log(avatar);
   const [value, setValue] = useState("");
   const id = useId();
-  console.log(authenticated);
+
+  const defaultValue = props.type === "text" ? email : password;
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
-    if (!authenticated) {
-      setValue(inputValue);
-      props.handleChange(inputValue);
-    } else {
-      setValue(inputValue);
-    }
+
+    setValue(inputValue);
+    props.handleChange && props.handleChange(inputValue);
   };
 
   return (
@@ -28,7 +28,7 @@ function Input(props) {
         id={`input${id}`}
         type={props.type}
         placeholder={props.placeholder}
-        value={value}
+        value={authenticated ? defaultValue : value}
         onChange={handleInputChange}
       />
     </Wrapper>

@@ -31,7 +31,7 @@ const MyCourses = () => {
     );
   }
   return (
-    <Wrapper style={{ position: "relative", marginTop: "2rem" }}>
+    <Wrapper>
       <BackArrow />
       {targetCourses.map((course) => (
         <SingleCourse key={course.id} {...course} />
@@ -45,10 +45,12 @@ export default MyCourses;
 const Wrapper = styled.div`
   --gap: ${24 / 16}rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
   justify-items: center;
   gap: var(--gap);
   background-color: ${COLORS.neutral.lightGrey};
   padding-block: 1rem;
   padding-inline: 0.5rem;
+  position: relative;
+  margin-top: 2rem;
 `;

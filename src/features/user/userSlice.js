@@ -5,6 +5,7 @@ const initialState = {
   email: "",
   password: "",
   username: "",
+  avatar: "",
   userId: null,
   authenticated: false,
   loading: false,
@@ -43,6 +44,9 @@ const userSlice = createSlice({
     setUsername: (state, { payload }) => {
       state.username = payload;
     },
+    setAvatar: (state, { payload }) => {
+      state.avatar = payload;
+    },
     setFollow: (state, { payload }) => {
       state.following.push(payload);
     },
@@ -68,6 +72,12 @@ const userSlice = createSlice({
   },
 });
 
-export const { setEmail, setPassword, setUsername, setFollow, joinCourse } =
-  userSlice.actions;
+export const {
+  setEmail,
+  setPassword,
+  setUsername,
+  setAvatar,
+  setFollow,
+  joinCourse,
+} = userSlice.actions;
 export default userSlice.reducer;

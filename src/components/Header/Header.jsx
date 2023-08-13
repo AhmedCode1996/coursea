@@ -1,9 +1,10 @@
 import { styled } from "styled-components";
 
 import notificationPicture from "./../../assets/notification.png";
-import avatarPicure from "./../../assets/avatarProfile.png";
+import { useSelector } from "react-redux";
 
 function Header() {
+  const { avatar } = useSelector((state) => state.user);
   return (
     <Wrapper>
       <Heading>Explore Courses</Heading>
@@ -11,7 +12,7 @@ function Header() {
         <img src={notificationPicture} title="notification picture" />
       </Notification>
       <AvatarProfle>
-        <img src={avatarPicure} title="avatar picture" />
+        <img src={avatar} title="avatar picture" />
       </AvatarProfle>
     </Wrapper>
   );
@@ -33,4 +34,12 @@ const Heading = styled.h2`
   margin-right: auto;
 `;
 const Notification = styled.div``;
-const AvatarProfle = styled.div``;
+const AvatarProfle = styled.div`
+  max-width: ${50 / 16}rem;
+
+  img {
+    background-size: cover;
+    border-radius: 50%;
+    aspect-ratio: 1 / 1;
+  }
+`;
