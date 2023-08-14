@@ -31,10 +31,9 @@ const CourseProvider = ({ children }) => {
       const { error } = await supabase
         .from("courses")
         .delete()
-        .eq("is_paid", true);
+        .eq("is_paid", false);
         */
     };
-
     getData();
   }, []);
 

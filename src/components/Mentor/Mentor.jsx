@@ -3,10 +3,27 @@
 import { styled } from "styled-components";
 import FollowLink from "./../FollowLink/FollowLink";
 import { COLORS, TYPOGRAPHY } from "../../constants";
+import { motion } from "framer-motion";
 
-function Mentor({ image, job, name }) {
+function Mentor({ image, job, name, id }) {
   return (
-    <Wrapper>
+    <Wrapper
+      drag
+      dragTransition={{
+        min: 0,
+        max: 5,
+        bounceStiffness: 20,
+        bounceDamping: 4,
+      }}
+      initial={{ opacity: 0, scale: 0.6 }}
+      animate={{ opacity: 1, scale: 1 }}
+      whileHover={{
+        scale: 1.03,
+        transition: { duration: 0.09 },
+      }}
+      transition={{ type: "spring", stiffness: 50, delay: id * 0.01 }}
+      as={motion.div}
+    >
       <Card>
         <InnerWrapper>
           <Avatar>
@@ -36,7 +53,7 @@ const Wrapper = styled.div`
     transform: translate(2px, 4px) scale(1.04);
     transition: all 0.3s;
   }
-  
+
   &:active {
     transform: translate(-2px, 4px);
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);

@@ -17,7 +17,7 @@ const AppLayout = () => {
       </AuthWrappers>
       <ToastContainer
         position="bottom-right"
-        autoClose={100000}
+        autoClose={2000}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

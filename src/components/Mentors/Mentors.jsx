@@ -6,13 +6,14 @@ import Mentor from "../Mentor/Mentor";
 import CourseSpinner from "./../CourseSpinner/CourseSpinner";
 import { styled } from "styled-components";
 import { COLORS } from "../../constants";
+import { motion } from "framer-motion";
 
 function Mentors() {
   const { courses, loading } = useSelector(getAllCourses);
   if (!courses.length) return <CourseSpinner />;
   return (
     <Wrapper>
-      {courses.map((element) => {
+      {courses.map((element, index) => {
         const { instructor_image, instructor_job, instructor_name, id } =
           element;
         return (
@@ -21,6 +22,7 @@ function Mentors() {
             job={instructor_job}
             name={instructor_name}
             key={id}
+            id={index}
           />
         );
       })}
