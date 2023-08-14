@@ -16,6 +16,7 @@ import Course from "./pages/Course";
 import MainContent from "./components/MainContent/MainContent";
 import MyCourses from "./pages/MyCourses";
 import Overview from "./pages/Overview";
+import Mentors from "./components/Mentors/Mentors";
 
 const router = createBrowserRouter([
   {
@@ -41,12 +42,16 @@ const router = createBrowserRouter([
         element: <MainContent />,
       },
       {
-        path: 'overview',
-        element: <Overview />
+        path: "overview",
+        element: <Overview />,
       },
       {
-        path: 'mycourses',
-        element: <MyCourses/>
+        path: "mentors",
+        element: <Mentors />,
+      },
+      {
+        path: "mycourses",
+        element: <MyCourses />,
       },
       {
         path: ":courseid",

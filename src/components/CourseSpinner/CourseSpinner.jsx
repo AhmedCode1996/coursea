@@ -18,4 +18,5 @@ const LoadingItem = styled.span`
   display: block;
   width: ${300 / 16}rem;
   height: ${300 / 16}rem;
+  margin-inline: auto;
 `;

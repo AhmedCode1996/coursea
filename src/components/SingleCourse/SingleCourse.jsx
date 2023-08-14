@@ -44,10 +44,10 @@ function SingleCourse(props) {
         </Level>
       </CourseImage>
       <CourseTotalInformation>
-        <CourseHeadline>{title}</CourseHeadline>
+        <CourseHeadline>{title.substring(0, 20)}</CourseHeadline>
         <CourseInfo>
           <InstructorAvatar src={instructor_image} title={instructor_name} />
-          <InstructorName>{instructor_name}</InstructorName>
+          <InstructorName>{instructor_name.substring(0, 10)}</InstructorName>
           <CourseRating image={star}>{rating.toFixed(1)}</CourseRating>
         </CourseInfo>
         <CourseDetails>

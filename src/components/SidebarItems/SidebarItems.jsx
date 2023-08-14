@@ -5,6 +5,7 @@ import arrowDown from "./../../assets/sidebar/arrow-down.png";
 import arrowUp from "./../../assets/sidebar/arrow-up.png";
 import { useState } from "react";
 import ExpandCourses from "../ExpandCourses/ExpandCourses";
+import { Link } from "react-router-dom";
 
 function SidebarItems() {
   const [expand, setIsExpand] = useState(false);
@@ -13,20 +14,22 @@ function SidebarItems() {
       <List>
         {sidebarData.map((item) => {
           return (
-            <ListItem key={item.id}>
-              <img src={item.lightIcon} title={item.title} />
-              <span>{item.title}</span>
-              {item.title === "courses" && (
-                <>
-                  <img
-                    onClick={() => setIsExpand(!expand)}
-                    src={!expand ? arrowDown : arrowUp}
-                    title="arrow down"
-                  />
-                  {expand && <ExpandCourses />}
-                </>
-              )}
-            </ListItem>
+            <li key={item.id}>
+              <ListItem to={`/account/${item.title}`} key={item.id}>
+                <img src={item.lightIcon} title={item.title} />
+                <span>{item.title}</span>
+                {item.title === "courses" && (
+                  <>
+                    <img
+                      onClick={() => setIsExpand(!expand)}
+                      src={!expand ? arrowDown : arrowUp}
+                      title="arrow down"
+                    />
+                    {expand && <ExpandCourses />}
+                  </>
+                )}
+              </ListItem>
+            </li>
           );
         })}
       </List>
@@ -42,8 +45,16 @@ const List = styled.ul`
   flex-direction: column;
   gap: 0.5rem;
   margin-bottom: auto;
+
+  li {
+    transition: all 0.3s;
+  }
+  & li:active {
+    transform: translate(2px, -3px) scale(1.03);
+    transition: all 0.3s;
+  }
 `;
-const ListItem = styled.li`
+const ListItem = styled(Link)`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
