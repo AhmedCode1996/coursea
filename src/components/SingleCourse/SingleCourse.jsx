@@ -33,6 +33,7 @@ function SingleCourse(props) {
   if (level === "beginner") levelImage = beginnerRange;
   if (level === "intermediate") levelImage = intermediateRange;
   if (level === "master") levelImage = masterRange;
+
   return (
     <CourseWrapper to={`/account/${id}`}>
       <CourseImage>

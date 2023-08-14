@@ -5,19 +5,8 @@ import AuthButton from "../components/AuthButton/AuthButton";
 import SocialAuth from "../components/SocialAuth/SocialAuth";
 import { COLORS, TYPOGRAPHY } from "../constants";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { supabase } from "../services/supabase";
-import { mappedCourses } from "../data/filteredCourses";
-import { useSelector } from "react-redux";
 
 const SignIn = () => {
-  const { email, password } = useSelector((state) => state.user);
-
- console.log(email, password);
- const setValue = (email, password)=> {
-
- }
-
   return (
     <Wrapper>
       <Heading>
