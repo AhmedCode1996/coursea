@@ -21,8 +21,8 @@ function Courses() {
 
   return (
     <Wrapper>
-      {courses.map((element) => (
-        <SingleCourse key={element.id} {...element} />
+      {courses.map((element, index) => (
+        <SingleCourse index={index} key={element.id} {...element} />
       ))}
     </Wrapper>
   );

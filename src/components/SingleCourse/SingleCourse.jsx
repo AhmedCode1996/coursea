@@ -12,10 +12,12 @@ import star from "./../../assets/star.png";
 import beginnerRange from "./../../assets/beginnerRange.png";
 import intermediateRange from "./../../assets/intermediateRange.png";
 import masterRange from "./../../assets/masterRange.png";
+import { motion } from "framer-motion";
 
 function SingleCourse(props) {
   const {
     id,
+    index,
     category,
     level,
     title,
@@ -35,28 +37,39 @@ function SingleCourse(props) {
   if (level === "master") levelImage = masterRange;
 
   return (
-    <CourseWrapper to={`/account/${id}`}>
-      <CourseImage>
-        <CourseAvatar src={course_image} title={title} />
-        <Level>
-          <span> {level}</span>
-          <img src={levelImage} />
-        </Level>
-      </CourseImage>
-      <CourseTotalInformation>
-        <CourseHeadline>{title.substring(0, 20)}</CourseHeadline>
-        <CourseInfo>
-          <InstructorAvatar src={instructor_image} title={instructor_name} />
-          <InstructorName>{instructor_name.substring(0, 10)}</InstructorName>
-          <CourseRating image={star}>{rating.toFixed(1)}</CourseRating>
-        </CourseInfo>
-        <CourseDetails>
-          <Students image={user}>{students} Student</Students>
-          <Modules image={document}>{sections} Module</Modules>
-          <Duration image={clock}>{duration}</Duration>
-        </CourseDetails>
-      </CourseTotalInformation>
-    </CourseWrapper>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.6 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={{
+        type: "spring",
+        stiffness: 30,
+        damping: 10,
+        delay: index * 0.1,
+      }}
+    >
+      <CourseWrapper to={`/account/${id}`}>
+        <CourseImage>
+          <CourseAvatar src={course_image} title={title} />
+          <Level>
+            <span> {level}</span>
+            <img src={levelImage} />
+          </Level>
+        </CourseImage>
+        <CourseTotalInformation>
+          <CourseHeadline>{title.substring(0, 20)}</CourseHeadline>
+          <CourseInfo>
+            <InstructorAvatar src={instructor_image} title={instructor_name} />
+            <InstructorName>{instructor_name.substring(0, 10)}</InstructorName>
+            <CourseRating image={star}>{rating.toFixed(1)}</CourseRating>
+          </CourseInfo>
+          <CourseDetails>
+            <Students image={user}>{students} Student</Students>
+            <Modules image={document}>{sections} Module</Modules>
+            <Duration image={clock}>{duration}</Duration>
+          </CourseDetails>
+        </CourseTotalInformation>
+      </CourseWrapper>
+    </motion.div>
   );
 }
 

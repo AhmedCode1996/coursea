@@ -35,7 +35,7 @@ const courseSlice = createSlice({
 
       state.courses = state.originalCourses;
       state.courses = state.courses.filter((course) => course.level === value);
-      state.categoryFilterState = "hello";
+      state.categoryFilterState = "category";
       state.sortFilterState = "Sort By";
       console.log(state.categoryFilterState);
     },

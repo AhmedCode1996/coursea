@@ -6,6 +6,7 @@ import { COLORS } from "../../constants";
 
 import forwardButton from "../../assets/forwardButton.json";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
+import { motion } from "framer-motion";
 
 function SliderWrapper({ children }) {
   const WrapperRef = useRef();
@@ -36,7 +37,14 @@ function SliderWrapper({ children }) {
           <AnimatedIcon icon={forwardButton} />
         </NextButton>
       </ActionButtons>
-      <InnerWrapper width={width}>{children}</InnerWrapper>
+      <InnerWrapper
+        transition={{ type: "spring", stiffness: 50, damping: 10 }}
+        animate={{ x: -width }}
+        as={motion.div}
+        width={width}
+      >
+        {children}
+      </InnerWrapper>
     </OuterWrapper>
   );
 }
@@ -52,8 +60,6 @@ const InnerWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   gap: 1rem;
-  transform: translateX(${(props) => props.width && -props.width}px);
-  transition: all 0.3s;
 `;
 
 const ActionButtons = styled.div`

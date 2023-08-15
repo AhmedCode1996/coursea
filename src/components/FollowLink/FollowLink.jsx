@@ -5,7 +5,7 @@ import { styled } from "styled-components";
 
 import { setFollow } from "../../features/user/userSlice";
 
-import { COLORS } from "../../constants";
+import { COLORS, TYPOGRAPHY } from "../../constants";
 
 function FollowLink({ course }) {
   const [isFollowing, setIsFollowing] = useState(false);
@@ -38,5 +38,6 @@ const LinkWrapper = styled.button`
   color: ${(props) =>
     props.following ? COLORS.seconday.blue : COLORS.neutral.darkGrey};
   text-transform: capitalize;
+  font-size: ${TYPOGRAPHY.sm};
   cursor: pointer;
 `;

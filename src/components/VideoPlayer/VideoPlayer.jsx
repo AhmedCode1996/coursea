@@ -11,8 +11,9 @@ import volumbeButton from "./../../assets/volume.svg";
 import screenMirroringButton from "./../../assets/screenmirroring.svg";
 import { displayFormattedTime } from "../../utils/displayFormattedTime";
 
-function VideoPlayer({ videoUrl }) {
+function VideoPlayer({ videoUrl, handleVideoCompleted }) {
   const [isPlaying, setIsPlaying] = useState(false);
+  const [completed, setCompleted] = useState(false);
   const [videoFullDuration, setVideoFullDuration] = useState(0);
   const [videoCurrentTime, setVideoCurrentTime] = useState(0);
   const [currentProgress, setCurrentProgress] = useState("");
@@ -40,7 +41,6 @@ function VideoPlayer({ videoUrl }) {
   useEffect(() => {
     const videoElement = elementRef.current;
     videoRef.current = videoElement;
-
     /* 
       autoplay
       controller
@@ -76,14 +76,6 @@ function VideoPlayer({ videoUrl }) {
         />
         <ProgressBarWrapper
           ref={progressBarElement}
-          // error onClick code
-          // onClick={(e) => {
-          //   const currentTime = e.nativeEvent.offsetX;
-          //   console.log((currentTime / progressBarOffsetWidth) * 100);
-          //   setCurrentProgress(
-          //     `${(currentTime / progressBarOffsetWidth) * 100}%`
-          //   );
-          // }}
           onClick={handleProgressBarClick}
         >
           <ProgressBar currentProgress={currentProgress}></ProgressBar>
@@ -106,6 +98,8 @@ function VideoPlayer({ videoUrl }) {
               (videoRef.current.currentTime / videoRef.current.duration) * 100
             }%`
           );
+          handleVideoCompleted(videoRef.current.ended);
+          setCompleted(videoRef.current.ended);
         }}
         onClick={handlePlayPauseClick}
         ref={elementRef}

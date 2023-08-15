@@ -1,9 +1,17 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { styled } from "styled-components";
 import { COLORS } from "../../constants";
 import { Link } from "react-router-dom";
+import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
+import animatedCompleteIcon from "./../../assets/completedCheck.json";
 
-function CourseCardModules({ selectedCourseModules, handleVideoIndex }) {
+function CourseCardModules({
+  selectedCourseModules,
+  handleVideoIndex,
+  videoIndex,
+  completed,
+}) {
   return (
     <CourseModules>
       <h3>{selectedCourseModules.modules.length} Modules</h3>
@@ -12,6 +20,12 @@ function CourseCardModules({ selectedCourseModules, handleVideoIndex }) {
           <ModuleListItem onClick={() => handleVideoIndex(index)} key={index}>
             <span>{index + 1}</span>
             <Link>{module.title}</Link>
+            {completed && videoIndex === index && (
+              <div style={{ maxWidth: "2rem" }}>
+                {" "}
+                <AnimatedIcon icon={animatedCompleteIcon} />{" "}
+              </div>
+            )}
           </ModuleListItem>
         ))}
       </ModuleList>
@@ -50,5 +64,6 @@ const ModuleListItem = styled.li`
 
   a {
     color: ${COLORS.neutral.darkGrey};
+    margin-right: auto;
   }
 `;

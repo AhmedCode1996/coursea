@@ -2,7 +2,8 @@ import { styled } from "styled-components";
 
 import notificationPicture from "./../../assets/notification.png";
 import { useSelector } from "react-redux";
-
+import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
+import animatedAvatar from "./../../assets/animatedAvatar.json";
 function Header() {
   const { avatar } = useSelector((state) => state.user);
   return (
@@ -12,7 +13,11 @@ function Header() {
         <img src={notificationPicture} title="notification picture" />
       </Notification>
       <AvatarProfle>
-        <img src={avatar} title="avatar picture" />
+        {!avatar ? (
+          <AnimatedIcon icon={animatedAvatar} />
+        ) : (
+          <img src={avatar} title="avatar picture" />
+        )}
       </AvatarProfle>
     </Wrapper>
   );
@@ -35,7 +40,7 @@ const Heading = styled.h2`
 `;
 const Notification = styled.div``;
 const AvatarProfle = styled.div`
-  max-width: ${50 / 16}rem;
+  max-width: ${80 / 16}rem;
 
   img {
     background-size: cover;

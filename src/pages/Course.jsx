@@ -20,12 +20,17 @@ import CourseSpinner from "../components/CourseSpinner/CourseSpinner";
 
 const Course = () => {
   const [videoIndex, setVideoIndex] = useState(4);
+  const [completed, setCompleted] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState({});
   const { courseid } = useParams();
   const { courses } = useSelector(getAllCourses);
 
   const handleVideoIndex = (index) => {
     setVideoIndex(index);
+  };
+
+  const handleVideoCompleted = (completed) => {
+    setCompleted(completed);
   };
 
   useEffect(() => {
@@ -41,7 +46,10 @@ const Course = () => {
         <>
           <CourseWrapper>
             <BackArrow />
-            <VideoPlayer videoUrl={selectedCourse.modules[videoIndex].url} />
+            <VideoPlayer
+              handleVideoCompleted={handleVideoCompleted}
+              videoUrl={selectedCourse.modules[videoIndex].url}
+            />
             <CourseInfo>
               <CourseMiniInformation courseInformation={selectedCourse} />
               <TabsAndContent courseInformation={selectedCourse} />
@@ -51,6 +59,8 @@ const Course = () => {
             <CourseCardInformation cardInformation={selectedCourse} />
             <CourseDetails details={selectedCourse} />
             <CourseCardModules
+              completed={completed}
+              videoIndex={videoIndex}
               handleVideoIndex={handleVideoIndex}
               selectedCourseModules={selectedCourse}
             />
