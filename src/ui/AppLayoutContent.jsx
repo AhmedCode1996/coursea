@@ -32,6 +32,7 @@ export default AppLayoutContent;
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: ${240 / 16}rem 1fr;
+  position: relative;
   background-color: ${COLORS.neutral.lightGrey};
   gap: 8px;
 `;

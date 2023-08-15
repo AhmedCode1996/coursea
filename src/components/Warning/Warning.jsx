@@ -1,19 +1,18 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import { useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { useDispatch, useSelector } from "react-redux";
 import { styled } from "styled-components";
 
 import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../../constants";
 
-import AnimatedIcon from "./../AnimatedIcon/AnimatedIcon";
+import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 
-import planAnimation from "./../../assets/planAnimation.json";
-import underline from "./../../assets/underline.json";
-import festivalSubscription from "./../../assets/festivalSubscription.json";
+import warningIcon from "../../assets/warning.json";
+import { setPlan } from "../../features/user/userSlice";
 
-function SubscribeNotification({ setModal }) {
-  const navigate = useNavigate();
-  const { username, plan } = useSelector((state) => state.user);
+function Warning({ setPremium, planType, setModal }) {
+  const { plan } = useSelector((state) => state.user);
+  const dispatch = useDispatch();
   const prefix =
     plan[0] === "a" ||
     plan[0] === "e" ||
@@ -25,39 +24,28 @@ function SubscribeNotification({ setModal }) {
 
   const clickHandler = (e) => {
     e.stopPropagation();
-    setModal(false);
+    setPremium(false);
   };
   return (
     <Wrapper onClick={clickHandler}>
       <Card>
         <Icon>
-          <AnimatedIcon icon={planAnimation} />
+          <AnimatedIcon icon={warningIcon} />
         </Icon>
-        <Title>
-          <Festival>
-            <AnimatedIcon icon={festivalSubscription} />
-          </Festival>
-          congratulations <Username>{username}</Username>
-        </Title>
         <Message>
-          now you are {prefix}
-          <span>
-            {plan}
-            <span>
-              <AnimatedIcon icon={underline} />
-            </span>
-          </span>{" "}
-          subscriber{" "}
+          you already subscribed to {prefix}
+          <span>{plan}</span> plan{" "}
         </Message>
         <ActionButtons>
           <Cancel onClick={clickHandler}>cancel</Cancel>
           <Start
             onClick={() => {
-              setModal(false);
-              navigate("/account/overview");
+              dispatch(setPlan(planType));
+              setPremium(false);
+              setModal(true)
             }}
           >
-            start learning
+            subscribe
           </Start>
         </ActionButtons>
       </Card>
@@ -65,7 +53,7 @@ function SubscribeNotification({ setModal }) {
   );
 }
 
-export default SubscribeNotification;
+export default Warning;
 
 const Wrapper = styled.div`
   display: flex;
@@ -93,28 +81,7 @@ const Card = styled.div`
 const Icon = styled.div`
   max-width: ${200 / 16}rem;
 `;
-const Title = styled.div`
-  position: relative;
-`;
-const Festival = styled.span`
-  position: absolute;
-  top: -100%;
-  left: 0;
-  pointer-events: none;
-`;
-const Username = styled.span`
-  display: block;
-  text-align: center;
-  background: linear-gradient(
-    14deg,
-    rgba(0, 20, 36, 1) 0%,
-    rgba(9, 85, 121, 1) 70%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`;
+
 const Message = styled.div`
   font-size: ${TYPOGRAPHY.base};
   font-weight: 500;

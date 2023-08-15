@@ -1,41 +1,63 @@
 /* eslint-disable no-unused-vars */
-import { styled } from "styled-components";
-import { plans } from "../data/plans";
-import { COLORS, TYPOGRAPHY } from "../constants";
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+
+import { styled } from "styled-components";
+
 import { setPlan } from "../features/user/userSlice";
+import { COLORS, TYPOGRAPHY } from "../constants";
+
+import { plans } from "../data/plans";
 import SubscribeNotification from "../components/SubscribeNotification/SubscribeNotification";
+import Warning from "../components/Warning/Warning";
 
 const Plans = () => {
+  const { plan } = useSelector((state) => state.user);
+  const [planType, setPlanType] = useState(plan);
   const [index, setIndex] = useState(1);
   const [modal, setModal] = useState(false);
+  const [premium, setPremium] = useState(false);
   const dispatch = useDispatch();
   return (
     <Wrapper>
-      {plans.map((plan) => (
+      {plans.map((element) => (
         <SinglePlan
-          key={plan.id}
+          key={element.id}
           onClick={() => {
-            const value = plan.id;
+            const value = element.id;
             setIndex(value);
-            dispatch(setPlan(plan.title));
-            setModal(true)
+            if (planType === "free") {
+              dispatch(setPlan(element.title));
+              setModal(true);
+              setPremium(false);
+              setPlanType(element.title);
+            } else {
+              setModal(false);
+              setPremium(true);
+              setPlanType(element.title);
+            }
           }}
-          className={index === plan.id && "active"}
+          className={index === element.id && "active"}
         >
           <LeftCorner>
-            <PlanTitle>{plan.title}</PlanTitle>
-            <PlanDuration>{plan.duration}</PlanDuration>
-            <Button>go {plan.title}</Button>
+            <PlanTitle>{element.title}</PlanTitle>
+            <PlanDuration>{element.duration}</PlanDuration>
+            <Button>go {element.title}</Button>
           </LeftCorner>
           <RightCorner>
-            <PlanPrice>${plan.price}</PlanPrice>
-            <PlanDiscount>{plan.discount}</PlanDiscount>
+            <PlanPrice>${element.price}</PlanPrice>
+            <PlanDiscount>{element.discount}</PlanDiscount>
           </RightCorner>
         </SinglePlan>
       ))}
-      {modal && <SubscribeNotification setModal={setModal} />}{" "}
+      {modal && <SubscribeNotification setModal={setModal} />}
+      {premium && (
+        <Warning
+          setPremium={setPremium}
+          planType={planType}
+          setModal={setModal}
+        />
+      )}
     </Wrapper>
   );
 };
@@ -49,6 +71,7 @@ const Wrapper = styled.div`
   justify-content: space-between;
   gap: var(--gap);
   padding: var(--gap);
+  margin-inline: 5%;
 `;
 const BasePlan = styled.div`
   --bg-color-light: rgba(245, 245, 247, 1);

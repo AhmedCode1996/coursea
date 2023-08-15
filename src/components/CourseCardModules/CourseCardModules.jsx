@@ -47,6 +47,7 @@ const ModuleList = styled.ul`
 const ModuleListItem = styled.li`
   display: flex;
   align-items: center;
+  flex-wrap: no-wrap;
   gap: 20px;
 
   span {
@@ -65,7 +66,7 @@ const ModuleListItem = styled.li`
   a {
     color: ${COLORS.neutral.darkGrey};
     font-size: ${TYPOGRAPHY.sm};
-    font-weight: 600;
+    font-weight: 500;
     margin-right: auto;
   }
 `;
