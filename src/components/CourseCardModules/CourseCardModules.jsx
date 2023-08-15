@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { styled } from "styled-components";
-import { COLORS } from "../../constants";
+import { COLORS, TYPOGRAPHY } from "../../constants";
 import { Link } from "react-router-dom";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import animatedCompleteIcon from "./../../assets/completedCheck.json";
@@ -64,6 +64,8 @@ const ModuleListItem = styled.li`
 
   a {
     color: ${COLORS.neutral.darkGrey};
+    font-size: ${TYPOGRAPHY.sm};
+    font-weight: 600;
     margin-right: auto;
   }
 `;

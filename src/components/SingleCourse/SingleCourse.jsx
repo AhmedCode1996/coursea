@@ -13,6 +13,7 @@ import beginnerRange from "./../../assets/beginnerRange.png";
 import intermediateRange from "./../../assets/intermediateRange.png";
 import masterRange from "./../../assets/masterRange.png";
 import { motion } from "framer-motion";
+import { formatModuleTime } from "../../utils/displayFormattedTime";
 
 function SingleCourse(props) {
   const {
@@ -65,7 +66,7 @@ function SingleCourse(props) {
           <CourseDetails>
             <Students image={user}>{students} Student</Students>
             <Modules image={document}>{sections} Module</Modules>
-            <Duration image={clock}>{duration}</Duration>
+            <Duration image={clock}>{formatModuleTime(duration)}</Duration>
           </CourseDetails>
         </CourseTotalInformation>
       </CourseWrapper>
@@ -83,7 +84,8 @@ const CourseWrapper = styled(Link)`
   gap: var(--vertical-gap);
   padding: var(--padding);
   border-radius: 1rem;
-  max-width: 350px;
+  max-width: ${350 / 16}rem;
+  width: 350px;
   background-color: ${COLORS.neutral.white};
   transition: all 0.5s;
   cursor: pointer;

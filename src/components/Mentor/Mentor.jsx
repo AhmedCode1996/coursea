@@ -21,7 +21,6 @@ function Mentor({ image, job, name, id }) {
         scale: 1.03,
         transition: { duration: 0.09 },
       }}
-      transition={{ type: "spring", stiffness: 50, delay: id * 0.01 }}
       as={motion.div}
     >
       <Card>

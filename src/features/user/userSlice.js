@@ -12,6 +12,7 @@ const initialState = {
   error: "",
   following: [],
   joinedCourses: [],
+  plan: "free",
 };
 
 export const createUser = createAsyncThunk(
@@ -50,6 +51,9 @@ const userSlice = createSlice({
     setFollow: (state, { payload }) => {
       state.following.push(payload);
     },
+    setPlan: (state, { payload }) => {
+      state.plan = payload;
+    },
     joinCourse: (state, { payload }) => {
       if (state.joinedCourses.includes(payload)) return;
       state.joinedCourses.push(payload);
@@ -78,6 +82,7 @@ export const {
   setUsername,
   setAvatar,
   setFollow,
+  setPlan,
   joinCourse,
 } = userSlice.actions;
 export default userSlice.reducer;

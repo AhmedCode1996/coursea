@@ -7,6 +7,7 @@ import { useState } from "react";
 
 import animatedWelcome from "./../../assets/animatedWelcome.json";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
+// import underline from "./../../assets/underline.json";
 import { motion } from "framer-motion";
 
 const WelcomeHeader = () => {
@@ -45,7 +46,6 @@ const Wrapper = styled.div`
     width: fit-content;
 
     span {
-      background: rgb(0, 20, 36);
       background: linear-gradient(
         14deg,
         rgba(0, 20, 36, 1) 0%,

@@ -29,8 +29,7 @@ const Wrapper = styled.div`
 
 const Content = styled.div`
   p {
-    font-family: ${FONT_FAMILY.bespoke};
-    font-weight: 500;
-    font-size: ${TYPOGRAPHY.xl};
+    font-family: ${FONT_FAMILY.paytone};
+    font-size: ${TYPOGRAPHY.xl2};
   }
 `;

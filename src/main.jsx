@@ -17,6 +17,7 @@ import MainContent from "./components/MainContent/MainContent";
 import MyCourses from "./pages/MyCourses";
 import Overview from "./pages/Overview";
 import Mentors from "./components/Mentors/Mentors";
+import Plans from "./pages/Plans";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
       {
         path: "mentors",
         element: <Mentors />,
+      },
+      {
+        path: "plans",
+        element: <Plans />,
       },
       {
         path: "mycourses",

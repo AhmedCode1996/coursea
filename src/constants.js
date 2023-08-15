@@ -41,6 +41,7 @@ export const TYPOGRAPHY = {
 };
 
 export const FONT_FAMILY = {
+  paytone: "'Paytone One', sans-serif",
   bespoke: "'Bespoke Serif', serif",
   telma: "'Telma', cursive",
   ubuntu: "'Ubuntu', sans-serif",

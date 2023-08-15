@@ -3,7 +3,7 @@ import upgradeProIcon from "./../../assets/sidebar/upgrade pro .png";
 import { styled } from "styled-components";
 function UpgradePro() {
   return (
-    <Wrapper>
+    <Wrapper to={"/account/plans"}>
       <img src={upgradeProIcon} title="upgrade pro " />
     </Wrapper>
   );
