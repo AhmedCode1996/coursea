@@ -27,7 +27,7 @@ function FollowLink({ course }) {
         setIsFollowing(!isFollowing);
       }}
     >
-      {isFollowing ? "follow mentor" : "followed"}
+      {isFollowing ? "follow" : "followed"}
     </LinkWrapper>
   );
 }

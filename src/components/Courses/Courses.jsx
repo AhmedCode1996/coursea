@@ -3,13 +3,24 @@ import { styled } from "styled-components";
 import SingleCourse from "../SingleCourse/SingleCourse";
 import Spinner from "../Spinner/Spinner";
 import { COLORS } from "./../../constants";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { fetchCourses, getAllCourses } from "../../features/courseSlice";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { setLocation } from "../../features/user/userSlice";
 // import { useCourseContext } from "../../hooks/useCourseProvider";
 // import { useEffect } from "react";
 // import { fetchApiCourses } from "../../features/productApiCall";
 
 function Courses() {
+  const data = useLocation();
+  const dispatch = useDispatch();
+  const location = data.pathname.split("/")[2];
+
+  useEffect(() => {
+    dispatch(setLocation(location));
+  }, [location, dispatch]);
+
   const { courses, loading } = useSelector(getAllCourses);
 
   // const [courses] = useCourseContext();

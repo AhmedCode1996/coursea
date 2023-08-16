@@ -18,6 +18,7 @@ import MyCourses from "./pages/MyCourses";
 import Overview from "./pages/Overview";
 import Mentors from "./components/Mentors/Mentors";
 import Plans from "./pages/Plans";
+import Courses from "./components/Courses/Courses";
 
 const router = createBrowserRouter([
   {
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "overview",
         element: <Overview />,
+      },
+      {
+        path: "explorecourses",
+        element: <Courses />,
       },
       {
         path: "mentors",

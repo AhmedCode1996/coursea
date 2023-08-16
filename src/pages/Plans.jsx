@@ -1,23 +1,31 @@
 /* eslint-disable no-unused-vars */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { styled } from "styled-components";
 
-import { setPlan } from "../features/user/userSlice";
+import { setLocation, setPlan } from "../features/user/userSlice";
 import { COLORS, TYPOGRAPHY } from "../constants";
 
 import { plans } from "../data/plans";
 import SubscribeNotification from "../components/SubscribeNotification/SubscribeNotification";
 import Warning from "../components/Warning/Warning";
+import { useLocation } from "react-router-dom";
 
 const Plans = () => {
+  const data = useLocation();
+  const location = data.pathname.split("/")[2];
+
   const { plan } = useSelector((state) => state.user);
   const [planType, setPlanType] = useState(plan);
   const [index, setIndex] = useState(1);
   const [modal, setModal] = useState(false);
   const [premium, setPremium] = useState(false);
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(setLocation(location));
+  }, [location, dispatch]);
   return (
     <Wrapper>
       {plans.map((element) => (

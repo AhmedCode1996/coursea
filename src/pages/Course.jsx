@@ -8,7 +8,6 @@ import { getAllCourses } from "../features/courseSlice";
 
 import { COLORS } from "../constants";
 
-import BackArrow from "../components/BackArrow/BackArrow";
 import VideoPlayer from "../components/VideoPlayer/VideoPlayer";
 import CourseMiniInformation from "../components/CourseMiniInformation/CourseMiniInformation";
 import TabsAndContent from "../components/TabsAndContent/TabsAndContent";
@@ -45,7 +44,6 @@ const Course = () => {
       {Object.keys(selectedCourse || {}).length ? (
         <>
           <CourseWrapper>
-            <BackArrow />
             <VideoPlayer
               handleVideoCompleted={handleVideoCompleted}
               videoUrl={selectedCourse.modules[videoIndex].url}
@@ -86,9 +84,7 @@ const FullCourseWrapper = styled.div`
   }
 `;
 
-const CourseWrapper = styled.div`
-  position: relative;
-`;
+const CourseWrapper = styled.div``;
 
 const CourseInfo = styled.div`
   display: flex;

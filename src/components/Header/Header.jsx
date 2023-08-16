@@ -1,17 +1,25 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { styled } from "styled-components";
 
-import notificationPicture from "./../../assets/notification.png";
 import { useSelector } from "react-redux";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import animatedAvatar from "./../../assets/animatedAvatar.json";
-function Header() {
-  const { avatar } = useSelector((state) => state.user);
+import animatedLogout from "./../../assets/logout.json";
+import BackArrow from "../BackArrow/BackArrow";
+
+function Header({ LoggedOut, setLoggedOut }) {
+  const { avatar, location } = useSelector((state) => state.user);
+
   return (
     <Wrapper>
-      <Heading>Explore Courses</Heading>
-      <Notification>
-        <img src={notificationPicture} title="notification picture" />
-      </Notification>
+      <HeadingAndArrow>
+        <Heading>{location}</Heading>
+        <BackArrow />
+      </HeadingAndArrow>
+      <Logout onClick={() => setLoggedOut(true)}>
+        <AnimatedIcon icon={animatedLogout} />
+      </Logout>
       <AvatarProfle>
         {!avatar ? (
           <AnimatedIcon icon={animatedAvatar} />
@@ -35,10 +43,15 @@ const Wrapper = styled.header`
     cursor: pointer;
   }
 `;
-const Heading = styled.h2`
+const HeadingAndArrow = styled.div`
   margin-right: auto;
 `;
-const Notification = styled.div``;
+const Heading = styled.h2`
+  text-transform: capitalize;
+`;
+const Logout = styled.div`
+  width: ${35 / 16}rem;
+`;
 const AvatarProfle = styled.div`
   max-width: ${80 / 16}rem;
 

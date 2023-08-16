@@ -8,7 +8,7 @@ import forwardButton from "../../assets/forwardButton.json";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import { motion } from "framer-motion";
 
-function SliderWrapper({ children }) {
+function SliderWrapper({ title, children }) {
   const WrapperRef = useRef();
   const [width, setWidth] = useState(0);
   const [fullWidth, setFullWidth] = useState(0);
@@ -29,14 +29,17 @@ function SliderWrapper({ children }) {
   };
   return (
     <OuterWrapper ref={WrapperRef}>
-      <ActionButtons>
-        <PrevButton onClick={handlePrevAction}>
-          {<AnimatedIcon icon={forwardButton} />}
-        </PrevButton>
-        <NextButton onClick={handleNExtAction}>
-          <AnimatedIcon icon={forwardButton} />
-        </NextButton>
-      </ActionButtons>
+      <HeadingAndActionWrapper>
+        <SliderTitle>monthly {title}</SliderTitle>
+        <ActionButtons>
+          <PrevButton onClick={handlePrevAction}>
+            {<AnimatedIcon icon={forwardButton} />}
+          </PrevButton>
+          <NextButton onClick={handleNExtAction}>
+            <AnimatedIcon icon={forwardButton} />
+          </NextButton>
+        </ActionButtons>
+      </HeadingAndActionWrapper>
       <InnerWrapper
         transition={{ type: "spring", stiffness: 50, damping: 10 }}
         animate={{ x: -width }}
@@ -61,7 +64,14 @@ const InnerWrapper = styled.div`
   align-items: flex-start;
   gap: 1rem;
 `;
-
+const HeadingAndActionWrapper = styled.div`
+  display: flex;
+  align-items: center;
+`;
+const SliderTitle = styled.h3`
+  text-transform: capitalize;
+  letter-spacing: 1px;
+`;
 const ActionButtons = styled.div`
   display: flex;
   justify-content: space-between;

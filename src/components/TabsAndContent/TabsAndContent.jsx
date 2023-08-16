@@ -7,7 +7,6 @@ import { COLORS, TYPOGRAPHY } from "../../constants";
 
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 
-import staticCheckMark from "./../../assets/staticCheckMark.png";
 import animatedCheckMark from "./../../assets/animatedCheckMark.json";
 
 function TabsAndContent({ courseInformation }) {
@@ -21,12 +20,6 @@ function TabsAndContent({ courseInformation }) {
           <NavTab>about</NavTab>
         </Tab>
         <Tab onClick={() => setContentToggle(2)}>
-          <NavTab> assignment </NavTab>
-        </Tab>
-        <Tab onClick={() => setContentToggle(3)}>
-          <NavTab> tools </NavTab>
-        </Tab>
-        <Tab onClick={() => setContentToggle(4)}>
           <NavTab> review </NavTab>
         </Tab>
       </Tabs>
@@ -49,15 +42,16 @@ function TabsAndContent({ courseInformation }) {
                   onMouseEnter={() => {
                     setKeyPointToggle(index);
                   }}
+                  onMouseLeave={() => {
+                    setKeyPointToggle(null);
+                  }}
                 >
-                  {keyPointToggle === index ? (
-                    <span style={{ width: "32px" }}>
-                      <AnimatedIcon icon={animatedCheckMark} />
-                    </span>
-                  ) : (
-                    <img src={staticCheckMark} />
-                  )}
-
+                  <span style={{ width: "32px" }}>
+                    <AnimatedIcon
+                      loop={keyPointToggle === index ? true : false}
+                      icon={animatedCheckMark}
+                    />
+                  </span>
                   <p>{cours.substring(0, 30 + index * 4)}</p>
                 </li>
               ))}

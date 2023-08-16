@@ -1,7 +1,7 @@
 import overviewIconLight from "./../assets/sidebar/overview.png";
-import courseIconLight from "./../assets/sidebar/lightCourse.png";
-import mentorsIconLight from "./../assets/sidebar/user-octagon.png";
-import settingIconLight from "./../assets/sidebar/setting-4.png";
+import searchIconLight from "./../assets/sidebar/search.png";
+import mineIconLight from "./../assets/sidebar/mine.png";
+import mentorIconLight from './../assets/sidebar/mentor.png'
 const data = [
   {
     id: 1,
@@ -10,18 +10,19 @@ const data = [
   },
   {
     id: 2,
-    lightIcon: courseIconLight,
-    title: "courses",
+    lightIcon: searchIconLight,
+    title: "explore courses",
   },
   {
     id: 3,
-    lightIcon: mentorsIconLight,
+    lightIcon: mentorIconLight,
     title: "mentors",
   },
+
   {
     id: 4,
-    lightIcon: settingIconLight,
-    title: "settings",
+    lightIcon: mineIconLight,
+    title: "my courses",
   },
 ];
 

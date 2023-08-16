@@ -2,6 +2,7 @@
 import { styled } from "styled-components";
 import { COLORS, TYPOGRAPHY } from "../../constants";
 import FollowLink from "../FollowLink/FollowLink";
+import fallingStar from "./../../assets/fallingStar.png";
 
 function CourseMiniInformation({ courseInformation }) {
   return (
@@ -14,7 +15,12 @@ function CourseMiniInformation({ courseInformation }) {
           <InstructorJob>{courseInformation.instructor_job}</InstructorJob>
           <FollowLink course={courseInformation} />
         </InstructorInfo>
-        <CourseRating>{courseInformation.rating.toFixed(1)}</CourseRating>
+        <CourseRating>
+          <span>
+            <img src={fallingStar} />
+          </span>
+          <span>{courseInformation.rating.toFixed(1)}</span>
+        </CourseRating>
       </MiniInfo>
     </>
   );
@@ -54,6 +60,18 @@ const InstructorJob = styled.h3`
   font-weight: normal;
 `;
 
-const CourseRating = styled.span`
-  color: ${COLORS.neutral.black};
+const CourseRating = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.375rem;
+
+  & span:first-child {
+    width: ${30 / 16}rem;
+  }
+
+  & span:last-child {
+    color: ${COLORS.neutral.black};
+    font-weight: 600;
+  }
 `;

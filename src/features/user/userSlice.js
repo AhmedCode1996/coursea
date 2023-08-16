@@ -13,6 +13,7 @@ const initialState = {
   following: [],
   joinedCourses: [],
   plan: "free",
+  location: "",
 };
 
 export const createUser = createAsyncThunk(
@@ -54,6 +55,18 @@ const userSlice = createSlice({
     setPlan: (state, { payload }) => {
       state.plan = payload;
     },
+    setLocation: (state, { payload }) => {
+      state.location = payload;
+    },
+    setLogout: (state) => {
+      state.username = "";
+      state.email = "";
+      state.password = "";
+      state.avatar = "";
+      state.authenticated = false;
+      state.following = [];
+      state.joinedCourses = [];
+    },
     joinCourse: (state, { payload }) => {
       if (state.joinedCourses.includes(payload)) return;
       state.joinedCourses.push(payload);
@@ -83,6 +96,8 @@ export const {
   setAvatar,
   setFollow,
   setPlan,
+  setLogout,
+  setLocation,
   joinCourse,
 } = userSlice.actions;
 export default userSlice.reducer;

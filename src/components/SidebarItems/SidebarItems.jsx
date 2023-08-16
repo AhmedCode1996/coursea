@@ -1,33 +1,22 @@
+/* eslint-disable no-unused-vars */
 import { styled } from "styled-components";
 import sidebarData from "../../data/sidebarData";
 import { COLORS, TYPOGRAPHY } from "../../constants";
-import arrowDown from "./../../assets/sidebar/arrow-down.png";
-import arrowUp from "./../../assets/sidebar/arrow-up.png";
-import { useState } from "react";
-import ExpandCourses from "../ExpandCourses/ExpandCourses";
 import { Link } from "react-router-dom";
 
 function SidebarItems() {
-  const [expand, setIsExpand] = useState(false);
   return (
     <Wrapper>
       <List>
         {sidebarData.map((item) => {
           return (
             <li key={item.id}>
-              <ListItem to={`/account/${item.title}`} key={item.id}>
+              <ListItem
+                to={`/account/${item.title.split(" ").join("")}`}
+                key={item.id}
+              >
                 <img src={item.lightIcon} title={item.title} />
                 <span>{item.title}</span>
-                {item.title === "courses" && (
-                  <>
-                    <img
-                      onClick={() => setIsExpand(!expand)}
-                      src={!expand ? arrowDown : arrowUp}
-                      title="arrow down"
-                    />
-                    {expand && <ExpandCourses />}
-                  </>
-                )}
               </ListItem>
             </li>
           );
@@ -70,8 +59,8 @@ const ListItem = styled(Link)`
   }
 
   img {
-    width: ${18 / 16}rem;
-    height: ${18 / 16}rem;
+    width: ${20 / 16}rem;
+    height: ${20 / 16}rem;
   }
 
   span {

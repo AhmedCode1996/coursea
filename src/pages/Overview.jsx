@@ -5,13 +5,24 @@ import WelcomeHeader from "../components/WelcomeHeader/WelcomeHeader";
 import SliderCourses from "../components/SliderCourses/SliderCourses";
 import { styled } from "styled-components";
 import SliderMentors from "../components/SliderMentors/SliderMentors";
+import { useLocation } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { useEffect } from "react";
+import { setLocation } from "../features/user/userSlice";
 
 const Overview = () => {
+  const data = useLocation();
+  const dispatch = useDispatch();
+  const location = data.pathname.split("/")[2];
+
+  useEffect(() => {
+    dispatch(setLocation(location));
+  }, [location, dispatch]);
   return (
     <Wrapper>
       <WelcomeHeader />
-      <SliderMentors />
-      <SliderCourses />
+      <SliderMentors title="mentors" />
+      <SliderCourses title="courses" />
     </Wrapper>
   );
 };

@@ -38,6 +38,7 @@ export default WelcomeHeader;
 
 const Wrapper = styled.div`
   position: relative;
+  margin-bottom: 1rem;
   h2 {
     font-size: ${TYPOGRAPHY.xl2};
     font-weight: bold;

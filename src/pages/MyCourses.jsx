@@ -1,15 +1,25 @@
 /* eslint-disable no-unused-vars */
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import SingleCourse from "../components/SingleCourse/SingleCourse";
 import BackArrow from "../components/BackArrow/BackArrow";
 import { styled } from "styled-components";
 import { COLORS } from "../constants";
 
 import CourseSpinner from "./../components/CourseSpinner/CourseSpinner";
+import { useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { setLocation } from "../features/user/userSlice";
 
 const MyCourses = () => {
   const { joinedCourses } = useSelector((state) => state.user);
   const { courses } = useSelector((state) => state.courseSlice);
+  const data = useLocation();
+  const dispatch = useDispatch();
+  const location = data.pathname.split("/")[2];
+
+  useEffect(() => {
+    dispatch(setLocation(location));
+  }, [location, dispatch]);
   /*
     In this code, the map function is used to iterate over
      each course ID in the courseIds array and for each ID,
@@ -25,23 +35,10 @@ const MyCourses = () => {
     .filter(Boolean);
 
   if (!targetCourses.length) {
-    return (
-      <div
-        style={{
-          position: "relative",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <BackArrow />
-        <CourseSpinner />
-      </div>
-    );
+    return <CourseSpinner />;
   }
   return (
     <Wrapper>
-      <BackArrow />
       {targetCourses.map((course) => (
         <SingleCourse key={course.id} {...course} />
       ))}
@@ -60,5 +57,4 @@ const Wrapper = styled.div`
   background-color: ${COLORS.neutral.lightGrey};
   padding-block: 1rem;
   padding-inline: 0.5rem;
-  position: relative;
 `;

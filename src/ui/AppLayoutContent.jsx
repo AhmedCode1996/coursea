@@ -5,11 +5,13 @@ import { COLORS } from "../constants";
 
 import Sidebar from "./../components/Sidebar/Sidebar";
 import Header from "./../components/Header/Header";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useDispatch } from "react-redux";
 import { fetchCourses } from "../features/courseSlice";
+import LogoutModal from "../components/LogoutModal/LogoutModal";
 
 const AppLayoutContent = () => {
+  const [loggedOut, setLoggedOut] = useState(false);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -17,13 +19,16 @@ const AppLayoutContent = () => {
   }, [dispatch]);
 
   return (
-    <Wrapper>
-      <Sidebar />
-      <HeaderAndContentWrapper>
-        <Header />
-        <Outlet />
-      </HeaderAndContentWrapper>
-    </Wrapper>
+    <>
+      <Wrapper>
+        <Sidebar />
+        <HeaderAndContentWrapper>
+          {loggedOut && <LogoutModal loggedOut={loggedOut} setLoggedOut={setLoggedOut}  />}
+          <Header loggedOut={loggedOut} setLoggedOut={setLoggedOut} />
+          <Outlet />
+        </HeaderAndContentWrapper>
+      </Wrapper>
+    </>
   );
 };
 
@@ -32,7 +37,6 @@ export default AppLayoutContent;
 const Wrapper = styled.div`
   display: grid;
   grid-template-columns: ${240 / 16}rem 1fr;
-  position: relative;
   background-color: ${COLORS.neutral.lightGrey};
   gap: 8px;
 `;
