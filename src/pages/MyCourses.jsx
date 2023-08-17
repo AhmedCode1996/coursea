@@ -15,7 +15,9 @@ const MyCourses = () => {
   const { courses } = useSelector((state) => state.courseSlice);
   const data = useLocation();
   const dispatch = useDispatch();
-  const location = data.pathname.split("/")[2];
+  const location = data.pathname.split("/")[2].replaceAll("-", " ");
+
+  console.log(location);
 
   useEffect(() => {
     dispatch(setLocation(location));

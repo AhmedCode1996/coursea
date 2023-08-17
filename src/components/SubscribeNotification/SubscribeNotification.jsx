@@ -27,9 +27,14 @@ function SubscribeNotification({ setModal }) {
     e.stopPropagation();
     setModal(false);
   };
+
   return (
     <Wrapper onClick={clickHandler}>
-      <Card>
+      <Card
+        onClick={(e) => {
+          e.stopPropagation();
+        }}
+      >
         <Icon>
           <AnimatedIcon icon={planAnimation} />
         </Icon>

@@ -19,6 +19,7 @@
     "@reduxjs/toolkit": "^1.9.5",
     "@supabase/supabase-js": "^2.26.0",
     "framer-motion": "^10.15.2",
+    "lodash.range": "^3.2.0",
     "lottie-react": "^2.4.0",
     "moment": "^2.29.4",
     "moment-duration-format": "^2.3.2",

@@ -9,9 +9,12 @@ import { COLORS } from "../../constants";
 import { motion } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { setLocation } from "../../features/user/userSlice";
+import { setLocation, setUnfollowingList } from "../../features/user/userSlice";
 
 function Mentors() {
+  const { courses } = useSelector(getAllCourses);
+  const { following, unfollowing } = useSelector((state) => state.user);
+
   const data = useLocation();
   const dispatch = useDispatch();
   const location = data.pathname.split("/")[2];
@@ -19,24 +22,52 @@ function Mentors() {
   useEffect(() => {
     dispatch(setLocation(location));
   }, [location, dispatch]);
-  const { courses, loading } = useSelector(getAllCourses);
+
+  useEffect(() => {
+    const unfollowingMentors = courses.map((element) => {
+      const {
+        id,
+        instructor_image: image,
+        instructor_job: job,
+        instructor_name: name,
+      } = element;
+      return {
+        id,
+        image,
+        job,
+        name,
+      };
+    });
+
+    dispatch(setUnfollowingList(unfollowingMentors));
+  }, [courses, dispatch]);
   if (!courses.length) return <CourseSpinner />;
   return (
-    <Wrapper>
-      {courses.map((element, index) => {
-        const { instructor_image, instructor_job, instructor_name, id } =
-          element;
-        return (
-          <Mentor
-            image={instructor_image}
-            job={instructor_job}
-            name={instructor_name}
-            key={id}
-            id={index}
-          />
-        );
-      })}
-    </Wrapper>
+    <>
+      <Wrapper>
+        {unfollowing.map((unfollowedElement, index) => {
+          const { id, name, image, job } = unfollowedElement;
+          return (
+            <motion.div layoutId={id} key={index}>
+              <Mentor id={id} image={image} job={job} name={name} />
+            </motion.div>
+          );
+        })}
+      </Wrapper>
+      <FollowedMentors>
+        <h2>Followed Mentors</h2>
+        <Wrapper>
+          {following.map((followedElement, index) => {
+            const { id, name, image, job } = followedElement;
+            return (
+              <motion.div layoutId={id} key={index}>
+                <Mentor id={id} image={image} job={job} name={name} />
+              </motion.div>
+            );
+          })}
+        </Wrapper>
+      </FollowedMentors>
+    </>
   );
 }
 
@@ -52,3 +83,5 @@ const Wrapper = styled.div`
   padding-block: 1rem;
   padding-inline: 0.5rem;
 `;
+
+const FollowedMentors = styled.div``;

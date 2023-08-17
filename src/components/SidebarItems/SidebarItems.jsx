@@ -20,7 +20,7 @@ function SidebarItems() {
             >
               <ListItem
                 onMouseEnter={() => setNavBackDrop(item.id)}
-                to={`/account/${item.title.split(" ").join("")}`}
+                to={`/account/${item.title.split(" ").join("-")}`}
                 key={item.id}
               >
                 {navBackDrop === item.id && (

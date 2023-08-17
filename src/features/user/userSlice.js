@@ -11,6 +11,7 @@ const initialState = {
   loading: false,
   error: "",
   following: [],
+  unfollowing: [],
   joinedCourses: [],
   plan: "free",
   location: "",
@@ -51,12 +52,21 @@ const userSlice = createSlice({
     },
     setFollow: (state, { payload }) => {
       state.following.push(payload);
+      state.unfollowing = state.unfollowing.filter(
+        (element) => element.id !== payload.id
+      );
     },
     setPlan: (state, { payload }) => {
       state.plan = payload;
     },
     setLocation: (state, { payload }) => {
       state.location = payload;
+    },
+    setUnfollowingList: (state, { payload }) => {
+      state.unfollowing = payload;
+    },
+    clearFollowing: (state) => {
+      state.following = [];
     },
     setLogout: (state) => {
       state.username = "";
@@ -98,6 +108,7 @@ export const {
   setPlan,
   setLogout,
   setLocation,
+  setUnfollowingList,
   joinCourse,
 } = userSlice.actions;
 export default userSlice.reducer;

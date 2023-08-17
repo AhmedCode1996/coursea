@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { styled } from "styled-components";
 
 import { setFollow } from "../../features/user/userSlice";
@@ -8,26 +8,30 @@ import { setFollow } from "../../features/user/userSlice";
 import { COLORS, TYPOGRAPHY } from "../../constants";
 
 function FollowLink({ course }) {
+  const { following, unfollowing } = useSelector((state) => state.user);
   const [isFollowing, setIsFollowing] = useState(false);
   const dispatch = useDispatch();
 
   return (
     <LinkWrapper
-      following={isFollowing}
+      following={isFollowing.toString()}
       onClick={() => {
         if (!isFollowing) {
           dispatch(
             setFollow({
-              name: course.instructor_name,
-              job: course.instructor_job,
-              image: course.instructor_image,
+              id: course.id,
+              name: course.name,
+              job: course.job,
+              image: course.image,
             })
           );
+          console.log(following);
+          console.log(unfollowing);
         }
         setIsFollowing(!isFollowing);
       }}
     >
-      {isFollowing ? "follow" : "followed"}
+      {isFollowing ? "followed" : "follow"}
     </LinkWrapper>
   );
 }
@@ -36,7 +40,9 @@ export default FollowLink;
 
 const LinkWrapper = styled.button`
   color: ${(props) =>
-    props.following ? COLORS.seconday.blue : COLORS.neutral.darkGrey};
+    props.following === "true"
+      ? COLORS.neutral.darkGrey
+      : COLORS.seconday.blue};
   text-transform: capitalize;
   font-size: ${TYPOGRAPHY.sm};
   cursor: pointer;

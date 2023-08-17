@@ -44,6 +44,7 @@ const Course = () => {
     );
     setSelectedCourse(selectedCourse);
   }, [courseid, courses]);
+  console.log(selectedCourse);
 
   return (
     <FullCourseWrapper>

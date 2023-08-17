@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 
 function Input(props) {
   const { email, password, authenticated, avatar } = useSelector((state) => state.user);
-console.log(avatar);
   const [value, setValue] = useState("");
   const id = useId();
 
