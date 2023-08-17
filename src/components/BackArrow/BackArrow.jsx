@@ -18,7 +18,7 @@ function BackArrow() {
   return (
     <ArrowWrapper
       as={motion.div}
-      transition={{ stiffness: 50 }}
+      transition={{ type: "spring", stiffness: 50, damping: 10 }}
       initial={{ opacity: 0, y: -70 }}
       animate={{ opacity: 1, y: 0 }}
       onMouseLeave={() => setIsAnimating(false)}

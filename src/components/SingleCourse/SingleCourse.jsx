@@ -14,8 +14,11 @@ import intermediateRange from "./../../assets/intermediateRange.png";
 import masterRange from "./../../assets/masterRange.png";
 import { motion } from "framer-motion";
 import { formatModuleTime } from "../../utils/displayFormattedTime";
+import { useSelector } from "react-redux";
 
 function SingleCourse(props) {
+  const { location } = useSelector((state) => state.user);
+
   const {
     id,
     index,
@@ -47,7 +50,7 @@ function SingleCourse(props) {
         damping: 7,
       }}
     >
-      <CourseWrapper to={`/account/${id}`}>
+      <CourseWrapper location={location} to={`/account/${id}`}>
         <CourseImage>
           <CourseAvatar src={course_image} title={title} />
           <Level>
@@ -62,11 +65,13 @@ function SingleCourse(props) {
             <InstructorName>{instructor_name.substring(0, 10)}</InstructorName>
             <CourseRating image={star}>{rating.toFixed(1)}</CourseRating>
           </CourseInfo>
-          <CourseDetails>
-            <Students image={user}>{students} Student</Students>
-            <Modules image={document}>{sections} Module</Modules>
-            <Duration image={clock}>{formatModuleTime(duration)}</Duration>
-          </CourseDetails>
+          {location === "overview" || (
+            <CourseDetails>
+              <Students image={user}>{students} Student</Students>
+              <Modules image={document}>{sections} Module</Modules>
+              <Duration image={clock}>{formatModuleTime(duration)}</Duration>
+            </CourseDetails>
+          )}
         </CourseTotalInformation>
       </CourseWrapper>
     </motion.div>
@@ -80,6 +85,7 @@ const CourseWrapper = styled(Link)`
   --vertical-gap: ${20 / 16}rem;
   display: flex;
   flex-direction: column;
+  min-width: ${(props) => props.location && 250}px;
   gap: var(--vertical-gap);
   padding: var(--padding);
   border-radius: 1rem;

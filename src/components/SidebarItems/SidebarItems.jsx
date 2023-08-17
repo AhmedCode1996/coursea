@@ -26,6 +26,7 @@ function SidebarItems() {
                 {navBackDrop === item.id && (
                   <BackdropItem
                     initial={{ borderRadius: 16 }}
+                    transition={{ type: "spring", stiffness: 60, damping: 10 }}
                     layoutId={layoutId}
                   />
                 )}

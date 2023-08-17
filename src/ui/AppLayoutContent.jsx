@@ -23,7 +23,9 @@ const AppLayoutContent = () => {
       <Wrapper>
         <Sidebar />
         <HeaderAndContentWrapper>
-          {loggedOut && <LogoutModal loggedOut={loggedOut} setLoggedOut={setLoggedOut}  />}
+          {loggedOut && (
+            <LogoutModal loggedOut={loggedOut} setLoggedOut={setLoggedOut} />
+          )}
           <Header loggedOut={loggedOut} setLoggedOut={setLoggedOut} />
           <Outlet />
         </HeaderAndContentWrapper>
@@ -44,4 +46,5 @@ const Wrapper = styled.div`
 
 const HeaderAndContentWrapper = styled.div`
   padding: 1rem;
+  min-width: 100%;
 `;

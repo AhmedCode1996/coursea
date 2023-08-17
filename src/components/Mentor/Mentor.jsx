@@ -15,6 +15,7 @@ function Mentor({ image, job, name, id }) {
         bounceStiffness: 20,
         bounceDamping: 4,
       }}
+      transition={{ type: "spring" }}
       initial={{ opacity: 0, scale: 0.6 }}
       animate={{ opacity: 1, scale: 1 }}
       whileHover={{

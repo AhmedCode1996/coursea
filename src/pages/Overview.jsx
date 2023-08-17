@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/no-unescaped-entities */
 
 // import { styled } from "styled-components";
@@ -30,5 +31,5 @@ const Overview = () => {
 export default Overview;
 
 const Wrapper = styled.div`
-  width: 100%;
+  /* min-width: 100%; */
 `;

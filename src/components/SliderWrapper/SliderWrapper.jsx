@@ -55,9 +55,9 @@ function SliderWrapper({ title, children }) {
 export default SliderWrapper;
 
 const OuterWrapper = styled.div`
-  width: 65rem;
   padding: 1rem;
   overflow: hidden;
+  margin-inline: 1%;
 `;
 const InnerWrapper = styled.div`
   display: flex;
