@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { styled } from "styled-components";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 import { getAllCourses } from "../features/courseSlice";
 
@@ -16,8 +16,10 @@ import CourseCardInformation from "../components/CourseCardInformation/CourseCar
 import CourseCardModules from "../components/CourseCardModules/CourseCardModules";
 import JoinButton from "../components/JoinButton/JoinButton";
 import CourseSpinner from "../components/CourseSpinner/CourseSpinner";
+import { setLocation } from "../features/user/userSlice";
 
 const Course = () => {
+  const dispatch = useDispatch();
   const [videoIndex, setVideoIndex] = useState(4);
   const [completed, setCompleted] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState({});
@@ -31,6 +33,10 @@ const Course = () => {
   const handleVideoCompleted = (completed) => {
     setCompleted(completed);
   };
+
+  useEffect(() => {
+    dispatch(setLocation("course"));
+  }, [dispatch]);
 
   useEffect(() => {
     const selectedCourse = courses.find(

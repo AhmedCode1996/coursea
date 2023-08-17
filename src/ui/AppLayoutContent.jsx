@@ -39,6 +39,7 @@ const Wrapper = styled.div`
   grid-template-columns: ${240 / 16}rem 1fr;
   background-color: ${COLORS.neutral.lightGrey};
   gap: 8px;
+  position: relative;
 `;
 
 const HeaderAndContentWrapper = styled.div`

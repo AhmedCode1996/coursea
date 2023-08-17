@@ -15,7 +15,7 @@ function Header({ LoggedOut, setLoggedOut }) {
     <Wrapper>
       <HeadingAndArrow>
         <Heading>{location}</Heading>
-        <BackArrow />
+        {location !== "overview" && <BackArrow />}
       </HeadingAndArrow>
       <Logout onClick={() => setLoggedOut(true)}>
         <AnimatedIcon icon={animatedLogout} />

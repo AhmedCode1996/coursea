@@ -39,13 +39,12 @@ function SingleCourse(props) {
 
   return (
     <motion.div
-      initial={{ opacity: 0, scale: 0.6 }}
+      initial={{ opacity: 0, scale: 0.8 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         type: "spring",
-        stiffness: 30,
-        damping: 10,
-        delay: index * 0.1,
+        stiffness: 40,
+        damping: 7,
       }}
     >
       <CourseWrapper to={`/account/${id}`}>
@@ -84,8 +83,6 @@ const CourseWrapper = styled(Link)`
   gap: var(--vertical-gap);
   padding: var(--padding);
   border-radius: 1rem;
-  max-width: ${350 / 16}rem;
-  width: 350px;
   background-color: ${COLORS.neutral.white};
   transition: all 0.5s;
   cursor: pointer;
@@ -163,7 +160,8 @@ const CourseDetailsSingleItem = styled.span`
   align-items: center;
   gap: 0.5rem;
   color: ${COLORS.neutral.black};
-  font-size: ${TYPOGRAPHY.base};
+  font-weight: bold;
+  font-size: ${TYPOGRAPHY.sm};
   font-weight: 500;
 
   &::before {

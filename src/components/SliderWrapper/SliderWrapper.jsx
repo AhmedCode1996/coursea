@@ -83,14 +83,18 @@ const ActionButtons = styled.div`
 `;
 
 const BaseButton = styled.button`
-  width: ${50 / 16}rem;
-  height: ${50 / 16}rem;
+  width: ${40 / 16}rem;
+  height: ${40 / 16}rem;
   border-radius: 50%;
   border: 2px dashed ${COLORS.primary};
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
+
+  & > * {
+    transform: translateX(-20%);
+  }
 `;
 const PrevButton = styled(BaseButton)`
   transform: rotateY(180deg);

@@ -9,6 +9,7 @@ import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 
 import warningIcon from "../../assets/warning.json";
 import { setPlan } from "../../features/user/userSlice";
+import { motion } from "framer-motion";
 
 function Warning({ setPremium, planType, setModal }) {
   const { plan } = useSelector((state) => state.user);
@@ -27,7 +28,11 @@ function Warning({ setPremium, planType, setModal }) {
     setPremium(false);
   };
   return (
-    <Wrapper onClick={clickHandler}>
+    <Wrapper
+      onClick={clickHandler}
+      transition={{ stiffness: 100 }}
+      as={motion.div}
+    >
       <Card>
         <Icon>
           <AnimatedIcon icon={warningIcon} />
@@ -42,7 +47,7 @@ function Warning({ setPremium, planType, setModal }) {
             onClick={() => {
               dispatch(setPlan(planType));
               setPremium(false);
-              setModal(true)
+              setModal(true);
             }}
           >
             subscribe

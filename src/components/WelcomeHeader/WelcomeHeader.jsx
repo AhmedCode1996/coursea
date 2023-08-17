@@ -16,7 +16,11 @@ const WelcomeHeader = () => {
   return (
     <Wrapper>
       {welcome && (
-        <WelcomeWrapper as={motion.div}>
+        <WelcomeWrapper
+          transition={{ stiffness: 50, damping: 10 }}
+          animate={{ x: 50, scale: 1.25 }}
+          as={motion.div}
+        >
           <AnimatedIcon icon={animatedWelcome} />
         </WelcomeWrapper>
       )}

@@ -3,18 +3,32 @@ import { styled } from "styled-components";
 import sidebarData from "../../data/sidebarData";
 import { COLORS, TYPOGRAPHY } from "../../constants";
 import { Link } from "react-router-dom";
+import { useId, useState } from "react";
+import { motion } from "framer-motion";
 
 function SidebarItems() {
+  const layoutId = useId();
+  const [navBackDrop, setNavBackDrop] = useState(null);
   return (
     <Wrapper>
-      <List>
+      <List onMouseLeave={() => setNavBackDrop(null)}>
         {sidebarData.map((item) => {
           return (
-            <li key={item.id}>
+            <li
+              style={{ zIndex: navBackDrop === item.id ? 1 : 2 }}
+              key={item.id}
+            >
               <ListItem
+                onMouseEnter={() => setNavBackDrop(item.id)}
                 to={`/account/${item.title.split(" ").join("")}`}
                 key={item.id}
               >
+                {navBackDrop === item.id && (
+                  <BackdropItem
+                    initial={{ borderRadius: 16 }}
+                    layoutId={layoutId}
+                  />
+                )}
                 <img src={item.lightIcon} title={item.title} />
                 <span>{item.title}</span>
               </ListItem>
@@ -36,11 +50,7 @@ const List = styled.ul`
   margin-bottom: auto;
 
   li {
-    transition: all 0.3s;
-  }
-  & li:active {
-    transform: translate(2px, -3px) scale(1.03);
-    transition: all 0.3s;
+    position: relative;
   }
 `;
 const ListItem = styled(Link)`
@@ -50,12 +60,15 @@ const ListItem = styled(Link)`
   gap: ${20 / 16}rem;
   padding-inline: 1.5rem;
   padding-block: 0.8rem;
-  border-radius: 1rem;
   transition: all 0.25s;
+  position: relative;
+  border-radius: 1rem;
   cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
 
   &:hover {
-    background-color: ${COLORS.neutral.softGrey};
+    opacity: 1;
   }
 
   img {
@@ -69,4 +82,11 @@ const ListItem = styled(Link)`
     font-size: ${TYPOGRAPHY.base};
     text-transform: capitalize;
   }
+`;
+
+const BackdropItem = styled(motion.div)`
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  background-color: ${COLORS.neutral.softGrey};
 `;

@@ -7,7 +7,7 @@ import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../../constants";
 
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 
-import warningIcon from "../../assets/warning.json";
+import unhappy from "../../assets/unhappy.json";
 import { setLogout, setPlan } from "../../features/user/userSlice";
 import { supabase } from "../../services/supabase";
 import { useNavigate } from "react-router-dom";
@@ -34,9 +34,9 @@ function LogoutModal({ loggedOut, setLoggedOut }) {
     <Wrapper onClick={clickHandler}>
       <Card>
         <Icon>
-          <AnimatedIcon icon={warningIcon} />
+          <AnimatedIcon icon={unhappy} />
         </Icon>
-        <Message>are you sure that you wanted to logout ?</Message>
+        <Message>are you sure you wanted to logout ?</Message>
         <ActionButtons>
           <Cancel onClick={clickHandler}>cancel</Cancel>
           <Start onClick={clickLogoutHandler}>logout</Start>
@@ -73,7 +73,7 @@ const Card = styled.div`
 `;
 
 const Icon = styled.div`
-  max-width: ${200 / 16}rem;
+  max-width: ${100 / 16}rem;
 `;
 
 const Message = styled.div`

@@ -44,7 +44,7 @@ export default Courses;
 const Wrapper = styled.div`
   --gap: ${24 / 16}rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
   justify-items: center;
   gap: var(--gap);
   background-color: ${COLORS.neutral.lightGrey};
