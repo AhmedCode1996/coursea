@@ -15,7 +15,7 @@ const MyCourses = () => {
   const { courses } = useSelector((state) => state.courseSlice);
   const data = useLocation();
   const dispatch = useDispatch();
-  const location = data.pathname.split("/")[2].replaceAll("-", " ");
+  const location = data.pathname.split("/")[2];
 
   console.log(location);
 

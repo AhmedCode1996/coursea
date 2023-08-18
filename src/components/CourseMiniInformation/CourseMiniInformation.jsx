@@ -5,6 +5,18 @@ import FollowLink from "../FollowLink/FollowLink";
 import fallingStar from "./../../assets/fallingStar.png";
 
 function CourseMiniInformation({ courseInformation }) {
+  const {
+    id,
+    instructor_name: name,
+    instructor_job: job,
+    instructor_image: image,
+  } = courseInformation;
+  const instructorInformation = {
+    id,
+    name,
+    job,
+    image,
+  };
   return (
     <>
       <Title>{courseInformation.title}</Title>
@@ -13,7 +25,7 @@ function CourseMiniInformation({ courseInformation }) {
           <InstructorAvatar src={courseInformation.instructor_image} />
           <InstructorName>{courseInformation.instructor_name}</InstructorName>
           <InstructorJob>{courseInformation.instructor_job}</InstructorJob>
-          <FollowLink course={courseInformation} />
+          <FollowLink course={instructorInformation} />
         </InstructorInfo>
         <CourseRating>
           <span>

@@ -6,7 +6,7 @@ import Mentor from "../Mentor/Mentor";
 import CourseSpinner from "./../CourseSpinner/CourseSpinner";
 import { styled } from "styled-components";
 import { COLORS } from "../../constants";
-import { motion } from "framer-motion";
+import { motion, LayoutGroup } from "framer-motion";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { setLocation, setUnfollowingList } from "../../features/user/userSlice";
@@ -43,7 +43,7 @@ function Mentors() {
   }, [courses, dispatch]);
   if (!courses.length) return <CourseSpinner />;
   return (
-    <>
+    <LayoutGroup>
       <Wrapper>
         {unfollowing.map((unfollowedElement, index) => {
           const { id, name, image, job } = unfollowedElement;
@@ -55,7 +55,7 @@ function Mentors() {
         })}
       </Wrapper>
       <FollowedMentors>
-        <h2>Followed Mentors</h2>
+        <h2>mentors that you follow</h2>
         <Wrapper>
           {following.map((followedElement, index) => {
             const { id, name, image, job } = followedElement;
@@ -67,7 +67,7 @@ function Mentors() {
           })}
         </Wrapper>
       </FollowedMentors>
-    </>
+    </LayoutGroup>
   );
 }
 
@@ -84,4 +84,10 @@ const Wrapper = styled.div`
   padding-inline: 0.5rem;
 `;
 
-const FollowedMentors = styled.div``;
+const FollowedMentors = styled.div`
+  margin-top: 3rem;
+  > h2 {
+    text-transform: capitalize;
+    padding-inline: 2.5rem;
+  }
+`;

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { styled } from "styled-components";
 
 import { setFollow } from "../../features/user/userSlice";
@@ -8,7 +8,6 @@ import { setFollow } from "../../features/user/userSlice";
 import { COLORS, TYPOGRAPHY } from "../../constants";
 
 function FollowLink({ course }) {
-  const { following, unfollowing } = useSelector((state) => state.user);
   const [isFollowing, setIsFollowing] = useState(false);
   const dispatch = useDispatch();
 
@@ -25,8 +24,6 @@ function FollowLink({ course }) {
               image: course.image,
             })
           );
-          console.log(following);
-          console.log(unfollowing);
         }
         setIsFollowing(!isFollowing);
       }}

@@ -65,7 +65,8 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.3);
-  position: absolute;
+  position: fixed;
+  z-index: 10;
   inset: 0;
 `;
 

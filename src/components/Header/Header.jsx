@@ -7,6 +7,7 @@ import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import animatedAvatar from "./../../assets/animatedAvatar.json";
 import animatedLogout from "./../../assets/logout.json";
 import BackArrow from "../BackArrow/BackArrow";
+import { COLORS } from "../../constants";
 
 function Header({ LoggedOut, setLoggedOut }) {
   const { avatar, location } = useSelector((state) => state.user);
@@ -37,7 +38,14 @@ const Wrapper = styled.header`
   display: flex;
   align-items: center;
   gap: 1rem;
-  margin-bottom: 2rem;
+  margin: -1rem -1rem 2rem -1rem;
+  padding-left: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: ${COLORS.neutral.white};
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
+  border-radius: 0.8rem;
 
   & > *:not(:first-child) {
     cursor: pointer;
