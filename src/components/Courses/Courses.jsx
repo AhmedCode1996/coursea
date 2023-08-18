@@ -8,6 +8,10 @@ import { fetchCourses, getAllCourses } from "../../features/courseSlice";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { setLocation } from "../../features/user/userSlice";
+import SearchInput from "../SearchInput/SearchInput";
+import LevelFilterInput from "../LevelFilterInput/LevelFilterInput";
+import SortFilterInput from "../SortFilterInput/SortFilterInput";
+import CategoryFilterInput from "../CategoryFilterInput/CategoryFilterInput";
 // import { useCourseContext } from "../../hooks/useCourseProvider";
 // import { useEffect } from "react";
 // import { fetchApiCourses } from "../../features/productApiCall";
@@ -15,7 +19,7 @@ import { setLocation } from "../../features/user/userSlice";
 function Courses() {
   const data = useLocation();
   const dispatch = useDispatch();
-  const location = data.pathname.split("/")[2];
+  const location = data.pathname.split("/")[2].replaceAll("-", " ");
 
   useEffect(() => {
     dispatch(setLocation(location));
@@ -31,15 +35,34 @@ function Courses() {
   if (loading) return <Spinner />;
 
   return (
-    <Wrapper>
-      {courses.map((element, index) => (
-        <SingleCourse index={index} key={element.id} {...element} />
-      ))}
-    </Wrapper>
+    <>
+      <FilterBar>
+        <SearchInput />
+        <LevelFilterInput />
+        <SortFilterInput />
+        <CategoryFilterInput />
+      </FilterBar>
+      <Wrapper>
+        {courses.map((element, index) => (
+          <SingleCourse index={index} key={element.id} {...element} />
+        ))}
+      </Wrapper>
+    </>
   );
 }
 
 export default Courses;
+
+const FilterBar = styled.div`
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+
+  & > *:first-child {
+    flex: 1;
+    margin-right: auto;
+  }
+`;
 
 const Wrapper = styled.div`
   --gap: ${24 / 16}rem;

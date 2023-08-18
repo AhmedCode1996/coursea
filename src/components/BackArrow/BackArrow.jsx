@@ -21,6 +21,7 @@ function BackArrow() {
       transition={{ type: "spring", stiffness: 50, damping: 10 }}
       initial={{ opacity: 0, y: -70 }}
       animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -70 }}
       onMouseLeave={() => setIsAnimating(false)}
       onMouseEnter={() => setIsAnimating(true)}
       onClick={() => navigate("/account/overview")}

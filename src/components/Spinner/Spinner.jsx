@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   position: absolute;
+  z-index: 10;
   inset: 0;
   background-color: ${COLORS.transparent.black10};
 `;

@@ -40,7 +40,7 @@ function AuthButton(props) {
         navigate("/");
         setClicked(false);
       } else {
-        navigate("/account");
+        navigate("/account/explore-courses");
         setClicked(false);
       }
     }, 2000);

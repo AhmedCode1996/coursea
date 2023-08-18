@@ -59,7 +59,7 @@ function SubscribeNotification({ setModal }) {
           <Start
             onClick={() => {
               setModal(false);
-              navigate("/account/overview");
+              navigate("/account/explore-courses");
             }}
           >
             start learning

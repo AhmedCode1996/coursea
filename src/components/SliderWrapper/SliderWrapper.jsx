@@ -63,6 +63,7 @@ const InnerWrapper = styled.div`
   display: flex;
   align-items: flex-start;
   gap: 1rem;
+
 `;
 const HeadingAndActionWrapper = styled.div`
   display: flex;

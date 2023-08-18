@@ -45,7 +45,7 @@ const Wrapper = styled.header`
   z-index: 10;
   background-color: ${COLORS.neutral.white};
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.09);
-  border-radius: 0.8rem;
+  border-radius: 1rem;
 
   & > *:not(:first-child) {
     cursor: pointer;

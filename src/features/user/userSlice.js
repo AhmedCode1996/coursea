@@ -15,6 +15,7 @@ const initialState = {
   joinedCourses: [],
   plan: "free",
   location: "",
+  toggleSidebar: false,
 };
 
 export const createUser = createAsyncThunk(
@@ -81,6 +82,9 @@ const userSlice = createSlice({
       if (state.joinedCourses.includes(payload)) return;
       state.joinedCourses.push(payload);
     },
+    setToggleSidebar: (state) => {
+      state.toggleSidebar = !state.toggleSidebar;
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(createUser.pending, (state) => {
@@ -110,5 +114,6 @@ export const {
   setLocation,
   setUnfollowingList,
   joinCourse,
+  setToggleSidebar
 } = userSlice.actions;
 export default userSlice.reducer;

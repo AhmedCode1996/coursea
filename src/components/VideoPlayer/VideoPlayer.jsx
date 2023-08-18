@@ -151,7 +151,7 @@ const ControlBar = styled.div`
   background-color: white;
   height: 3rem;
   width: 90%;
-  z-index: 100;
+  z-index: 1;
   border-radius: 0.5rem;
 
   & img {

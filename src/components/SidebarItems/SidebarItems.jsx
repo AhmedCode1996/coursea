@@ -5,12 +5,15 @@ import { COLORS, TYPOGRAPHY } from "../../constants";
 import { Link } from "react-router-dom";
 import { useId, useState } from "react";
 import { motion } from "framer-motion";
+import { useSelector } from "react-redux";
 
 function SidebarItems() {
+  const { toggleSidebar } = useSelector((state) => state.user);
+
   const layoutId = useId();
   const [navBackDrop, setNavBackDrop] = useState(null);
   return (
-    <Wrapper>
+    <Wrapper toggle={toggleSidebar}>
       <List onMouseLeave={() => setNavBackDrop(null)}>
         {sidebarData.map((item) => {
           return (
@@ -20,7 +23,7 @@ function SidebarItems() {
             >
               <ListItem
                 onMouseEnter={() => setNavBackDrop(item.id)}
-                to={`/account/${item.title.split(" ").join("-")}`}
+                to={`/account/${item.slug}`}
                 key={item.id}
               >
                 {navBackDrop === item.id && (
@@ -31,7 +34,7 @@ function SidebarItems() {
                   />
                 )}
                 <img src={item.lightIcon} title={item.title} />
-                <span>{item.title}</span>
+                {toggleSidebar || <span>{item.title}</span>}
               </ListItem>
             </li>
           );
