@@ -11,19 +11,29 @@ import { useDispatch, useSelector } from "react-redux";
 import { setToggleSidebar } from "../../features/user/userSlice";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "@mui/material";
+import { useEffect } from "react";
 function Sidebar() {
   const { toggleSidebar } = useSelector((state) => state.user);
   const dispatch = useDispatch();
+  const matches = useMediaQuery("(max-width:950px)");
+  useEffect(() => {
+    if (matches) {
+      dispatch(setToggleSidebar(true));
+    } else {
+      dispatch(setToggleSidebar(false));
+    }
+  }, [dispatch, matches]);
   return (
     <Wrapper
       as={motion.div}
       layout
-      transition={{ type: "spring", stiffness: 80 }}
+      transition={{ type: "spring", stiffness: 60 }}
       toggle={toggleSidebar}
     >
       <SideIcon
         toggle={toggleSidebar}
-        onClick={() => dispatch(setToggleSidebar())}
+        onClick={() => dispatch(setToggleSidebar(!toggleSidebar))}
       >
         <AnimatedIcon icon={hamburgerMenu} />
       </SideIcon>

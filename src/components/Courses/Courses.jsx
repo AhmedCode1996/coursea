@@ -12,11 +12,13 @@ import SearchInput from "../SearchInput/SearchInput";
 import LevelFilterInput from "../LevelFilterInput/LevelFilterInput";
 import SortFilterInput from "../SortFilterInput/SortFilterInput";
 import CategoryFilterInput from "../CategoryFilterInput/CategoryFilterInput";
+import { useMediaQuery } from "@mui/material";
 // import { useCourseContext } from "../../hooks/useCourseProvider";
 // import { useEffect } from "react";
 // import { fetchApiCourses } from "../../features/productApiCall";
 
 function Courses() {
+  const matches = useMediaQuery("(max-width:1050px)");
   const data = useLocation();
   const dispatch = useDispatch();
   const location = data.pathname.split("/")[2].replaceAll("-", " ");
@@ -36,7 +38,7 @@ function Courses() {
 
   return (
     <>
-      <FilterBar>
+      <FilterBar matches={matches}>
         <SearchInput />
         <LevelFilterInput />
         <SortFilterInput />
@@ -57,9 +59,11 @@ const FilterBar = styled.div`
   display: flex;
   gap: 1rem;
   margin-bottom: 1.5rem;
+  flex-wrap: wrap;
 
   & > *:first-child {
-    flex: 1;
+    width: ${(props) => (props.matches ? "100%" : null)};
+    flex: ${(props) => (props.matches ? "none" : 1)};
     margin-right: auto;
   }
 `;

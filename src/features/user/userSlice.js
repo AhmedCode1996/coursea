@@ -82,8 +82,8 @@ const userSlice = createSlice({
       if (state.joinedCourses.includes(payload)) return;
       state.joinedCourses.push(payload);
     },
-    setToggleSidebar: (state) => {
-      state.toggleSidebar = !state.toggleSidebar;
+    setToggleSidebar: (state, { payload }) => {
+      state.toggleSidebar = payload;
     },
   },
   extraReducers: (builder) => {
@@ -114,6 +114,6 @@ export const {
   setLocation,
   setUnfollowingList,
   joinCourse,
-  setToggleSidebar
+  setToggleSidebar,
 } = userSlice.actions;
 export default userSlice.reducer;

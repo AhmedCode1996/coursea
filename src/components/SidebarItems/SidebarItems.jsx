@@ -17,11 +17,13 @@ function SidebarItems() {
       <List onMouseLeave={() => setNavBackDrop(null)}>
         {sidebarData.map((item) => {
           return (
-            <li
+            <ListItem
               style={{ zIndex: navBackDrop === item.id ? 1 : 2 }}
               key={item.id}
             >
-              <ListItem
+              <ListItemLink
+                as={motion.a}
+                layout
                 onMouseEnter={() => setNavBackDrop(item.id)}
                 to={`/account/${item.slug}`}
                 key={item.id}
@@ -33,10 +35,16 @@ function SidebarItems() {
                     layoutId={layoutId}
                   />
                 )}
-                <img src={item.lightIcon} title={item.title} />
-                {toggleSidebar || <span>{item.title}</span>}
-              </ListItem>
-            </li>
+                <LinkImage
+                  layout="position"
+                  src={item.lightIcon}
+                  title={item.title}
+                />
+                {toggleSidebar || (
+                  <LinkTitle layout="position">{item.title}</LinkTitle>
+                )}
+              </ListItemLink>
+            </ListItem>
           );
         })}
       </List>
@@ -57,7 +65,8 @@ const List = styled.ul`
     position: relative;
   }
 `;
-const ListItem = styled(Link)`
+const ListItem = styled(motion.li)``;
+const ListItemLink = styled(Link)`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -74,18 +83,17 @@ const ListItem = styled(Link)`
   &:hover {
     opacity: 1;
   }
+`;
 
-  img {
-    width: ${20 / 16}rem;
-    height: ${20 / 16}rem;
-  }
-
-  span {
-    margin-right: auto;
-    color: ${COLORS.neutral.darkGrey};
-    font-size: ${TYPOGRAPHY.base};
-    text-transform: capitalize;
-  }
+const LinkTitle = styled(motion.span)`
+  margin-right: auto;
+  color: ${COLORS.neutral.darkGrey};
+  font-size: ${TYPOGRAPHY.base};
+  text-transform: capitalize;
+`;
+const LinkImage = styled(motion.img)`
+  width: ${20 / 16}rem;
+  height: ${20 / 16}rem;
 `;
 
 const BackdropItem = styled(motion.div)`
