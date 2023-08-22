@@ -1,12 +1,14 @@
 /* eslint-disable react/prop-types */
 import { styled } from "styled-components";
-import FacebookIcon from "../../assets/facebook.png";
-import GoogleIcon from "../../assets/Google.png";
+import facebookIcon from "./../../assets/facebook.png";
+import googleIcon from "./../../assets/google.png";
+
 import { TYPOGRAPHY } from "../../constants";
+
 function SocialAuth(props) {
   let AuthType = "";
-  if (props.type === "google") AuthType = GoogleIcon;
-  if (props.type === "facebook") AuthType = FacebookIcon;
+  if (props.type === "google") AuthType = googleIcon;
+  if (props.type === "facebook") AuthType = facebookIcon;
   return (
     <Wrapper>
       <img src={AuthType} />

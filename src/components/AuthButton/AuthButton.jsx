@@ -7,9 +7,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import AuthSpinner from "../AuthSpinner/AuthSpinner";
-import { toast } from "react-toastify";
-import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
-import toastSuccess from "./../../assets/toastSuccess.json";
 
 function AuthButton(props) {
   const [clicked, setClicked] = useState(false);
@@ -27,13 +24,6 @@ function AuthButton(props) {
       password,
     };
 
-    toast.success("account created successfully", {
-      icon: ({ theme, type }) => (
-        <div>
-          <AnimatedIcon icon={toastSuccess} />
-        </div>
-      ),
-    });
     setTimeout(() => {
       if (!authenticated) {
         dispatch(createUser(userCredentials));
