@@ -1,8 +1,7 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable no-undef */
 import { styled } from "styled-components";
-import FacebookIcon from "./../../assets/facebook.png";
-import GoogleIcon from "./../../assets/Google.png";
+import FacebookIcon from "../../assets/facebook.png";
+import GoogleIcon from "../../assets/Google.png";
 import { TYPOGRAPHY } from "../../constants";
 function SocialAuth(props) {
   let AuthType = "";
