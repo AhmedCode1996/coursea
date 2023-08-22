@@ -17,8 +17,6 @@ const MyCourses = () => {
   const dispatch = useDispatch();
   const location = data.pathname.split("/")[2].replaceAll("-", " ");
 
-  console.log(location);
-
   useEffect(() => {
     dispatch(setLocation(location));
   }, [location, dispatch]);
@@ -37,7 +35,14 @@ const MyCourses = () => {
     .filter(Boolean);
 
   if (!targetCourses.length) {
-    return <CourseSpinner />;
+    return (
+      <>
+        <h2 style={{ textTransform: "capitalize" }}>
+          add courses first to your dashboard
+        </h2>
+        <CourseSpinner />;
+      </>
+    );
   }
   return (
     <Wrapper>

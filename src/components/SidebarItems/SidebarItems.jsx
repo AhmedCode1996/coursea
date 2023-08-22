@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { styled } from "styled-components";
 import sidebarData from "../../data/sidebarData";
 import { COLORS, TYPOGRAPHY } from "../../constants";
@@ -18,15 +17,13 @@ function SidebarItems() {
         {sidebarData.map((item) => {
           return (
             <ListItem
-              style={{ zIndex: navBackDrop === item.id ? 1 : 2 }}
               key={item.id}
+              style={{ zIndex: navBackDrop === item.id ? 1 : 2 }}
+              layout
             >
               <ListItemLink
-                as={motion.a}
-                layout
                 onMouseEnter={() => setNavBackDrop(item.id)}
                 to={`/account/${item.slug}`}
-                key={item.id}
               >
                 {navBackDrop === item.id && (
                   <BackdropItem
