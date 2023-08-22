@@ -24,7 +24,7 @@ function LogoutModal({ loggedOut, setLoggedOut }) {
     logout();
     dispatch(setLogout());
     setLoggedOut(false);
-    navigate("/signup");
+    navigate("/");
   };
   const clickHandler = (e) => {
     e.stopPropagation();
