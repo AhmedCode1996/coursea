@@ -47,8 +47,8 @@ function SingleCourse(props) {
       animate={{ opacity: 1, scale: 1 }}
       transition={{
         type: "spring",
-        stiffness: 40,
-        damping: 7,
+        stiffness: 50,
+        damping: 15,
       }}
     >
       <CourseWrapper location={location} to={`/account/${id}`}>
