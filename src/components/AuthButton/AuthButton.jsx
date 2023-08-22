@@ -27,7 +27,7 @@ function AuthButton(props) {
     setTimeout(() => {
       if (!authenticated) {
         dispatch(createUser(userCredentials));
-        navigate("/");
+        navigate("/signin");
         setClicked(false);
       } else {
         navigate("/account/explore-courses");
