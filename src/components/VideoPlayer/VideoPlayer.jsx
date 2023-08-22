@@ -11,7 +11,7 @@ import volumbeButton from "./../../assets/volume.svg";
 import screenMirroringButton from "./../../assets/screenmirroring.svg";
 import { displayFormattedTime } from "../../utils/displayFormattedTime";
 
-function VideoPlayer({ videoUrl, handleVideoCompleted }) {
+function VideoPlayer({ videoUrl, handleVideoCompleted, selectedCourse }) {
   const [isPlaying, setIsPlaying] = useState(false);
   const [completed, setCompleted] = useState(false);
   const [videoFullDuration, setVideoFullDuration] = useState(0);
@@ -99,7 +99,9 @@ function VideoPlayer({ videoUrl, handleVideoCompleted }) {
             }%`
           );
           handleVideoCompleted(videoRef.current.ended);
-          setCompleted(videoRef.current.ended);
+          setCompleted((prev) => {
+            return videoRef.current.ended;
+          });
         }}
         onClick={handlePlayPauseClick}
         ref={elementRef}

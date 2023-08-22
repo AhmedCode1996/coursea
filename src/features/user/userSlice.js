@@ -13,6 +13,7 @@ const initialState = {
   following: [],
   unfollowing: [],
   joinedCourses: [],
+  completedCourse: [],
   plan: "free",
   location: "",
   toggleSidebar: false,

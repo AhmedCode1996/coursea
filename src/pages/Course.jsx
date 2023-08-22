@@ -20,7 +20,7 @@ import { setLocation } from "../features/user/userSlice";
 
 const Course = () => {
   const dispatch = useDispatch();
-  const [videoIndex, setVideoIndex] = useState(4);
+  const [videoIndex, setVideoIndex] = useState(0);
   const [completed, setCompleted] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState({});
   const { courseid } = useParams();
@@ -34,6 +34,13 @@ const Course = () => {
     setCompleted(completed);
   };
 
+  const handleCompletedCourse = () => {
+    const targetCourse = {
+      course: selectedCourse.id,
+      completedVideos: [],
+    };
+  };
+
   useEffect(() => {
     dispatch(setLocation("course"));
   }, [dispatch]);
@@ -44,7 +51,6 @@ const Course = () => {
     );
     setSelectedCourse(selectedCourse);
   }, [courseid, courses]);
-  console.log(selectedCourse);
 
   return (
     <FullCourseWrapper>
@@ -52,6 +58,7 @@ const Course = () => {
         <>
           <CourseWrapper>
             <VideoPlayer
+              selectedCourse={selectedCourse}
               handleVideoCompleted={handleVideoCompleted}
               videoUrl={selectedCourse.modules[videoIndex].url}
             />
