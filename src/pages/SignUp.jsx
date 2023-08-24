@@ -53,13 +53,6 @@ function SignUp() {
       <AuthButton signUpInformation={signUpInformation} type="create">
         Create
       </AuthButton>
-      <Recaptcha>
-        <input type="checkbox" />
-        <label>
-          By clicking Create account, I agree that I have read and accepted the{" "}
-          <LinkRef>Terms of Use</LinkRef> and <LinkRef>Privacy Policy</LinkRef>
-        </label>
-      </Recaptcha>
     </Wrapper>
   );
 }
@@ -82,12 +75,6 @@ const Heading = styled.div`
   }
   a {
     font-weight: 500;
-  }
-`;
-const Recaptcha = styled.div`
-  label {
-    color: ${COLORS.neutral.darkGrey};
-    font-size: ${TYPOGRAPHY.sm};
   }
 `;
 

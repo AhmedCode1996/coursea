@@ -7,7 +7,7 @@ import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 import animatedAvatar from "./../../assets/animatedAvatar.json";
 import animatedLogout from "./../../assets/logout.json";
 import BackArrow from "../BackArrow/BackArrow";
-import { COLORS } from "../../constants";
+import { COLORS, FONT_FAMILY } from "../../constants";
 
 function Header({ LoggedOut, setLoggedOut }) {
   const { avatar, location } = useSelector((state) => state.user);
@@ -56,6 +56,8 @@ const HeadingAndArrow = styled.div`
 `;
 const Heading = styled.h2`
   text-transform: capitalize;
+  font-family: ${FONT_FAMILY.pilcrow};
+  letter-spacing: 1px;
 `;
 const Logout = styled.div`
   width: ${35 / 16}rem;

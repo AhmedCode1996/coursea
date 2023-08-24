@@ -59,7 +59,7 @@ function AuthButton(props) {
       if (!error) {
         dispatch(setUsername(data.user.user_metadata.username));
         dispatch(toggleToastify());
-        navigate("/account/explore-courses");
+        navigate("/account/overview");
         setClicked(false);
       } else {
         setClicked(false);

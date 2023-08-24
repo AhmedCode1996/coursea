@@ -1,15 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable no-unused-vars */
 import { useDispatch, useSelector } from "react-redux";
 import SingleCourse from "../components/SingleCourse/SingleCourse";
-import BackArrow from "../components/BackArrow/BackArrow";
 import { styled } from "styled-components";
-import { COLORS } from "../constants";
+import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../constants";
 
-import CourseSpinner from "./../components/CourseSpinner/CourseSpinner";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { setLocation } from "../features/user/userSlice";
 
+import followLinkIcon from "./../assets/followme.json";
+import AnimatedIcon from "../components/AnimatedIcon/AnimatedIcon";
+import AnimatedAvatar from "./../assets/notFoundAvatar.json";
 const MyCourses = () => {
   const { joinedCourses } = useSelector((state) => state.user);
   const { courses } = useSelector((state) => state.courseSlice);
@@ -36,12 +38,20 @@ const MyCourses = () => {
 
   if (!targetCourses.length) {
     return (
-      <>
+      <EmptyWrapper>
         <h2 style={{ textTransform: "capitalize" }}>
-          add courses first to your dashboard
+          you haven't added any courses yet
         </h2>
-        <CourseSpinner />;
-      </>
+        <AvatarWrapper>
+          <AnimatedIcon icon={AnimatedAvatar} />
+        </AvatarWrapper>
+        <LinkWrapper to={"/account/explore-courses"}>
+          <span>follow me to add</span>
+          <IconWrapper>
+            <AnimatedIcon icon={followLinkIcon} />
+          </IconWrapper>
+        </LinkWrapper>
+      </EmptyWrapper>
     );
   }
   return (
@@ -54,6 +64,32 @@ const MyCourses = () => {
 };
 
 export default MyCourses;
+
+const EmptyWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  text-align: center;
+  font-family: ${FONT_FAMILY.pilcrow};
+`;
+
+const LinkWrapper = styled(Link)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${COLORS.neutral.black};
+  font-size: ${TYPOGRAPHY.lg};
+  font-weight: 600;
+`;
+
+const IconWrapper = styled.span`
+  width: ${50 / 16}rem;
+`;
+
+const AvatarWrapper = styled.div`
+  width: clamp(${250 / 16}rem, ${400 / 16}rem, ${600 / 16}rem);
+`;
 
 const Wrapper = styled.div`
   --gap: ${24 / 16}rem;

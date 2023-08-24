@@ -44,7 +44,7 @@ const InputElement = styled.input`
   }
 
   &:focus {
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 4px  rgba(0, 0, 0, 0.25);
   }
 `;
 const SearchIcon = styled.img`

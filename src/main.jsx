@@ -20,11 +20,13 @@ import Overview from "./pages/Overview";
 import Mentors from "./components/Mentors/Mentors";
 import Plans from "./pages/Plans";
 import Courses from "./components/Courses/Courses";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <AppLayout />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -39,6 +41,7 @@ const router = createBrowserRouter([
   {
     path: "account",
     element: <AppLayoutContent />,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
