@@ -2,39 +2,72 @@
 /* eslint-disable react/prop-types */
 import styled, { css } from "styled-components";
 import { COLORS, TYPOGRAPHY } from "../../constants";
-import { createUser } from "../../features/user/userSlice";
+import {
+  createUser,
+  enableToastify,
+  setError,
+  setUsername,
+  toggleToastify,
+} from "../../features/user/userSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import AuthSpinner from "../AuthSpinner/AuthSpinner";
+import { supabase } from "../../services/supabase";
 
 function AuthButton(props) {
   const [clicked, setClicked] = useState(false);
+  const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { email, password, authenticated } = useSelector((state) => state.user);
+  const { error, authenticated } = useSelector((state) => state.user);
 
-  const dispatch = useDispatch();
+  const userCredentials = {
+    email: "",
+    password: "",
+    username: "",
+  };
 
-  function handelAuthButton(e) {
+  const handelAuthButton = async (e) => {
     e.preventDefault();
     setClicked(true);
-    const userCredentials = {
-      email,
-      password,
-    };
 
-    setTimeout(() => {
-      if (!authenticated) {
-        dispatch(createUser(userCredentials));
-        navigate("/signin");
-        setClicked(false);
-      } else {
+    if (props.signUpInformation) {
+      userCredentials.email = props.signUpInformation.emailaddress;
+      userCredentials.password = props.signUpInformation.password;
+      userCredentials.username = props.signUpInformation.username;
+      dispatch(createUser(userCredentials));
+      setTimeout(() => {
+        if (!error) {
+          setClicked(false);
+          navigate("/signin");
+        } else {
+          console.log(error);
+          setClicked(true);
+          dispatch(enableToastify({ variant: "error", message: error }));
+        }
+      }, 4000);
+    }
+    if (props.loginInformation) {
+      userCredentials.email = props.loginInformation.emailaddress;
+      userCredentials.password = props.loginInformation.password;
+      let { data, error } = await supabase.auth.signInWithPassword({
+        email: props.loginInformation.emailaddress,
+        password: props.loginInformation.password,
+      });
+
+      if (!error) {
+        dispatch(setUsername(data.user.user_metadata.username));
+        dispatch(toggleToastify());
         navigate("/account/explore-courses");
         setClicked(false);
+      } else {
+        setClicked(false);
+        dispatch(setError(error.message));
       }
-    }, 2000);
-  }
+    }
+  };
+
   return (
     <Wrapper onClick={handelAuthButton} type={props.type}>
       {clicked ? <AuthSpinner /> : props.children}

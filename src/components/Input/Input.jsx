@@ -4,20 +4,17 @@ import { useId, useState } from "react";
 import { styled } from "styled-components";
 
 import { COLORS, TYPOGRAPHY } from "./../../constants";
-import { useSelector } from "react-redux";
 
 function Input(props) {
-  const { email, password, authenticated, avatar } = useSelector((state) => state.user);
   const [value, setValue] = useState("");
   const id = useId();
-
-  const defaultValue = props.type === "text" ? email : password;
 
   const handleInputChange = (e) => {
     const inputValue = e.target.value;
 
     setValue(inputValue);
-    props.handleChange && props.handleChange(inputValue);
+    props.handleSignInChange && props.handleSignInChange(e);
+    props.handleSignUpChange && props.handleSignUpChange(e);
   };
 
   return (
@@ -27,8 +24,9 @@ function Input(props) {
         id={`input${id}`}
         type={props.type}
         placeholder={props.placeholder}
-        value={authenticated ? defaultValue : value}
+        value={value}
         onChange={handleInputChange}
+        name={props.children.replaceAll(" ", "")}
       />
     </Wrapper>
   );
@@ -42,6 +40,7 @@ const Wrapper = styled.div`
 const Label = styled.label`
   font-weight: 500;
   font-size: ${TYPOGRAPHY.base};
+  text-transform: capitalize;
 `;
 const InputElement = styled.input`
   --vertical-padding: 8px;

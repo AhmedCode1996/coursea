@@ -10,7 +10,8 @@ import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 
 import GlobalStyle from "./styles/GlobalStyles";
-import CourseProvider from "./hooks/CourseProvider";
+import ToastProvider from "./components/toast/ToastProvider";
+// import CourseProvider from "./hooks/CourseProvider";
 
 import Course from "./pages/Course";
 import MainContent from "./components/MainContent/MainContent";
@@ -77,9 +78,9 @@ createRoot(root).render(
   <>
     <GlobalStyle />
     <Provider store={store}>
-      <CourseProvider>
+      <ToastProvider>
         <RouterProvider router={router} />
-      </CourseProvider>
+      </ToastProvider>
     </Provider>
   </>
 );

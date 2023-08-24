@@ -1,9 +1,9 @@
+/* eslint-disable no-unused-vars */
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { supabase } from "../../services/supabase";
 
 const initialState = {
-  email: "",
-  password: "",
+  emailaddress: "",
   username: "",
   avatar: "",
   userId: null,
@@ -17,6 +17,9 @@ const initialState = {
   plan: "free",
   location: "",
   toggleSidebar: false,
+  toastify: false,
+  toastVariant: "",
+  toastMessage: "",
 };
 
 export const createUser = createAsyncThunk(
@@ -26,11 +29,20 @@ export const createUser = createAsyncThunk(
       let { data, error } = await supabase.auth.signUp({
         email: userCredentials.email,
         password: userCredentials.password,
+        options: {
+          data: {
+            username: userCredentials.username,
+          },
+        },
       });
-      if (error) throw new Error("error");
-      console.log(data);
-      return data;
+
+      if (!error) {
+        return data;
+      } else {
+        throw new Error(error.message);
+      }
     } catch (error) {
+      console.log(error.message);
       return error.message;
     }
   }
@@ -40,14 +52,11 @@ const userSlice = createSlice({
   name: "user",
   initialState,
   reducers: {
-    setEmail: (state, { payload }) => {
-      state.email = payload;
-    },
-    setPassword: (state, { payload }) => {
-      state.password = payload;
-    },
     setUsername: (state, { payload }) => {
       state.username = payload;
+    },
+    setError: (state, { payload }) => {
+      state.error = payload;
     },
     setAvatar: (state, { payload }) => {
       state.avatar = payload;
@@ -79,6 +88,14 @@ const userSlice = createSlice({
       state.following = [];
       state.joinedCourses = [];
     },
+    toggleToastify: (state) => {
+      state.toastify = false;
+    },
+    enableToastify: (state, { payload }) => {
+      state.toastify = true;
+      state.message = payload.message;
+      state.toastVariant = payload.variant;
+    },
     joinCourse: (state, { payload }) => {
       if (state.joinedCourses.includes(payload)) return;
       state.joinedCourses.push(payload);
@@ -90,28 +107,37 @@ const userSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(createUser.pending, (state) => {
       state.loading = true;
+      state.toastify = true;
+      state.toastVariant = "notice";
+      state.toastMessage = "creating your account...";
     });
     builder.addCase(createUser.fulfilled, (state, { payload }) => {
       state.loading = false;
+      state.toastify = true;
+      state.toastVariant = "success";
+      state.toastMessage = "congratulations for creating account";
       state.userId = payload.user.id;
-      state.email = payload.user.email;
       state.authenticated = payload.user.role === "authenticated";
     });
     builder.addCase(createUser.rejected, (state, { payload }) => {
-      state.loading = false;
       state.error = payload;
+      state.loading = false;
+      state.toastify = true;
+      state.toastVariant = "error";
+      state.toastMessage = state.error;
     });
   },
 });
 
 export const {
-  setEmail,
-  setPassword,
   setUsername,
+  setError,
   setAvatar,
   setFollow,
   setPlan,
   setLogout,
+  toggleToastify,
+  enableToastify,
   setLocation,
   setUnfollowingList,
   joinCourse,

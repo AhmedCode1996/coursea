@@ -1,59 +1,58 @@
+import { useState } from "react";
 import { styled } from "styled-components";
-import { COLORS, TYPOGRAPHY } from "../constants";
 import { Link } from "react-router-dom";
+
 import Input from "../components/Input/Input";
 import AuthButton from "../components/AuthButton/AuthButton";
-import { useDispatch } from "react-redux";
-import { setEmail, setPassword, setUsername } from "../features/user/userSlice";
 import AvatarInput from "../components/AvatarInput/AvatarInput";
 
+import { COLORS, TYPOGRAPHY } from "../constants";
+
 function SignUp() {
+  const [signUpInformation, setSignUpInformation] = useState({
+    emailaddress: "",
+    username: "",
+    password: "",
+  });
 
-  const dispatch = useDispatch();
-
-  function handleEmailChange(value) {
-    dispatch(setEmail(value));
-  }
-
-  function handlePasswordChange(value) {
-    dispatch(setPassword(value));
-  }
-
-  function handleUsernameChange(value) {
-    dispatch(setUsername(value));
-  }
+  const handleSignUpChange = (e) => {
+    const { name, value } = e.target;
+    setSignUpInformation((prevState) => ({ ...prevState, [name]: value }));
+  };
 
   return (
     <Wrapper>
       <Heading>
         <h2>Create An Account</h2>
         <p>
-          Already have an account ? <LinkRef to="/">Login</LinkRef>
+          Already have an account ? <LinkRef to="/signin">Login</LinkRef>
         </p>
       </Heading>
       <Input
-        handleChange={handleEmailChange}
+        handleSignUpChange={handleSignUpChange}
         type="text"
         placeholder="Your Email"
       >
-        Email Address
+        email address
       </Input>
       <Input
-        handleChange={handleUsernameChange}
+        handleSignUpChange={handleSignUpChange}
         type="text"
         placeholder="Your Username"
       >
-        Username
+        username
       </Input>
       <Input
-        handleChange={handlePasswordChange}
+        handleSignUpChange={handleSignUpChange}
         type="password"
         placeholder="Your password"
       >
-        Password
+        password
       </Input>
       <AvatarInput>upload your avatar</AvatarInput>
-      <AuthButton type="create">Create</AuthButton>
+      <AuthButton signUpInformation={signUpInformation} type="create">
+        Create
+      </AuthButton>
       <Recaptcha>
         <input type="checkbox" />
         <label>

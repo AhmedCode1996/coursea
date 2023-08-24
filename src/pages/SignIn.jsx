@@ -1,12 +1,24 @@
-/* eslint-disable no-unused-vars */
+import { useState } from "react";
+import { Link } from "react-router-dom";
 import { styled } from "styled-components";
+
 import Input from "../components/Input/Input";
 import AuthButton from "../components/AuthButton/AuthButton";
 import SocialAuth from "../components/SocialAuth/SocialAuth";
+
 import { COLORS, TYPOGRAPHY } from "../constants";
-import { Link } from "react-router-dom";
 
 const SignIn = () => {
+  const [loginInformation, setLoginInformation] = useState({
+    emailaddress: "",
+    password: "",
+  });
+
+  const handleSignInChange = (e) => {
+    const { name, value } = e.target;
+    setLoginInformation((prevState) => ({ ...prevState, [name]: value }));
+  };
+
   return (
     <Wrapper>
       <Heading>
@@ -15,15 +27,25 @@ const SignIn = () => {
           New user ? <LinkRef to="/">Create an account</LinkRef>
         </p>
       </Heading>
-      <Input type="text" placeholder="Your Email">
-        Email Address
+      <Input
+        type="text"
+        placeholder="Your Email"
+        handleSignInChange={handleSignInChange}
+      >
+        email address
       </Input>
-      <Input type="password" placeholder="Your password">
-        Password
+      <Input
+        type="password"
+        placeholder="Your password"
+        handleSignInChange={handleSignInChange}
+      >
+        password
       </Input>
       <ActionButtons>
         <AuthButton type="forgot">forgot password ?</AuthButton>
-        <AuthButton type="sign">sign in</AuthButton>
+        <AuthButton loginInformation={loginInformation} type="sign">
+          sign in
+        </AuthButton>
       </ActionButtons>
       <Divider>
         <span>or</span>
