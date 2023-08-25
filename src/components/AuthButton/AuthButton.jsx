@@ -4,12 +4,11 @@ import styled, { css } from "styled-components";
 import { COLORS, TYPOGRAPHY } from "../../constants";
 import {
   createUser,
-  enableToastify,
   setError,
   setUsername,
   toggleToastify,
 } from "../../features/user/userSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import AuthSpinner from "../AuthSpinner/AuthSpinner";
@@ -20,8 +19,6 @@ function AuthButton(props) {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const { error, authenticated } = useSelector((state) => state.user);
-
   const userCredentials = {
     email: "",
     password: "",
@@ -31,22 +28,19 @@ function AuthButton(props) {
   const handelAuthButton = async (e) => {
     e.preventDefault();
     setClicked(true);
-
     if (props.signUpInformation) {
       userCredentials.email = props.signUpInformation.emailaddress;
       userCredentials.password = props.signUpInformation.password;
       userCredentials.username = props.signUpInformation.username;
-      dispatch(createUser(userCredentials));
-      setTimeout(() => {
-        if (!error) {
+      dispatch(createUser(userCredentials))
+        .unwrap()
+        .then(() => {
           setClicked(false);
           navigate("/signin");
-        } else {
-          console.log(error);
-          setClicked(true);
-          dispatch(enableToastify({ variant: "error", message: error }));
-        }
-      }, 4000);
+        })
+        .catch((error) => {
+          setClicked(false);
+        });
     }
     if (props.loginInformation) {
       userCredentials.email = props.loginInformation.emailaddress;

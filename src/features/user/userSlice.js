@@ -9,7 +9,7 @@ const initialState = {
   userId: null,
   authenticated: false,
   loading: false,
-  error: "",
+  error: "pending",
   following: [],
   unfollowing: [],
   joinedCourses: [],
@@ -24,7 +24,8 @@ const initialState = {
 
 export const createUser = createAsyncThunk(
   "user/createUser",
-  async (userCredentials) => {
+  async (userCredentials, thunkAPI) => {
+    const { rejectWithValue } = thunkAPI;
     try {
       let { data, error } = await supabase.auth.signUp({
         email: userCredentials.email,
@@ -35,15 +36,14 @@ export const createUser = createAsyncThunk(
           },
         },
       });
-
       if (!error) {
         return data;
       } else {
-        throw new Error(error.message);
+        return rejectWithValue(error.message);
       }
     } catch (error) {
       console.log(error.message);
-      return error.message;
+      return rejectWithValue(error);
     }
   }
 );
@@ -107,12 +107,14 @@ const userSlice = createSlice({
   extraReducers: (builder) => {
     builder.addCase(createUser.pending, (state) => {
       state.loading = true;
+      state.error = "pending";
       state.toastify = true;
       state.toastVariant = "notice";
       state.toastMessage = "creating your account...";
     });
     builder.addCase(createUser.fulfilled, (state, { payload }) => {
       state.loading = false;
+      state.error = null;
       state.toastify = true;
       state.toastVariant = "success";
       state.toastMessage = "congratulations for creating account";
