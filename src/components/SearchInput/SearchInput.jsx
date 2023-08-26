@@ -3,10 +3,20 @@ import { styled } from "styled-components";
 
 import Icon from "./../../assets/search-normal.png";
 import { COLORS, TYPOGRAPHY } from "../../constants";
+import { useDispatch } from "react-redux";
+import { searchFilter } from "../../features/courseSlice";
 
 function SearchInput() {
   const WrapperRef = useRef();
+  const dispatch = useDispatch();
+  const [value, setValue] = useState("");
   const [position, setPosition] = useState(0);
+
+  const handleSearchInput = (e) => {
+    const query = e.target.value;
+    setValue(query);
+    dispatch(searchFilter(query));
+  };
 
   useEffect(() => {
     const elementWidth = WrapperRef.current.getBoundingClientRect().height;
@@ -15,7 +25,11 @@ function SearchInput() {
 
   return (
     <Wrapper ref={WrapperRef}>
-      <InputElement placeholder="Search Course Name/Mentor" />
+      <InputElement
+        value={value}
+        onChange={handleSearchInput}
+        placeholder="Search Course Name/Mentor"
+      />
       <SearchIcon position={position} src={Icon} title="Search input Icon" />
     </Wrapper>
   );

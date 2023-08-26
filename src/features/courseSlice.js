@@ -28,6 +28,14 @@ const courseSlice = createSlice({
   name: "courses",
   initialState,
   reducers: {
+    searchFilter: (state, { payload }) => {
+      const searchValue = payload.toLowerCase();
+      state.courses = state.originalCourses;
+      state.courses = state.courses.filter((course) => {
+        const titleValue = course.title.toLowerCase();
+        return titleValue.includes(searchValue);
+      });
+    },
     levelFilter: (state, { payload }) => {
       let value = payload.label.toLowerCase();
       state.levelFilterState = value;
@@ -97,7 +105,8 @@ const courseSlice = createSlice({
   },
 });
 
-export const { levelFilter, sortFilter, categoryFilter } = courseSlice.actions;
+export const { levelFilter, sortFilter, categoryFilter, searchFilter } =
+  courseSlice.actions;
 
 export default courseSlice.reducer;
 
