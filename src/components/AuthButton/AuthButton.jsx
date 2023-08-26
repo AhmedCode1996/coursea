@@ -76,7 +76,6 @@ const Wrapper = styled.button`
     props.type === "sign" &&
     css`
       background-color: ${COLORS.primary};
-
       color: ${COLORS.neutral.black};
     `}
   ${(props) =>
@@ -91,7 +90,7 @@ const Wrapper = styled.button`
       color: ${COLORS.neutral.darkGrey};
       background-color: ${COLORS.neutral.softGrey};
     `}
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: ${TYPOGRAPHY.base};

@@ -7,7 +7,7 @@ import {
   Info,
   X,
 } from "react-feather";
-
+  
 import { ToastContext } from "./ToastProvider";
 import VisuallyHidden from "./../VisuallyHidden/VisuallyHidden";
 import styles from "./Toastify.module.css";
