@@ -17,9 +17,11 @@ import CourseCardModules from "../components/CourseCardModules/CourseCardModules
 import JoinButton from "../components/JoinButton/JoinButton";
 import CourseSpinner from "../components/CourseSpinner/CourseSpinner";
 import { setLocation } from "../features/user/userSlice";
+import { useMediaQuery } from "@mui/material";
 
 const Course = () => {
   const dispatch = useDispatch();
+  const matches = useMediaQuery("(max-width:1100px)");
   const [videoIndex, setVideoIndex] = useState(0);
   const [completed, setCompleted] = useState(false);
   const [selectedCourse, setSelectedCourse] = useState({});
@@ -53,7 +55,7 @@ const Course = () => {
   }, [courseid, courses]);
 
   return (
-    <FullCourseWrapper>
+    <FullCourseWrapper matches={matches}>
       {Object.keys(selectedCourse || {}).length ? (
         <>
           <CourseWrapper>
@@ -62,22 +64,37 @@ const Course = () => {
               handleVideoCompleted={handleVideoCompleted}
               videoUrl={selectedCourse.modules[videoIndex].url}
             />
-            <CourseInfo>
-              <CourseMiniInformation courseInformation={selectedCourse} />
-              <TabsAndContent courseInformation={selectedCourse} />
-            </CourseInfo>
+            <div style={{ display: "flex" }}>
+              <CourseInfo>
+                <CourseMiniInformation courseInformation={selectedCourse} />
+                <TabsAndContent courseInformation={selectedCourse} />
+              </CourseInfo>
+             {matches && <CourseCardWrapper>
+                <CourseCardInformation cardInformation={selectedCourse} />
+                <CourseDetails details={selectedCourse} />
+                <CourseCardModules
+                  completed={completed}
+                  videoIndex={videoIndex}
+                  handleVideoIndex={handleVideoIndex}
+                  selectedCourseModules={selectedCourse}
+                />
+                <JoinButton courseId={courseid} />
+              </CourseCardWrapper>}
+            </div>
           </CourseWrapper>
-          <CourseCardWrapper>
-            <CourseCardInformation cardInformation={selectedCourse} />
-            <CourseDetails details={selectedCourse} />
-            <CourseCardModules
-              completed={completed}
-              videoIndex={videoIndex}
-              handleVideoIndex={handleVideoIndex}
-              selectedCourseModules={selectedCourse}
-            />
-            <JoinButton courseId={courseid} />
-          </CourseCardWrapper>
+          {!matches && (
+            <CourseCardWrapper>
+              <CourseCardInformation cardInformation={selectedCourse} />
+              <CourseDetails details={selectedCourse} />
+              <CourseCardModules
+                completed={completed}
+                videoIndex={videoIndex}
+                handleVideoIndex={handleVideoIndex}
+                selectedCourseModules={selectedCourse}
+              />
+              <JoinButton courseId={courseid} />
+            </CourseCardWrapper>
+          )}
         </>
       ) : (
         <CourseSpinner />
@@ -91,7 +108,8 @@ export default Course;
 const FullCourseWrapper = styled.div`
   display: grid;
   column-gap: 30px;
-  grid-template-columns: 1fr ${350 / 16}rem;
+  grid-template-columns: ${(props) =>
+    props.matches ? "1fr" : `1fr ${350 / 16}rem`};
 
   & > * {
     background-color: ${COLORS.neutral.white};

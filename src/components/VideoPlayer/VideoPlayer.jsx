@@ -121,7 +121,7 @@ const VideoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  max-width: ${744 / 16}rem;
+  /* max-width: ${744 / 16}rem; */
   max-height: ${500 / 16}rem;
 `;
 
