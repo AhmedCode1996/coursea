@@ -8,7 +8,7 @@ import { COLORS, FONT_FAMILY, TYPOGRAPHY } from "../../constants";
 import AnimatedIcon from "../AnimatedIcon/AnimatedIcon";
 
 import unhappy from "../../assets/unhappy.json";
-import { setLogout, setPlan } from "../../features/user/userSlice";
+import { setLogout } from "../../features/user/userSlice";
 import { supabase } from "../../services/supabase";
 import { useNavigate } from "react-router-dom";
 
