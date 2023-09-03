@@ -1,3 +1,6 @@
+import { useEffect, useRef, useState } from "react";
+
+import { useDispatch, useSelector } from "react-redux";
 import { styled } from "styled-components";
 import { Outlet } from "react-router-dom";
 
@@ -5,13 +8,13 @@ import { COLORS } from "../constants";
 
 import Sidebar from "./../components/Sidebar/Sidebar";
 import Header from "./../components/Header/Header";
-import { useEffect, useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { fetchCourses } from "../features/courseSlice";
 import LogoutModal from "../components/LogoutModal/LogoutModal";
+import useAlan from "../hooks/Alan";
 
 const AppLayoutContent = () => {
   const { toggleSidebar } = useSelector((state) => state.user);
+  const assistantBtn = useRef(null);
 
   const [loggedOut, setLoggedOut] = useState(false);
   const dispatch = useDispatch();
@@ -20,11 +23,11 @@ const AppLayoutContent = () => {
     dispatch(fetchCourses());
   }, [dispatch]);
 
+  useAlan();
+
   return (
     <>
-      <Wrapper
-        toggle={toggleSidebar}
-      >
+      <Wrapper toggle={toggleSidebar}>
         <Sidebar />
         <HeaderAndContentWrapper>
           {loggedOut && (
@@ -33,6 +36,7 @@ const AppLayoutContent = () => {
           <Header loggedOut={loggedOut} setLoggedOut={setLoggedOut} />
           <Outlet />
         </HeaderAndContentWrapper>
+        <div ref={assistantBtn} />
       </Wrapper>
     </>
   );
