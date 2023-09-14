@@ -4,7 +4,7 @@ import { styled } from "styled-components";
 
 import Input from "../components/Input/Input";
 import AuthButton from "../components/AuthButton/AuthButton";
-import SocialAuth from "../components/SocialAuth/SocialAuth";
+// import SocialAuth from "../components/SocialAuth/SocialAuth";
 
 import { COLORS, TYPOGRAPHY } from "../constants";
 import { useSelector } from "react-redux";
