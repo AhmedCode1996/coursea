@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { styled } from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -7,6 +7,7 @@ import AuthButton from "../components/AuthButton/AuthButton";
 import AvatarInput from "../components/AvatarInput/AvatarInput";
 
 import { COLORS, TYPOGRAPHY } from "../constants";
+import { supabase } from "../services/supabase";
 
 function SignUp() {
   const [signUpInformation, setSignUpInformation] = useState({
@@ -19,6 +20,16 @@ function SignUp() {
     const { name, value } = e.target;
     setSignUpInformation((prevState) => ({ ...prevState, [name]: value }));
   };
+
+  useEffect(() => {
+    async function getSession() {
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+      console.log(user);
+    }
+    getSession()
+  }, []);
 
   return (
     <Wrapper>

@@ -50,11 +50,10 @@ const SignIn = () => {
           sign in
         </AuthButton>
       </ActionButtons>
-      <Divider>
+      {/* <Divider>
         <span>or</span>
       </Divider>
-      <SocialAuth type="google" />
-      <SocialAuth type="facebook" />
+      <SocialAuth type="google" /> */}
       <Recaptcha>
         <label>
           Protected by reCAPTCHA and subject to the Google{" "}
@@ -91,25 +90,25 @@ const ActionButtons = styled.div`
   justify-content: space-between;
 `;
 
-const Divider = styled.div`
-  position: relative;
-  width: 100%;
-  height: 1px;
-  background-color: ${COLORS.neutral.softGrey};
-  color: ${COLORS.neutral.black};
-  font-size: ${TYPOGRAPHY.lg};
+// const Divider = styled.div`
+//   position: relative;
+//   width: 100%;
+//   height: 1px;
+//   background-color: ${COLORS.neutral.softGrey};
+//   color: ${COLORS.neutral.black};
+//   font-size: ${TYPOGRAPHY.lg};
 
-  span {
-    display: block;
-    background-color: ${COLORS.neutral.white};
-    position: absolute;
-    line-height: 2;
-    left: 50%;
-    top: 50%;
-    padding-inline: 2rem;
-    transform: translate(-50%, -50%);
-  }
-`;
+//   span {
+//     display: block;
+//     background-color: ${COLORS.neutral.white};
+//     position: absolute;
+//     line-height: 2;
+//     left: 50%;
+//     top: 50%;
+//     padding-inline: 2rem;
+//     transform: translate(-50%, -50%);
+//   }
+// `;
 
 const Recaptcha = styled.div`
   label {

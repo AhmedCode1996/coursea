@@ -48,6 +48,27 @@ export const createUser = createAsyncThunk(
   }
 );
 
+export const getOAuth = createAsyncThunk(
+  "user/getAuth",
+  async (_, thunkAPI) => {
+    const { rejectWithValue } = thunkAPI;
+    try {
+      let { data, error } = await supabase.auth.signInWithOAuth({
+        provider: "google",
+      });
+
+      if (!error) {
+        return data;
+      } else {
+        return rejectWithValue(error.message);
+      }
+    } catch (error) {
+      console.log(error.message);
+      return rejectWithValue(error);
+    }
+  }
+);
+
 const userSlice = createSlice({
   name: "user",
   initialState,
@@ -128,6 +149,9 @@ const userSlice = createSlice({
       state.toastVariant = "error";
       state.toastMessage = state.error;
     });
+    builder.addCase(getOAuth.pending, (state, { payload }) => {});
+    builder.addCase(getOAuth.fulfilled, (state, { payload }) => {});
+    builder.addCase(getOAuth.rejected, (state, { payload }) => {});
   },
 });
 
